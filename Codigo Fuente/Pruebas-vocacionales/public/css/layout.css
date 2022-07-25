@@ -8,7 +8,11 @@
     align-items: center; 
 }
 body{
-    background-color: #4C566A !important;
+    margin: 0 !important;
+    background-color: #4C566A !important; 
+    position: relative;
+    padding-bottom: 3.5em;
+    min-height: 100vh !important;
 }
 .login{
     background-color: #3B4353;
@@ -19,4 +23,18 @@ body{
 }
 .boton:hover{
     background-color: #3a5980 !important;
+}  
+.nav{
+    padding: 12px !important; 
+} 
+.margen{
+    margin-top: 5.4rem;
+    margin-bottom: 10rem;
 }
+.footer{ 
+    position: absolute !important;
+    background-color: #2E3440 !important;
+    bottom: 0 !important; 
+    width: 100% !important;
+    margin-top: 2.5rem !important;  
+} 

@@ -14,11 +14,13 @@
         <link href="{{ asset('css/bootstrap-icons.css') }}" rel="stylesheet">  
         
     </head>
+    <header>
+        @yield('navbar') 
+    </header>
     <body>
-        @yield('navbar')
-        @include('layouts.navbar')
         @yield('body')
     </body>
+    @yield('footer') 
     <script type="text/javascript" src="{{ URL::asset('js/jquery-3.6.0.min.js') }}"></script> 
     <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script> 
 </html>
