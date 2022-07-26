@@ -1,6 +1,5 @@
 .navbar{ 
-    background-color: #2E3440;
-    cursor: pointer;
+    background-color: #2E3440; 
     padding: 20px !important;
 }
 .titulo{
@@ -29,12 +28,34 @@ body{
 } 
 .margen{
     margin-top: 5.4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 .footer{ 
     position: absolute !important;
     background-color: #2E3440 !important;
     bottom: 0 !important; 
     width: 100% !important;
-    margin-top: 2.5rem !important;  
+    margin-top: 3.5rem !important;  
+} 
+.card-texto{
+    font-size: 22px !important; 
+}
+.card-titulo{
+    font-size: 24px !important;
+}
+.header-card{
+    background-color: #ECEFF4 !important;
+}
+.body-card{
+    background-color: #4C566A !important;
+}
+.bloque{
+    background-color: #2E3440!important;
+} 
+.literal{
+    font-size: 22px !important;
+    color: #ECEFF4 !important; 
+}
+.active{
+    background-color: #5b82cf !important;
 } 

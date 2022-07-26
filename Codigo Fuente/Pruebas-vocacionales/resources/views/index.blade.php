@@ -1,17 +1,16 @@
 @extends('layouts.container')
 @section('titulo', 'Pruebas vocacionales')
 @section('navbar')
-@include('layouts.navbar')
-@endsection
+@include('layouts.navbar') 
 @section('body')
     <div class="container margen">
         <div class="row">
-            <div class="col-12 text-light p-5">
+            <div class="col-12 text-light pt-5 pb-3">
                 <h1 class="text-center">Escala de preferencias vocacionales</h1>
             </div>
         </div>
         <div class="row">
-            <div class="container login mt-4"> 
+            <div class="container login mt-4 margen"> 
                 <div class="row">
                     <div class="col-12">
                         <h2 class="text-center p-3 text-light mb-4 mt-4">Ingresa tus datos</h2>
@@ -77,12 +76,11 @@
                     </div> 
                 </div>
                 <div class="row justify-content-center mb-4">
-                    <button type="button" class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton "><h4>Registrarme</h4></button>
+                    <a href="/instrucciones" type="button" class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton "><h4>Registrarme</h4></a>
                 </div>   
             </div>
         </div>
     </div>
 @endsection
 @section('footer')
-@include('layouts.footer')
-@endsection
+@include('layouts.footer') 
