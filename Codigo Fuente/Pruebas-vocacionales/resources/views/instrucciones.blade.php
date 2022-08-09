@@ -200,7 +200,7 @@
                     </div> 
                 </div> 
                 <div class="row justify-content-center mb-5">
-                    <a href="/instrucciones" type="button" class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton "><h4>Iniciar prueba</h4></a>
+                    <a href="/parte1" type="button" class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton "><h4>Iniciar prueba</h4></a>
                 </div> 
             </div> 
         </div> 

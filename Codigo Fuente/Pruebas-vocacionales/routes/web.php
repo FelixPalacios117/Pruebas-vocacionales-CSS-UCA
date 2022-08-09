@@ -14,6 +14,6 @@
 Route::get('/', function () { 
     return view('index');
 });
-Route::get('/instrucciones',function(){
-    return view('instrucciones');
-});
+Route::get('/instrucciones','QuizController@instrucciones');
+Route::get('/parte1','QuizController@primera');
+Route::post('/quiz','QuizController@store');

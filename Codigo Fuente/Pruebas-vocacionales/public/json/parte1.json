@@ -1,0 +1,49 @@
+{
+    "parte":"Parte 1 de 12",
+    "bloques":[
+        {
+            "literal1": "a",
+            "actividad1": "En sus viajes observar de preferencia la gente",
+            "name1":"al", 
+            "literal2": "b",
+            "actividad2": "En sus viajes observar de preferencia los paisajes",
+            "name2":"bl", 
+            "literal3": "c",
+            "actividad3": "En sus viajes observar de preferencia los cultivos",
+            "name3":"cl" 
+        },
+        {
+            "literal1": "d",
+            "actividad1": "Ayudarse económicamente dedicando varias horas diarias a leerle a un ciego",
+            "name1":"dl",
+            "literal2": "e",
+            "actividad2": "Ayudarse económicamente llevando la estadística de vehículos que pasan por un retén",
+            "name2":"el",
+            "literal3": "f",
+            "actividad3": "Ayudarse económicamente haciendo encuestas entre el público",
+            "name3":"fl"
+        },
+        {
+            "literal1": "g",
+            "actividad1": "Visitar lugares de diversión en una feria de pueblo",
+            "name1":"gl",
+            "literal2": "h",
+            "actividad2": "Visitar la exposición de productos alimenticios caseros en una feria de pueblo",
+            "name2":"hl",
+            "literal3": "j",
+            "actividad3": "Visitar la exposición de ganado en una feria de pueblo",
+            "name3":"jl"
+        },
+        {
+            "literal1": "k",
+            "actividad1":"Hacer ejercicios de atletismo",
+            "name1":"kl",
+            "literal2": "l",
+            "actividad2": "Ir a pescar",
+            "name2":"ll",
+            "literal3": "m",
+            "actividad3": "Jugar fútbol",
+            "name3":"ml"
+        }
+    ]
+}

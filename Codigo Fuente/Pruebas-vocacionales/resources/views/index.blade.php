@@ -74,6 +74,15 @@
                         <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono"
                             aria-describedby="telefono" name="telefono">
                     </div> 
+                    <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="lugar"> 
+                                <i class="bi bi-house-door-fill"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Lugar de estudio" aria-label="lugar"
+                            aria-describedby="lugar" name="lugar">
+                    </div> 
                 </div>
                 <div class="row justify-content-center mb-4">
                     <a href="/instrucciones" type="button" class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton "><h4>Registrarme</h4></a>
