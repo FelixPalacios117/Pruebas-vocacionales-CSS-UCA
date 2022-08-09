@@ -44,6 +44,116 @@
             "literal3": "m",
             "actividad3": "Jugar fútbol",
             "name3":"ml"
+        },
+        {
+            "literal1": "n",
+            "actividad1":"Hojear libros y revistas en una libreria",
+            "name1":"nl",
+            "literal2": "p",
+            "actividad2": "Presenciar el ensayo de una orquesta",
+            "name2":"pl",
+            "literal3": "q",
+            "actividad3": "Visitar un jardín zoológico",
+            "name3":"ql"
+        },
+        {
+            "literal1": "r",
+            "actividad1":"Coleccionar autografos de célebres personajes",
+            "name1":"rl",
+            "literal2": "s",
+            "actividad2": "Coleccionar maariposas",
+            "name2":"sl",
+            "literal3": "t",
+            "actividad3": "Coleccionar muestras de maderas",
+            "name3":"tl"
+        },
+        {
+            "literal1": "u",
+            "actividad1":"Visitar una exposición de cuadros famosos",
+            "name1":"ul",
+            "literal2": "v",
+            "actividad2": "Visitar una exposición de distintos medios de transporte",
+            "name2":"vl",
+            "literal3": "w",
+            "actividad3": "Visitar una exposición de equipos de laboratorio",
+            "name3":"wl"
+        },
+        {
+            "literal1": "x",
+            "actividad1":"Vender frutas",
+            "name1":"xl",
+            "literal2": "y",
+            "actividad2": "Ser pianista profesional",
+            "name2":"yl",
+            "literal3": "z",
+            "actividad3": "Cultivar hortalizas",
+            "name3":"zl"
+        },
+        {
+            "literal1": "A",
+            "actividad1": "Dirigir la organización de una fiesta en un club social",
+            "name1":"au", 
+            "literal2": "B",
+            "actividad2": "Decorar el salón para la fiesta",
+            "name2":"bu", 
+            "literal3": "C",
+            "actividad3": "Repartir las invitaciones para la fiesta",
+            "name3":"cu" 
+        },
+        {
+            "literal1": "D",
+            "actividad1": "Visitar un museo de ciencia",
+            "name1":"du",
+            "literal2": "E",
+            "actividad2": "Visitar una empresa periodística",
+            "name2":"eu",
+            "literal3": "F",
+            "actividad3": "Visitar una fábrica de máquinas de escribir",
+            "name3":"fu"
+        },
+        {
+            "literal1": "G",
+            "actividad1": "Leer para distraer una persona enferma",
+            "name1":"gu",
+            "literal2": "H",
+            "actividad2": "Enseñar trucos a un perro",
+            "name2":"hu",
+            "literal3": "J",
+            "actividad3": "Desarnar un juguete dañado para ver cómo se arregla",
+            "name3":"ju"
+        },
+        {
+            "literal1": "K",
+            "actividad1":"Recibir clases de dibujo",
+            "name1":"ku",
+            "literal2": "L",
+            "actividad2": "Recibir clases de biología",
+            "name2":"lu",
+            "literal3": "M",
+            "actividad3": "Recibir clases de metalistería",
+            "name3":"mu"
+        },
+        {
+            "literal1": "N",
+            "actividad1":"Construir pajareras",
+            "name1":"nu",
+            "literal2": "P",
+            "actividad2": "Escribir artículos sobre las aves",
+            "name2":"pu",
+            "literal3": "Q",
+            "actividad3": "Dibujar las aves",
+            "name3":"qu"
+        },
+        {
+            "literal1": "R",
+            "actividad1":"Tratar de arreglar una máquina de coser dañada",
+            "name1":"ru",
+            "literal2": "S",
+            "actividad2": "Tocar piano",
+            "name2":"su",
+            "literal3": "T",
+            "actividad3": "Hacer el bosquejo de una escena interesante",
+            "name3":"tu"
         }
     ]
 }
