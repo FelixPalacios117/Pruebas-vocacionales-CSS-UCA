@@ -18,15 +18,20 @@
                             <h2 class="text-center p-3 text-light mb-4 mt-4">Ingresa tus datos</h2>
                         </div>
                         @if ($errors->any())
-                            <div class="col-12">
+                        <div class="container">
+                            <div class="col-12"> 
                                 <div class="alert alert-danger">
+                                    <h2 class="text-center"> El formulario contiene errores</h2>
                                     <ul>
                                         @foreach ($errors->all() as $error)
-                                            <h5>{{ $error }}</h5>
+                                            <li>
+                                                <h5>{{ $error }}</h5>
+                                            </li>
                                         @endforeach
                                     </ul>
                                 </div>
                             </div>
+                        </div>
                         @endif
                     </div>
                     <div class="row justify-content-center">
@@ -37,7 +42,7 @@
                                 </span>
                             </div>
                             <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
-                                aria-describedby="nombre" name="nombre" required>
+                                aria-describedby="nombre" name="nombre" required value={{old('nombre')}}>
                         </div>
                         <div class="input-group input-group-lg mb-4 col-8">
                             <div class="input-group-prepend">
@@ -46,7 +51,7 @@
                                 </span>
                             </div>
                             <input type="text" class="form-control" placeholder="Apellido" aria-label="apellido"
-                                aria-describedby="nombre" name="apellido" required>
+                                aria-describedby="nombre" name="apellido" required value={{old("apellido")}}>
                         </div>
                         <div class="input-group input-group-lg mb-4 col-8">
                             <div class="input-group-prepend">
@@ -57,8 +62,10 @@
 
                             <select class="custom-select" id="inputGroupSelect01" name="genero" required>
                                 <option value="">Seleccionar género</option>
-                                <option value="Masculino">Masculino</option>
-                                <option value="Femenino">Femenino</option>
+                                <option value="Masculino" 
+                                @if (old("genero")=="Masculino") {{'selected'}} @endif>Masculino</option>
+                                <option value="Femenino" 
+                                @if (old("genero")=="Femenino") {{'selected'}} @endif>Femenino</option>
                             </select>
                         </div>
                         <div class="input-group input-group-lg date mb-4 col-8">
@@ -68,7 +75,7 @@
                                 </span>
                             </div>
                             <input type="date" class="form-control" placeholder="Fecha de nacimiento" aria-label="Fecha"
-                                aria-describedby="Fecha" name="fecha" required>
+                                aria-describedby="Fecha" name="fecha" onkeypress="return false" max="{{Carbon\Carbon::now()->format('Y-m-d')}}" required value={{old('fecha')}}>
                         </div>
                         <div class="input-group input-group-lg mb-4 col-8">
                             <div class="input-group-prepend">
@@ -77,7 +84,7 @@
                                 </span>
                             </div>
                             <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Correo"
-                                aria-describedby="Correo" name="correo" required>
+                                aria-describedby="Correo" name="correo" required value={{old('correo')}}>
                         </div>
                         <div class="input-group input-group-lg mb-4 col-8">
                             <div class="input-group-prepend">
@@ -85,8 +92,8 @@
                                     <i class="bi bi-telephone"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Teléfono" aria-label="telefono"
-                                aria-describedby="telefono" name="telefono" required>
+                            <input type="text" pattern="^[0-9]{4}[\-][0-9]{4}" title="0000-0000" class="form-control" placeholder="Teléfono" aria-label="telefono"
+                                aria-describedby="telefono" name="telefono" required value={{old('telefono')}}>
                         </div>
                         <div class="input-group input-group-lg mb-4 col-8">
                             <div class="input-group-prepend">
@@ -95,7 +102,7 @@
                                 </span>
                             </div>
                             <input type="text" class="form-control" placeholder="Lugar de estudio" aria-label="lugar"
-                                aria-describedby="lugar" name="lugar" required>
+                                aria-describedby="lugar" name="lugar" required value={{old('lugar')}}>
                         </div>
                     </div>
                     <div class="row justify-content-center mb-4">

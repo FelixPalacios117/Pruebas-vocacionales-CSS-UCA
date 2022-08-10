@@ -5,6 +5,9 @@ namespace Pruebas\Http\Controllers;
 use Illuminate\Http\Request;
 use Pruebas\Prueba;
 use Pruebas\Respuesta;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon; 
+use DateTime;
 
 class QuizController extends Controller
 {
@@ -24,25 +27,34 @@ class QuizController extends Controller
         //dd(session('idCarrito'));
         // session()->forget('idCarrito');
         $this->validate($request, [
-            'nombre' => 'required|string|different:apellido',
-            'apellido' => 'required|string|different:nombre',
+            'nombre' => 'required|string',
+            'apellido' => 'required|string',
             'correo' => 'required|email|unique:pruebas,correo',
             'telefono' => 'required|unique:pruebas,telefono',
             'genero' => 'required',
             'lugar' => 'required',
             'fecha' => 'required|date'
-        ]);
-
+        ]); 
+        $date = new DateTime($request->fecha);  
+        $edad= Carbon::createFromDate($date->format('Y'),$date->format('m'),$date->format('d'))->age; 
+        if($edad<15 || $edad>55){
+            return back()->withInput()->withErrors('Debes ser mayor de 15 años e ingresar una fecha válida');
+        } 
         $prueba = new Prueba;
         $prueba->nombre = $request->nombre;
         $prueba->apellido = $request->apellido;
         $prueba->correo = $request->correo;
-        session(['id_prueba' => 1]);
+        $prueba->telefono=$request->telefono;
+        $prueba->genero=$request->genero;
+        $prueba->lugar_estudio=$request->lugar;
+        $prueba->fecha=$request->fecha;   
+        $prueba->save();
+        $id_prueba= DB::table('pruebas')->where('correo', $request->correo)->value('id');
+        session(['id_prueba' => $id_prueba]);
         return view('instrucciones');
     }
     public function store(Request $request)
-    {
-        dd($request);
+    { 
         $this->validate($request, [
             'a' => 'required|different:c',
             'b' => 'required|different:a',
@@ -87,24 +99,23 @@ class QuizController extends Controller
             'S' => 'required|different:R',
             'T' => 'required|different:S',
 
-        ]); 
-            //bloques de respuestas
-            $bloque_uno = $request->al . $request->bl . $request->cl; //esto para todos los bloques de preguntas
-            $bloque_dos = $request->dl . $request->el . $request->fl;
-            $bloque_tres = $request->gl . $request->hl . $request->jl;
-            $bloque_cuatro = $request->kl . $request->ll . $request->ml;
-            $bloque_cinco = $request->nl . $request->pl . $request->ql;
-            $bloque_seis = $request->rl . $request->sl . $request->tl;
-            $bloque_siete = $request->ul . $request->vl . $request->wl;
-            $bloque_ocho = $request->xl . $request->yl . $request->zl;
-            $bloque_nueve = $request->au . $request->bu . $request->cu;
-            $bloque_diez = $request->du . $request->eu . $request->fu;
-            $bloque_once = $request->gu . $request->hu . $request->ju;
-            $bloque_doce = $request->ku . $request->lu . $request->mu;
-            $bloque_trece = $request->nu . $request->pu . $request->qu;
-            $bloque_catorce = $request->ru . $request->su . $request->tu;
-
-            $respuesta = new Respuesta;
+        ]);  
+         //bloques de respuestas 
+            $bloque_uno = $request->a . $request->b . $request->c; //esto para todos los bloques de preguntas
+            $bloque_dos = $request->d . $request->e . $request->f;
+            $bloque_tres = $request->g . $request->h . $request->j;
+            $bloque_cuatro = $request->k . $request->l . $request->m;
+            $bloque_cinco = $request->n . $request->p . $request->q;
+            $bloque_seis = $request->r . $request->s . $request->t;
+            $bloque_siete = $request->u . $request->v . $request->w;
+            $bloque_ocho = $request->x . $request->y . $request->z;
+            $bloque_nueve = $request->A . $request->B . $request->C;
+            $bloque_diez = $request->D . $request->E . $request->F;
+            $bloque_once = $request->G . $request->H . $request->J;
+            $bloque_doce = $request->K. $request->L . $request->M;
+            $bloque_trece = $request->N . $request->P . $request->Q;
+            $bloque_catorce = $request->R . $request->S . $request->T; 
+            $respuesta = new Respuesta; 
             $respuesta->id_prueba = session('id_prueba');
             $respuesta->parte = 1;
             $respuesta->bloque_uno = $bloque_uno;
