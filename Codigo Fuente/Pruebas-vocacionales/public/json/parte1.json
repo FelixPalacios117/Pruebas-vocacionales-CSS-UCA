@@ -47,7 +47,7 @@
         },
         {
             "literal1": "n",
-            "actividad1":"Hojear libros y revistas en una libreria",
+            "actividad1":"Hojear libros y revistas en una librería",
             "name1":"nl",
             "literal2": "p",
             "actividad2": "Presenciar el ensayo de una orquesta",
@@ -58,7 +58,7 @@
         },
         {
             "literal1": "r",
-            "actividad1":"Coleccionar autografos de célebres personajes",
+            "actividad1":"Coleccionar autógrafos de célebres personajes",
             "name1":"rl",
             "literal2": "s",
             "actividad2": "Coleccionar maariposas",
@@ -119,7 +119,7 @@
             "actividad2": "Enseñar trucos a un perro",
             "name2":"hu",
             "literal3": "J",
-            "actividad3": "Desarnar un juguete dañado para ver cómo se arregla",
+            "actividad3": "Desarmar un juguete dañado para ver cómo se arregla",
             "name3":"ju"
         },
         {

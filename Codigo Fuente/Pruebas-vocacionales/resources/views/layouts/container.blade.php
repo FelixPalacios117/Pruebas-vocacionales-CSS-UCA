@@ -11,8 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> 
          <link href="{{ asset('css/layout.css') }}" rel="stylesheet"> 
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"> 
-        <link href="{{ asset('css/bootstrap-icons.css') }}" rel="stylesheet">  
-        <link href="{{ asset('css/sweetalert2.min.css') }}" rel="stylesheet">    
+        <link href="{{ asset('css/bootstrap-icons.css') }}" rel="stylesheet">   
     </head>
     <header>
         @yield('navbar') 
@@ -22,7 +21,6 @@
     </body>
     @yield('footer') 
     <script type="text/javascript" src="{{ URL::asset('js/jquery-3.6.0.min.js') }}"></script> 
-    <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script> 
-    <script type="text/javascript" src="{{ URL::asset('js/sweetalert2.min.js') }}"></script> 
+    <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>  
     
 </html>
