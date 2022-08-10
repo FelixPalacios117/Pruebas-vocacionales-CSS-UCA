@@ -8,6 +8,18 @@
             <div class="col-12 text-light pt-5 pb-3">
                 <h1 class="text-center">{{ $preguntas_uno->parte }}</h1>
             </div>
+            @if ($errors->any())
+                <div class="col-12">
+                    <div class="alert alert-danger">
+                        <h1 class="text-center"> El formulario contiene errores</h1>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            @endif
         </div>
         <div class="row">
             <div class="container-fluid login mt-5 margen mx-5">
@@ -18,49 +30,59 @@
                             <div class="mx-3 my-3 card bloque col-5 col-lg-5 col-5 col-md-5 col-12 col-sm-12">
                                 <div class="card-body card-texto">
                                     <div class="col-12">
-                                        <h5 class="card-title literal">{{ $preguntas->literal1 }} .
+                                        <h5 class="card-title literal">{{ $preguntas->name1 }} .
                                             {{ $preguntas->actividad1 }}
                                         </h5>
                                     </div>
                                     <div class="col-12 btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active">
-                                            <input type="radio" name={{ $preguntas->name1 }} value="+" required> +
+                                            <input type="radio" name={{ $preguntas->name1 }}
+                                                {{ old($preguntas->name1) == '+' ? 'checked=' . '"' . 'checked' . '"' : '' }}
+                                                value="+" required> +
                                         </label>
                                         <label class="btn btn-secondary active">
-                                            <input type="radio" name={{ $preguntas->name1 }} value="0" required> 0
+                                            <input type="radio" name={{ $preguntas->name1 }} value="0" 
+                                            {{ old($preguntas->name1) == '0' ? 'checked=' . '"' . 'checked' . '"' : '' }}required> 0
                                         </label>
                                         <label class="btn btn-secondary">
-                                            <input type="radio" name={{ $preguntas->name1 }} value="-" required> -
+                                            <input type="radio" name={{ $preguntas->name1 }} value="-" 
+                                            {{ old($preguntas->name1) == '-' ? 'checked=' . '"' . 'checked' . '"' : '' }} required> -
                                         </label>
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="card-title  literal">{{ $preguntas->literal2 }} .
+                                        <h5 class="card-title  literal">{{ $preguntas->name2 }} .
                                             {{ $preguntas->actividad2 }}</h5>
                                     </div>
                                     <div class="col-12 btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active">
-                                            <input type="radio" name={{ $preguntas->name2 }} value="+" required> +
+                                            <input type="radio" name={{ $preguntas->name2 }} value="+" 
+                                            {{ old($preguntas->name2) == '+' ? 'checked=' . '"' . 'checked' . '"' : '' }} required> +
                                         </label>
                                         <label class="btn btn-secondary active">
-                                            <input type="radio" name={{ $preguntas->name2 }} value="0" required> 0
+                                            <input type="radio" name={{ $preguntas->name2 }} value="0" 
+                                            {{ old($preguntas->name2) == '0' ? 'checked=' . '"' . 'checked' . '"' : '' }} required> 0
                                         </label>
                                         <label class="btn btn-secondary">
-                                            <input type="radio" name={{ $preguntas->name2 }} value="-" required> -
+                                            <input type="radio" name={{ $preguntas->name2 }} value="-" 
+                                            {{ old($preguntas->name2) == '-' ? 'checked=' . '"' . 'checked' . '"' : '' }} required> -
                                         </label>
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="card-title  literal">{{ $preguntas->literal3 }} .
+                                        <h5 class="card-title  literal">{{ $preguntas->name3 }} .
                                             {{ $preguntas->actividad3 }}</h5>
                                     </div>
                                     <div class="col-12 btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active">
-                                            <input type="radio" name={{ $preguntas->name3 }} value="+" required> +
+                                            <input type="radio" name={{ $preguntas->name3 }} value="+" 
+                                            {{ old($preguntas->name3) == '+' ? 'checked=' . '"' . 'checked' . '"' : '' }} required> +
                                         </label>
                                         <label class="btn btn-secondary active">
-                                            <input type="radio" name={{ $preguntas->name3 }} value="0" required> 0
+                                            <input type="radio" name={{ $preguntas->name3 }} value="0" 
+                                            {{ old($preguntas->name3) == '0' ? 'checked=' . '"' . 'checked' . '"' : '' }} required> 0
                                         </label>
                                         <label class="btn btn-secondary">
-                                            <input type="radio" name={{ $preguntas->name3 }} value="-" required> -
+                                            <input type="radio" name={{ $preguntas->name3 }} value="-" 
+                                            {{ old($preguntas->name3) == '-' ? 'checked=' . '"' . 'checked' . '"' : '' }} required> -
                                         </label>
                                     </div>
                                 </div>

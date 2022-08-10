@@ -25,12 +25,12 @@ class QuizController extends Controller
         // session()->forget('idCarrito');
         $this->validate($request, [
             'nombre' => 'required|string|different:apellido',
-            'apellido'=>'required|string|different:nombre',
+            'apellido' => 'required|string|different:nombre',
             'correo' => 'required|email|unique:pruebas,correo',
-            'telefono'=>'required|unique:pruebas,telefono',
-            'genero'=>'required',
-            'lugar'=>'required',
-            'fecha'=>'required|date'
+            'telefono' => 'required|unique:pruebas,telefono',
+            'genero' => 'required',
+            'lugar' => 'required',
+            'fecha' => 'required|date'
         ]);
 
         $prueba = new Prueba;
@@ -42,16 +42,27 @@ class QuizController extends Controller
     }
     public function store(Request $request)
     {
-        //imprimir dd($request->el) ;
         $this->validate($request, [
-            'al' => 'required',
-            'bl' => 'required',
-            'cl' => 'required',
-            'dl' => 'required',
-            'el' => 'required',
-            'fl' => 'required'
+            'a' => 'required|different:c',
+            'b' => 'required|different:a',
+            'c' => 'required|different:b',
+            'd' => 'required|different:f',
+            'e' => 'required|different:d',
+            'f' => 'required|different:e',
+            'g' => 'required|different:j',
+            'h' => 'required|different:g',
+            'j' => 'required|different:h',
+            'k',
+            'l',
+            'm',
+            'n',
+            'p',
+            'q',
+            'r',
+            's',
+            't',
         ]);
-        if ($request->al == $request->cl || $request->al == $request->bl || $request->bl == $request->cl) {
+        /*  if ($request->al == $request->cl || $request->al == $request->bl || $request->bl == $request->cl) {
             return redirect()->back()->with('alert', 'Respuestas invalidas en el grupo de actividades a b c, las respuestas de las 3 actividades de cada bloque deben ser diferentes');
         } else if ($request->dl == $request->el || $request->dl == $request->fl || $request->el == $request->fl) {
             return redirect()->back()->with('alert', 'Respuestas invalidas en el grupo de actividades d e f, las respuestas de las 3 actividades de cada bloque deben ser diferentes');
@@ -95,7 +106,6 @@ class QuizController extends Controller
             $respuesta->bloque_doce = $bloque_doce;
             $respuesta->bloque_trece = $bloque_trece;
             $respuesta->bloque_catorce = $bloque_catorce;
-            $respuesta->save();
-        }
+            $respuesta->save(); */
     }
 }

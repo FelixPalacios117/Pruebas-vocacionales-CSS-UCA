@@ -2,158 +2,117 @@
     "parte":"Parte 1 de 12",
     "bloques":[
         {
-            "literal1": "a",
             "actividad1": "En sus viajes observar de preferencia la gente",
-            "name1":"al", 
-            "literal2": "b",
+            "name1":"a", 
             "actividad2": "En sus viajes observar de preferencia los paisajes",
-            "name2":"bl", 
-            "literal3": "c",
+            "name2":"b", 
             "actividad3": "En sus viajes observar de preferencia los cultivos",
-            "name3":"cl" 
+            "name3":"c" 
         },
         {
-            "literal1": "d",
             "actividad1": "Ayudarse económicamente dedicando varias horas diarias a leerle a un ciego",
-            "name1":"dl",
-            "literal2": "e",
+            "name1":"d",
             "actividad2": "Ayudarse económicamente llevando la estadística de vehículos que pasan por un retén",
-            "name2":"el",
-            "literal3": "f",
+            "name2":"e",
             "actividad3": "Ayudarse económicamente haciendo encuestas entre el público",
-            "name3":"fl"
+            "name3":"f"
         },
         {
-            "literal1": "g",
             "actividad1": "Visitar lugares de diversión en una feria de pueblo",
-            "name1":"gl",
-            "literal2": "h",
+            "name1":"g",
             "actividad2": "Visitar la exposición de productos alimenticios caseros en una feria de pueblo",
-            "name2":"hl",
-            "literal3": "j",
+            "name2":"h",
             "actividad3": "Visitar la exposición de ganado en una feria de pueblo",
-            "name3":"jl"
+            "name3":"j"
         },
         {
-            "literal1": "k",
             "actividad1":"Hacer ejercicios de atletismo",
-            "name1":"kl",
+            "name1":"k",
             "literal2": "l",
             "actividad2": "Ir a pescar",
-            "name2":"ll",
-            "literal3": "m",
+            "name2":"l",
             "actividad3": "Jugar fútbol",
-            "name3":"ml"
+            "name3":"m"
         },
         {
-            "literal1": "n",
             "actividad1":"Hojear libros y revistas en una librería",
-            "name1":"nl",
-            "literal2": "p",
+            "name1":"n",
             "actividad2": "Presenciar el ensayo de una orquesta",
-            "name2":"pl",
-            "literal3": "q",
+            "name2":"p",
             "actividad3": "Visitar un jardín zoológico",
-            "name3":"ql"
+            "name3":"q"
         },
         {
-            "literal1": "r",
             "actividad1":"Coleccionar autógrafos de célebres personajes",
-            "name1":"rl",
-            "literal2": "s",
+            "name1":"r",
             "actividad2": "Coleccionar maariposas",
-            "name2":"sl",
-            "literal3": "t",
+            "name2":"s",
             "actividad3": "Coleccionar muestras de maderas",
-            "name3":"tl"
+            "name3":"t"
         },
         {
-            "literal1": "u",
             "actividad1":"Visitar una exposición de cuadros famosos",
-            "name1":"ul",
-            "literal2": "v",
+            "name1":"u",
             "actividad2": "Visitar una exposición de distintos medios de transporte",
-            "name2":"vl",
-            "literal3": "w",
+            "name2":"v",
             "actividad3": "Visitar una exposición de equipos de laboratorio",
-            "name3":"wl"
+            "name3":"w"
         },
         {
-            "literal1": "x",
             "actividad1":"Vender frutas",
-            "name1":"xl",
-            "literal2": "y",
+            "name1":"x",
             "actividad2": "Ser pianista profesional",
-            "name2":"yl",
-            "literal3": "z",
+            "name2":"y",
             "actividad3": "Cultivar hortalizas",
-            "name3":"zl"
+            "name3":"z"
         },
         {
-            "literal1": "A",
             "actividad1": "Dirigir la organización de una fiesta en un club social",
-            "name1":"au", 
-            "literal2": "B",
+            "name1":"A",  
             "actividad2": "Decorar el salón para la fiesta",
-            "name2":"bu", 
-            "literal3": "C",
+            "name2":"B",
             "actividad3": "Repartir las invitaciones para la fiesta",
-            "name3":"cu" 
+            "name3":"C" 
         },
-        {
-            "literal1": "D",
+        { 
             "actividad1": "Visitar un museo de ciencia",
-            "name1":"du",
-            "literal2": "E",
+            "name1":"D", 
             "actividad2": "Visitar una empresa periodística",
-            "name2":"eu",
-            "literal3": "F",
+            "name2":"E", 
             "actividad3": "Visitar una fábrica de máquinas de escribir",
-            "name3":"fu"
+            "name3":"F"
         },
-        {
-            "literal1": "G",
+        { 
             "actividad1": "Leer para distraer una persona enferma",
-            "name1":"gu",
-            "literal2": "H",
+            "name1":"G", 
             "actividad2": "Enseñar trucos a un perro",
-            "name2":"hu",
-            "literal3": "J",
+            "name2":"H", 
             "actividad3": "Desarmar un juguete dañado para ver cómo se arregla",
-            "name3":"ju"
+            "name3":"H"
         },
-        {
-            "literal1": "K",
+        { 
             "actividad1":"Recibir clases de dibujo",
-            "name1":"ku",
-            "literal2": "L",
+            "name1":"K", 
             "actividad2": "Recibir clases de biología",
-            "name2":"lu",
-            "literal3": "M",
+            "name2":"L", 
             "actividad3": "Recibir clases de metalistería",
-            "name3":"mu"
+            "name3":"M"
         },
-        {
-            "literal1": "N",
+        { 
             "actividad1":"Construir pajareras",
-            "name1":"nu",
-            "literal2": "P",
+            "name1":"N", 
             "actividad2": "Escribir artículos sobre las aves",
-            "name2":"pu",
-            "literal3": "Q",
+            "name2":"P", 
             "actividad3": "Dibujar las aves",
-            "name3":"qu"
+            "name3":"Q"
         },
-        {
-            "literal1": "R",
+        { 
             "actividad1":"Tratar de arreglar una máquina de coser dañada",
-            "name1":"ru",
-            "literal2": "S",
+            "name1":"R", 
             "actividad2": "Tocar piano",
-            "name2":"su",
-            "literal3": "T",
+            "name2":"S", 
             "actividad3": "Hacer el bosquejo de una escena interesante",
-            "name3":"tu"
+            "name3":"T"
         }
     ]
 }
