@@ -42,6 +42,7 @@ class QuizController extends Controller
     }
     public function store(Request $request)
     {
+        dd($request);
         $this->validate($request, [
             'a' => 'required|different:c',
             'b' => 'required|different:a',
@@ -52,27 +53,41 @@ class QuizController extends Controller
             'g' => 'required|different:j',
             'h' => 'required|different:g',
             'j' => 'required|different:h',
-            'k',
-            'l',
-            'm',
-            'n',
-            'p',
-            'q',
-            'r',
-            's',
-            't',
-        ]);
-        /*  if ($request->al == $request->cl || $request->al == $request->bl || $request->bl == $request->cl) {
-            return redirect()->back()->with('alert', 'Respuestas invalidas en el grupo de actividades a b c, las respuestas de las 3 actividades de cada bloque deben ser diferentes');
-        } else if ($request->dl == $request->el || $request->dl == $request->fl || $request->el == $request->fl) {
-            return redirect()->back()->with('alert', 'Respuestas invalidas en el grupo de actividades d e f, las respuestas de las 3 actividades de cada bloque deben ser diferentes');
-        } else if ($request->gl == $request->hl || $request->gl == $request->jl || $request->jl == $request->hl) {
-            return redirect()->back()->with('alert', 'Respuestas invalidas en el grupo de actividades g h j, las respuestas de las 3 actividades de cada bloque deben ser diferentes');
-        } else if ($request->kl == $request->ll || $request->kl == $request->ml || $request->ll == $request->ml) {
-            return redirect()->back()->with('alert', 'Respuestas invalidas en el grupo de actividades k l m, las respuestas de las 3 actividades de cada bloque deben ser diferentes');
-        } else if ($request->nl == $request->pl || $request->nl == $request->ql || $request->pl == $request->ql) {
-            return redirect()->back()->with('alert', 'Respuestas invalidas en el grupo de actividades n p q, las respuestas de las 3 actividades de cada bloque deben ser diferentes');
-        } else {
+            'k' => 'required|different:m',
+            'l' => 'required|different:k',
+            'm' => 'required|different:l',
+            'n' => 'required|different:q',
+            'p' => 'required|different:n',
+            'q' => 'required|different:p',
+            'r' => 'required|different:t',
+            's' => 'required|different:r',
+            't' => 'required|different:s',
+            'u' => 'required|different:w',
+            'v' => 'required|different:u',
+            'w' => 'required|different:v',
+            'x' => 'required|different:z',
+            'y' => 'required|different:x',
+            'z' => 'required|different:y',
+            'A' => 'required|different:C',
+            'B' => 'required|different:A',
+            'C' => 'required|different:B',
+            'D' => 'required|different:F',
+            'E' => 'required|different:D',
+            'F' => 'required|different:E',
+            'G' => 'required|different:J',
+            'H' => 'required|different:G',
+            'J' => 'required|different:H',
+            'K' => 'required|different:M',
+            'L' => 'required|different:K',
+            'M' => 'required|different:L',
+            'N' => 'required|different:Q',
+            'P' => 'required|different:N',
+            'Q' => 'required|different:P',
+            'R' => 'required|different:T',
+            'S' => 'required|different:R',
+            'T' => 'required|different:S',
+
+        ]); 
             //bloques de respuestas
             $bloque_uno = $request->al . $request->bl . $request->cl; //esto para todos los bloques de preguntas
             $bloque_dos = $request->dl . $request->el . $request->fl;
@@ -106,6 +121,6 @@ class QuizController extends Controller
             $respuesta->bloque_doce = $bloque_doce;
             $respuesta->bloque_trece = $bloque_trece;
             $respuesta->bloque_catorce = $bloque_catorce;
-            $respuesta->save(); */
+            $respuesta->save(); 
     }
 }

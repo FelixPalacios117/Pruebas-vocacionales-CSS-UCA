@@ -22,12 +22,12 @@
                                 <div class="alert alert-danger">
                                     <ul>
                                         @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
+                                            <h5>{{ $error }}</h5>
                                         @endforeach
                                     </ul>
                                 </div>
                             </div>
-                        @endif 
+                        @endif
                     </div>
                     <div class="row justify-content-center">
                         <div class="input-group input-group-lg mb-4 col-8">
