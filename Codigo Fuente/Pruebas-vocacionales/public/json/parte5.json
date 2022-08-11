@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 5 de 12",
+    "bloques":[
+        {
+            "actividad1": "Vender boletas para una función de aficionados",
+            "name1":"a", 
+            "actividad2": "Preparar los programas y boletas para la función",
+            "name2":"b", 
+            "actividad3": "Actuar como tesorero de la función",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Calcular el costo de fabricación de un nuevo modelo de lavadoras",
+            "name1":"d",
+            "actividad2": "Convencer a un grupo de capitalistas para que financíen la fabricación de estas lavadoras",
+            "name2":"e",
+            "actividad3": "Enseñar a la gente el funcionamiento del nuevo modelo de las lavadoras",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Analizar los resultados de encuestas hechas al público",
+            "name1":"g",
+            "actividad2": "Escribir editoriales para un periódico",
+            "name2":"h",
+            "actividad3": "Enseñar trabajos manuales en un asilo de niños desamparados",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Leer acerca de las causas de varias enfermedades",
+            "name1":"k",
+            "actividad2": "Leer acerca de cómo lograron éxito los grandes capitanes de la industria",
+            "name2":"l",
+            "actividad3": "Leer acerca de los métodos empleados en la cría de ganado",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Asistir a una reunión donde la mayoría de los invitados le es desconocida",
+            "name1":"n",
+            "actividad2": "Asistir a una reunión en la que Ud. conoce a casi todos los invitados",
+            "name2":"p",
+            "actividad3": "Asistir a una reunión donde sólo la mitad de los invitados le es conocida",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Vender materiales y equipos para los artistas pintores",
+            "name1":"r",
+            "actividad2": "Producir semillas para la venta",
+            "name2":"s",
+            "actividad3": "Criar ratones blancos para usos científicos",
+            "name3":"t"
+        },
+        {
+            "actividad1":"Hacer experimentos de laboratorio",
+            "name1":"u",
+            "actividad2": "Confeccionar muebles",
+            "name2":"v",
+            "actividad3": "Vender pólizas de seguro",
+            "name3":"w"
+        },
+        {
+            "actividad1":"Pesar encomiendas postales para determinar las etiquetas que deben llevar",
+            "name1":"x",
+            "actividad2": "Seleccionar textos enviados para publicación en una revista",
+            "name2":"y",
+            "actividad3": "Ensayar nuevos modelos de automóviles para introducirles otras mejoras",
+            "name3":"z"
+        },
+        {
+            "actividad1": "Ser experto en la talla de piedras preciosas",
+            "name1":"A",  
+            "actividad2": "Dirigir investigaciones para encontrar un nuevo sustituto al caucho",
+            "name2":"B",
+            "actividad3": "Ser comentarista musical de una radioemisora",
+            "name3":"C" 
+        },
+        { 
+            "actividad1": "Ayudar a cuidar a los enfermos",
+            "name1":"D", 
+            "actividad2": "Vender instrumentos musicales",
+            "name2":"E", 
+            "actividad3": "Reparar artefactos de uso casero",
+            "name3":"F"
+        },
+        { 
+            "actividad1": "Diseñar floreros",
+            "name1":"G", 
+            "actividad2": "Dirigir la fabricación de floreros",
+            "name2":"H", 
+            "actividad3": "Perfeccionar los métodos para la fabricación de floreros",
+            "name3":"J"
+        },
+        { 
+            "actividad1":"Trabajar como cajero en un restaurante de gran movimiento",
+            "name1":"K", 
+            "actividad2": "Enseñar a los niños la construcción de aeromodelos",
+            "name2":"L", 
+            "actividad3": "Llevar el registro de las investigaciones médicas que adelanta un científico",
+            "name3":"M"
+        },
+        { 
+            "actividad1":"Dirigir un campo de juegos para niños pobres",
+            "name1":"N", 
+            "actividad2": "Ser cocinero de un restaurante",
+            "name2":"P", 
+            "actividad3": "Vender productos químicos",
+            "name3":"Q"
+        },
+        { 
+            "actividad1":"Reunir un buen equipo de herramientas para trabajar madera",
+            "name1":"R", 
+            "actividad2": "Formar un álbum con las reproducciones de sus cuadros favoritos",
+            "name2":"S", 
+            "actividad3": "Formar un botiquín para casos de emergencia",
+            "name3":"T"
+        }
+    ]
+}
