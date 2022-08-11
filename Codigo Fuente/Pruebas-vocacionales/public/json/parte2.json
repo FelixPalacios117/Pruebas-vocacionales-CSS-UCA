@@ -1,159 +1,117 @@
 {
-    "parte":"Parte 2 de 12",
-    "bloques":[
-        {
-            "literal1": "A",
-            "actividad1": "Leer un libro titulado 'Cómo cultivar buenas frutas'",
-            "name1":"au", 
-            "literal2": "B",
-            "actividad2": "Leer un libro titulado 'Cómo trabajar con materiales plásticos'",
-            "name2":"bu", 
-            "literal3": "C",
-            "actividad3": "Leer un libro titulado 'Cómo tomar fotos de animales en su ambiente natural",
-            "name3":"cu" 
-        },
-        {
-            "literal1": "D",
-            "actividad1": "Tener a su cargo en un periódico la columna de 'Consejos personales'",
-            "name1":"du",
-            "literal2": "E",
-            "actividad2": "Criar perros de raza",
-            "name2":"eu",
-            "literal3": "F",
-            "actividad3": "Investigar la eficiencia de diversos medios de propaganda",
-            "name3":"fu"
-        },
-        {
-            "literal1": "G",
-            "actividad1": "Ser autoridad en el juego de ajedrez",
-            "name1":"gu",
-            "literal2": "H",
-            "actividad2": "Ser autoridad en erosión de suelos",
-            "name2":"hu",
-            "literal3": "J",
-            "actividad3": "Ser autoridad en materia de propaganda gráfica",
-            "name3":"ju"
-        },
-        {
-            "literal1": "K",
-            "actividad1":"Visitar un estudio cinematográfico",
-            "name1":"ku",
-            "literal2": "L",
-            "actividad2": "Visitar una región montañosa célebre por sus paisajes",
-            "name2":"lu",
-            "literal3": "M",
-            "actividad3": "Visitar un antiguo campo de batalla",
-            "name3":"mu"
-        },
-        {
-            "literal1": "N",
-            "actividad1":"Leer sobre las actuaciones de hombres y mujeres célebres en la vida pública",
-            "name1":"nu",
-            "literal2": "P",
-            "actividad2": "Leer las opiniones de varios escritores sobre lo que sería el mundo ideal",
-            "name2":"pu",
-            "literal3": "Q",
-            "actividad3": "Leer cómo vivían los primeros colonizadores del país",
-            "name3":"qu"
-        },
-        {
-            "literal1": "R",
-            "actividad1":"Trabajar como psicólogo profesional atendiendo consultas de carácter personal",
-            "name1":"ru",
-            "literal2": "S",
-            "actividad2": "Cazar animales raros para un museo",
-            "name2":"su",
-            "literal3": "T",
-            "actividad3": "Pagar cheques al público en un banco",
-            "name3":"tu"
-        },
-        {
-            "literal1": "U",
-            "actividad1":"Pertenecer a una sociedad que estudie los problemas del mundo contemporáneo",
-            "name1":"uu",
-            "literal2": "V",
-            "actividad2": "Pertenecer a un club literario",
-            "name2":"vu",
-            "literal3": "W",
-            "actividad3": "Pertenecer a una sociedad de aficionados a los estudios astronómicos",
-            "name3":"wu"
-        },
-        {
-            "literal1": "X",
-            "actividad1":"Relacionarse con gente común y corriente",
-            "name1":"xu",
-            "literal2": "Y",
-            "actividad2": "Relacionarse con gente extravagante y de ideas raras",
-            "name2":"yu",
-            "literal3": "Z",
-            "actividad3": "Relacionarse con gente alegre y despreocupada",
-            "name3":"zu"
-        },
-        {
-            "literal1": "a",
-            "actividad1": "Enseñar castellano a los extranjeros",
-            "name1":"al", 
-            "literal2": "b",
-            "actividad2": "Vender pólizas de seguros",
-            "name2":"bl", 
-            "literal3": "c",
-            "actividad3": "Ser cocinero jefe de un restaurante de lujo",
-            "name3":"cl" 
-        },
-        {
-            "literal1": "d",
-            "actividad1": "Desarrollar nuevas variedades de flores",
-            "name1":"dl",
-            "literal2": "e",
-            "actividad2": "Dirigir la propaganda para una floristería",
-            "name2":"el",
-            "literal3": "f",
-            "actividad3": "Atender pedidos telefónicos en una floristería",
-            "name3":"fl"
-        },
-        {
-            "literal1": "g",
-            "actividad1": "Dirigir investigaciones sobre los métodos de la propaganda comercial",
-            "name1":"gl",
-            "literal2": "h",
-            "actividad2": "Ser Decano de una Facultad Universitaria",
-            "name2":"hl",
-            "literal3": "j",
-            "actividad3": "Ser experto en fotografía de colores",
-            "name3":"jl"
-        },
-        {
-            "literal1": "k",
-            "actividad1":"Dibujar cuadros para un libro de historia universal",
-            "name1":"kl",
-            "literal2": "l",
-            "actividad2": "Producir una nueva variedad de naranjas sin semillas",
-            "name2":"ll",
-            "literal3": "m",
-            "actividad3": "Entrenar un grupo escénico ganador del primer puesto en un concurso nacional",
-            "name3":"ml"
-        },
-        {
-            "literal1": "n",
-            "actividad1":"Costear en parte sus estudios trabajando como ayudante de laboratorio",
-            "name1":"nl",
-            "literal2": "p",
-            "actividad2": "Costearlos en parte ayudando en la secretaría del plantel donde estudia",
-            "name2":"pl",
-            "literal3": "q",
-            "actividad3": "Costear en parte sus estudios tocando en una orquesta",
-            "name3":"ql"
-        },
-        {
-            "literal1": "r",
-            "actividad1":"Escribir un libro sobre la historia de la Cruz Roja",
-            "name1":"rl",
-            "literal2": "s",
-            "actividad2": "Buscar datos que arrojen nueva luz sobre un célebre acontecimiento histórico",
-            "name2":"sl",
-            "literal3": "t",
-            "actividad3": "Escribir una comedia musical",
-            "name3":"tl"
-        }
-    ]
+  "parte": "Parte 2 de 12",
+  "bloques": [
+    {
+      "actividad1": "Leer un libro titulado \"Cómo cultivar buenas frutas\"",
+      "name1": "A",
+      "actividad2": "Leer un libro titulado \"Cómo trabajar con materiales plásticos\"",
+      "name2": "B",
+      "actividad3": "Leer un libro titulado \"Cómo tomar fotos de animales en su ambiente natural\"",
+      "name3": "C"
+    },
+    {
+      "actividad1": "Tener a su cargo en un periódico la columna de \"Consejos personales\"",
+      "name1": "D",
+      "actividad2": "Criar perros de raza",
+      "name2": "E",
+      "actividad3": "Investigar la eficiencia de diversos medios de propaganda",
+      "name3": "F"
+    },
+    {
+      "actividad1": "Ser autoridad en el juego de ajedrez",
+      "name1": "G",
+      "actividad2": "Ser autoridad en erosión de suelos",
+      "name2": "H",
+      "actividad3": "Ser autoridad en materia de propaganda gráfica",
+      "name3": "J"
+    },
+    {
+      "actividad1": "Visitar un estudio cinematográfico",
+      "name1": "K",
+      "actividad2": "Visitar una región montañosa célebre por sus paisajes",
+      "name2": "L",
+      "actividad3": "Visitar un antiguo campo de batalla",
+      "name3": "M"
+    },
+    {
+      "actividad1": "Leer sobre las actuaciones de hombres y mujeres célebres en la vida pública",
+      "name1": "N",
+      "actividad2": "Leer las opiniones de varios escritores sobre lo que sería el mundo ideal",
+      "name2": "P",
+      "actividad3": "Leer cómo vivían los primeros colonizadores del país",
+      "name3": "Q"
+    },
+    {
+      "actividad1": "Trabajar como psicólogo profesional atendiendo consultas de carácter personal",
+      "name1": "R",
+      "actividad2": "Cazar animales raros para un museo",
+      "name2": "S",
+      "actividad3": "Pagar cheques al público en un banco",
+      "name3": "T"
+    },
+    {
+      "actividad1": "Pertenecer a una sociedad que estudie los problemas del mundo contemporáneo",
+      "name1": "U",
+      "actividad2": "Pertenecer a un club literario",
+      "name2": "V",
+      "actividad3": "Pertenecer a una sociedad de aficionados a los estudios astronómicos",
+      "name3": "W"
+    },
+    {
+      "actividad1": "Relacionarse con gente común y corriente",
+      "name1": "X",
+      "actividad2": "Relacionarse con gente extravagante y de ideas raras",
+      "name2": "Y",
+      "actividad3": "Relacionarse con gente alegre y despreocupada",
+      "name3": "Z"
+    },
+    {
+      "actividad1": "Enseñar castellano a los extranjeros",
+      "name1": "a",
+      "actividad2": "Vender pólizas de seguros",
+      "name2": "b",
+      "actividad3": "Ser cocinero jefe de un restaurante de lujo",
+      "name3": "c"
+    },
+    {
+      "actividad1": "Desarrollar nuevas variedades de flores",
+      "name1": "d",
+      "actividad2": "Dirigir la propaganda para una floristería",
+      "name2": "e",
+      "actividad3": "Atender pedidos telefónicos en una floristería",
+      "name3": "f"
+    },
+    {
+      "actividad1": "Dirigir investigaciones sobre los métodos de la propaganda comercial",
+      "name1": "g",
+      "actividad2": "Ser Decano de una Facultad Universitaria",
+      "name2": "h",
+      "actividad3": "Ser experto en fotografía de colores",
+      "name3": "j"
+    },
+    {
+      "actividad1": "Dibujar cuadros para un libro de historia universal",
+      "name1": "k",
+      "actividad2": "Producir una nueva variedad de naranjas sin semillas",
+      "name2": "l",
+      "actividad3": "Entrenar un grupo escénico ganador del primer puesto en un concurso nacional",
+      "name3": "m"
+    },
+    {
+      "actividad1": "Costear en parte sus estudios trabajando como ayudante de laboratorio",
+      "name1": "n",
+      "actividad2": "Costearlos en parte ayudando en la secretaría del plantel donde estudia",
+      "name2": "p",
+      "actividad3": "Costear en parte sus estudios tocando en una orquesta",
+      "name3": "q"
+    },
+    {
+      "actividad1": "Escribir un libro sobre la historia de la Cruz Roja",
+      "name1": "r",
+      "actividad2": "Buscar datos que arrojen nueva luz sobre un célebre acontecimiento histórico",
+      "name2": "s",
+      "actividad3": "Escribir una comedia musical",
+      "name3": "t"
+    }
+  ]
 }

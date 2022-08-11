@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {  
-    return view('index');
-});
-Route::post('/instrucciones','QuizController@instrucciones');
-Route::get('/parte1','QuizController@primera');
-Route::post('/quiz','QuizController@store');
+Route::get('/','QuizController@index');
+Route::post('/crearPrueba','QuizController@iniciarPrueba');
+Route::get('/instrucciones','QuizController@instrucciones');
+Route::get('/parte1','QuizOneController@primera');
+Route::get('/parte2','QuizTwoController@segunda');
+Route::post('/savePartOne','QuizOneController@store');
+Route::post('/savePartTwo','QuizTwoController@store');

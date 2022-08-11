@@ -11,7 +11,7 @@
         </div>
         <div class="row">
             <div class="container login mt-4 margen">
-                <form method="POST" action={{ url('instrucciones') }}>
+                <form method="POST" action={{ url('crearPrueba') }}>
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-12">
