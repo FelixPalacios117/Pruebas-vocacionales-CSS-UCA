@@ -1,117 +1,117 @@
 {
-    "parte":"Parte 2 de 12",
-    "bloques":[
-        {
-            "actividad1": "Leer un libro titulado 'Cómo cultivar buenas frutas'",
-            "name1":"A", 
-            "actividad2": "Leer un libro titulado 'Cómo trabajar con materiales plásticos'",
-            "name2":"B", 
-            "actividad3": "Leer un libro titulado 'Cómo tomar fotos de animales en su ambiente natural",
-            "name3":"C" 
-        },
-        {
-            "actividad1": "Tener a su cargo en un periódico la columna de 'Consejos personales'",
-            "name1":"D",
-            "actividad2": "Criar perros de raza",
-            "name2":"E",
-            "actividad3": "Investigar la eficiencia de diversos medios de propaganda",
-            "name3":"F"
-        },
-        {
-            "actividad1": "Ser autoridad en el juego de ajedrez",
-            "name1":"G",
-            "actividad2": "Ser autoridad en erosión de suelos",
-            "name2":"H",
-            "actividad3": "Ser autoridad en materia de propaganda gráfica",
-            "name3":"J"
-        },
-        {
-            "actividad1":"Visitar un estudio cinematográfico",
-            "name1":"K",
-            "actividad2": "Visitar una región montañosa célebre por sus paisajes",
-            "name2":"L",
-            "actividad3": "Visitar un antiguo campo de batalla",
-            "name3":"M"
-        },
-        {
-            "actividad1":"Leer sobre las actuaciones de hombres y mujeres célebres en la vida pública",
-            "name1":"N",
-            "actividad2": "Leer las opiniones de varios escritores sobre lo que sería el mundo ideal",
-            "name2":"P",
-            "actividad3": "Leer cómo vivían los primeros colonizadores del país",
-            "name3":"Q"
-        },
-        {
-            "actividad1":"Trabajar como psicólogo profesional atendiendo consultas de carácter personal",
-            "name1":"R",
-            "actividad2": "Cazar animales raros para un museo",
-            "name2":"S",
-            "actividad3": "Pagar cheques al público en un banco",
-            "name3":"T"
-        },
-        {
-            "actividad1":"Pertenecer a una sociedad que estudie los problemas del mundo contemporáneo",
-            "name1":"U",
-            "actividad2": "Pertenecer a un club literario",
-            "name2":"V",
-            "actividad3": "Pertenecer a una sociedad de aficionados a los estudios astronómicos",
-            "name3":"W"
-        },
-        {
-            "actividad1":"Relacionarse con gente común y corriente",
-            "name1":"X",
-            "actividad2": "Relacionarse con gente extravagante y de ideas raras",
-            "name2":"Y",
-            "actividad3": "Relacionarse con gente alegre y despreocupada",
-            "name3":"Z"
-        },
-        {
-            "actividad1": "Enseñar castellano a los extranjeros",
-            "name1":"a", 
-            "actividad2": "Vender pólizas de seguros",
-            "name2":"b", 
-            "actividad3": "Ser cocinero jefe de un restaurante de lujo",
-            "name3":"c" 
-        },
-        {
-            "actividad1": "Desarrollar nuevas variedades de flores",
-            "name1":"d",
-            "actividad2": "Dirigir la propaganda para una floristería",
-            "name2":"e",
-            "actividad3": "Atender pedidos telefónicos en una floristería",
-            "name3":"f"
-        },
-        {
-            "actividad1": "Dirigir investigaciones sobre los métodos de la propaganda comercial",
-            "name1":"g",
-            "actividad2": "Ser Decano de una Facultad Universitaria",
-            "name2":"h",
-            "actividad3": "Ser experto en fotografía de colores",
-            "name3":"j"
-        },
-        {
-            "actividad1":"Dibujar cuadros para un libro de historia universal",
-            "name1":"k",
-            "actividad2": "Producir una nueva variedad de naranjas sin semillas",
-            "name2":"l",
-            "actividad3": "Entrenar un grupo escénico ganador del primer puesto en un concurso nacional",
-            "name3":"m"
-        },
-        {
-            "actividad1":"Costear en parte sus estudios trabajando como ayudante de laboratorio",
-            "name1":"n",
-            "actividad2": "Costearlos en parte ayudando en la secretaría del plantel donde estudia",
-            "name2":"p",
-            "actividad3": "Costear en parte sus estudios tocando en una orquesta",
-            "name3":"q"
-        },
-        {
-            "actividad1":"Escribir un libro sobre la historia de la Cruz Roja",
-            "name1":"r",
-            "actividad2": "Buscar datos que arrojen nueva luz sobre un célebre acontecimiento histórico",
-            "name2":"s",
-            "actividad3": "Escribir una comedia musical",
-            "name3":"t"
-        }
-    ]
+  "parte": "Parte 2 de 12",
+  "bloques": [
+    {
+      "actividad1": "Leer un libro titulado \"Cómo cultivar buenas frutas\"",
+      "name1": "A",
+      "actividad2": "Leer un libro titulado \"Cómo trabajar con materiales plásticos\"",
+      "name2": "B",
+      "actividad3": "Leer un libro titulado \"Cómo tomar fotos de animales en su ambiente natural\"",
+      "name3": "C"
+    },
+    {
+      "actividad1": "Tener a su cargo en un periódico la columna de \"Consejos personales\"",
+      "name1": "D",
+      "actividad2": "Criar perros de raza",
+      "name2": "E",
+      "actividad3": "Investigar la eficiencia de diversos medios de propaganda",
+      "name3": "F"
+    },
+    {
+      "actividad1": "Ser autoridad en el juego de ajedrez",
+      "name1": "G",
+      "actividad2": "Ser autoridad en erosión de suelos",
+      "name2": "H",
+      "actividad3": "Ser autoridad en materia de propaganda gráfica",
+      "name3": "J"
+    },
+    {
+      "actividad1": "Visitar un estudio cinematográfico",
+      "name1": "K",
+      "actividad2": "Visitar una región montañosa célebre por sus paisajes",
+      "name2": "L",
+      "actividad3": "Visitar un antiguo campo de batalla",
+      "name3": "M"
+    },
+    {
+      "actividad1": "Leer sobre las actuaciones de hombres y mujeres célebres en la vida pública",
+      "name1": "N",
+      "actividad2": "Leer las opiniones de varios escritores sobre lo que sería el mundo ideal",
+      "name2": "P",
+      "actividad3": "Leer cómo vivían los primeros colonizadores del país",
+      "name3": "Q"
+    },
+    {
+      "actividad1": "Trabajar como psicólogo profesional atendiendo consultas de carácter personal",
+      "name1": "R",
+      "actividad2": "Cazar animales raros para un museo",
+      "name2": "S",
+      "actividad3": "Pagar cheques al público en un banco",
+      "name3": "T"
+    },
+    {
+      "actividad1": "Pertenecer a una sociedad que estudie los problemas del mundo contemporáneo",
+      "name1": "U",
+      "actividad2": "Pertenecer a un club literario",
+      "name2": "V",
+      "actividad3": "Pertenecer a una sociedad de aficionados a los estudios astronómicos",
+      "name3": "W"
+    },
+    {
+      "actividad1": "Relacionarse con gente común y corriente",
+      "name1": "X",
+      "actividad2": "Relacionarse con gente extravagante y de ideas raras",
+      "name2": "Y",
+      "actividad3": "Relacionarse con gente alegre y despreocupada",
+      "name3": "Z"
+    },
+    {
+      "actividad1": "Enseñar castellano a los extranjeros",
+      "name1": "a",
+      "actividad2": "Vender pólizas de seguros",
+      "name2": "b",
+      "actividad3": "Ser cocinero jefe de un restaurante de lujo",
+      "name3": "c"
+    },
+    {
+      "actividad1": "Desarrollar nuevas variedades de flores",
+      "name1": "d",
+      "actividad2": "Dirigir la propaganda para una floristería",
+      "name2": "e",
+      "actividad3": "Atender pedidos telefónicos en una floristería",
+      "name3": "f"
+    },
+    {
+      "actividad1": "Dirigir investigaciones sobre los métodos de la propaganda comercial",
+      "name1": "g",
+      "actividad2": "Ser Decano de una Facultad Universitaria",
+      "name2": "h",
+      "actividad3": "Ser experto en fotografía de colores",
+      "name3": "j"
+    },
+    {
+      "actividad1": "Dibujar cuadros para un libro de historia universal",
+      "name1": "k",
+      "actividad2": "Producir una nueva variedad de naranjas sin semillas",
+      "name2": "l",
+      "actividad3": "Entrenar un grupo escénico ganador del primer puesto en un concurso nacional",
+      "name3": "m"
+    },
+    {
+      "actividad1": "Costear en parte sus estudios trabajando como ayudante de laboratorio",
+      "name1": "n",
+      "actividad2": "Costearlos en parte ayudando en la secretaría del plantel donde estudia",
+      "name2": "p",
+      "actividad3": "Costear en parte sus estudios tocando en una orquesta",
+      "name3": "q"
+    },
+    {
+      "actividad1": "Escribir un libro sobre la historia de la Cruz Roja",
+      "name1": "r",
+      "actividad2": "Buscar datos que arrojen nueva luz sobre un célebre acontecimiento histórico",
+      "name2": "s",
+      "actividad3": "Escribir una comedia musical",
+      "name3": "t"
+    }
+  ]
 }

@@ -6,13 +6,26 @@
     <div class="container margen">
         <div class="row">
             <div class="col-12 text-light pt-5 pb-3">
-                <h1 class="text-center">Instrucciones generales {{session('id_prueba')}}</h1>
+                <h1 class="text-center">Instrucciones generales</h1>
             </div>
         </div>
         <div class="row">
             <div class="container login mt-4 margen">
                 <div class="container">
                     <div class="row justify-content-center">
+                        @if ($errors->any())
+                            <div class="col-12 mt-5">
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>
+                                                <h5>{{ $error }}</h5>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        @endif
                         <div class="col-10 col-lg-10 col-12 col-sm-12">
                             <div class="card mt-5 mb-5 ">
                                 <h5 class="card-header text-center header-card card-titulo">Indicaciones</h5>
@@ -196,14 +209,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                    </div> 
-                </div> 
+                        </div>
+                    </div>
+                </div>
                 <div class="row justify-content-center mb-5">
-                    <a href="/parte1" type="button" class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton "><h4>Iniciar prueba</h4></a>
-                </div> 
-            </div> 
-        </div> 
+                    <a href="/parte1" type="button"
+                        class="btn col-5 col-lg-5 col-10 col-sm-10 text-light btn-lg btn-info boton ">
+                        <h4>@if(session('id_prueba')) {{'Continuar prueba'}} @else{{'Iniciar prueba'}} @endif</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 @section('footer')

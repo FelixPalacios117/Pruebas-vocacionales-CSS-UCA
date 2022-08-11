@@ -6,7 +6,7 @@
     <div class="container-fluid margen">
         <div class="row">
             <div class="col-12 text-light pt-5 pb-3">
-                <h1 class="text-center">{{ $preguntas_uno->parte }}</h1>
+                <h1 class="text-center">{{ $preguntas_dos->parte }}</h1>
             </div>
         </div>
         <div class="row">
@@ -28,10 +28,10 @@
                     </div>
                 @endif
 
-                <form method="POST" action={{ url('savePartOne') }}>
+                <form method="POST" action={{ url('savePartTwo') }}>
                     {{ csrf_field() }}
                     <div class="row justify-content-center mt-5 mb-5">
-                        @foreach ($preguntas_uno->bloques as $preguntas)
+                        @foreach ($preguntas_dos->bloques as $preguntas)
                             <div class="mx-3 my-3 card bloque col-5 col-lg-5 col-5 col-md-5 col-12 col-sm-12">
                                 <div class="card-body card-texto">
                                     <div class="col-12">
@@ -113,7 +113,7 @@
                         @endforeach
                     </div>
                     <div class="row justify-content-around mb-5">
-                        <a href="/instrucciones"
+                        <a href="/parte1"
                             class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
                             <h4>Anterior</h4>
                         </a>
