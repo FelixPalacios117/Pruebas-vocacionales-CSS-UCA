@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 4 de 12",
+    "bloques":[
+        {
+            "actividad1": "Repartir hojas volantes a los automóviles que se detienen en una esquina",
+            "name1":"A", 
+            "actividad2": "Contar el número de automóviles que pasan por una esquina a distintas horas",
+            "name2":"B", 
+            "actividad3": "Dirigir el tráfico en una esquina",
+            "name3":"C" 
+        },
+        {
+            "actividad1": "Reeducar a los niños lisiados por medio de ejercicios físicos",
+            "name1":"D",
+            "actividad2": "Cultivar hortalizas para la venta",
+            "name2":"E",
+            "actividad3": "Enseñar la confección de objetos de mimbre",
+            "name3":"F"
+        },
+        {
+            "actividad1": "Recolectar dinero para una obra de beneficencia",
+            "name1":"G",
+            "actividad2": "Redactar informes diarios sobre el progreso de la campaña de recolección de estos fondos",
+            "name2":"H",
+            "actividad3": "Contabilizar los fondos recolectados a medida que estos van ingresando",
+            "name3":"J"
+        },
+        {
+            "actividad1":"Hacerse cargo de los preparativos para una boda con numerosos invitados",
+            "name1":"K",
+            "actividad2": "Repartir las invitaciones para la boda",
+            "name2":"L",
+            "actividad3": "Escribir un comentario en la prensa sobre su celebración",
+            "name3":"M"
+        },
+        {
+            "actividad1":"Escribir novelas",
+            "name1":"N",
+            "actividad2": "Dirigir investigaciones sobre los efectos psicológicos de la música",
+            "name2":"P",
+            "actividad3": "Confeccionar objetos de cerámica",
+            "name3":"Q"
+        },
+        {
+            "actividad1":"Investigar la eficiencia de los métodos para incrementar ventas",
+            "name1":"R",
+            "actividad2": "Clasificar las cartas en una oficina de correos",
+            "name2":"S",
+            "actividad3": "Criar pollos",
+            "name3":"T"
+        },
+        {
+            "actividad1":"Escribir en un periódico la página dedicada a sucesos de actualidad",
+            "name1":"U",
+            "actividad2": "Dictar conferencias populares sobre Química",
+            "name2":"V",
+            "actividad3": "Ayudar a los jóvenes a descubrir su vocación",
+            "name3":"W"
+        },
+        {
+            "actividad1":"Tener una persona para que siempre le ayude a resolver sus problemas",
+            "name1":"X",
+            "actividad2": "Tener una persona para que ocasionalmente le resuelva sus problemas",
+            "name2":"Y",
+            "actividad3": "Resolver sus problemas sin consultar con nadie",
+            "name3":"Z"
+        },
+        {
+            "actividad1": "Trabajar como supervisor de ventas en un gran almacén",
+            "name1":"a", 
+            "actividad2": "Dirigir investigaciones sobre la televisión",
+            "name2":"b", 
+            "actividad3": "Dirigir programas recreativos en una institución de beneficencia",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Controlar el trabajo de varias secretarias",
+            "name1":"d",
+            "actividad2": "Entrevistar personas que hacen solicitud de empleo",
+            "name2":"e",
+            "actividad3": "Trabajar como secretario(a) privado",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Dibujar tiras cómicas",
+            "name1":"g",
+            "actividad2": "Redactar propaganda para artículos eléctricos",
+            "name2":"h",
+            "actividad3": "Cultivar una huerta",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Ensayar la elaboración de dulces cuya receta usted no conoce",
+            "name1":"k",
+            "actividad2": "Contar cuentos a los niños",
+            "name2":"l",
+            "actividad3": "Pintar con acuarelas",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Hacer investigaciones químicas",
+            "name1":"n",
+            "actividad2": "Entrevistar a las personas que solicitan empleo",
+            "name2":"p",
+            "actividad3": "Escribir reportajes para los periódicos",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Bosquejar una escena interesante",
+            "name1":"r",
+            "actividad2": "Ensayar varios tipos de aeromodelos para ver cuál resulta mejor",
+            "name2":"s",
+            "actividad3": "Escribir un ensayo imitando el estilo de un determinado escritor",
+            "name3":"t"
+        }
+    ]
+}

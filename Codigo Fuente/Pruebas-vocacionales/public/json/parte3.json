@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 3 de 12",
+    "bloques":[
+        {
+            "actividad1": "Enseñar castellano",
+            "name1":"a", 
+            "actividad2": "Atender pedidos telefónicos en un almacén",
+            "name2":"b", 
+            "actividad3": "Hacer encuestas de opinión pública sobre temas de actualidad",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Estar encargado de compras para un gran almacén",
+            "name1":"d",
+            "actividad2": "Estar encargado de entrevistar a los aspirantes a empleos en una empresa",
+            "name2":"e",
+            "actividad3": "Trabajar en una hacienda ganadera",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Ser jefe de personal en una empresa",
+            "name1":"g",
+            "actividad2": "Escribir para una revista artículos sobre la vida de animales raros",
+            "name2":"h",
+            "actividad3": "Escribir la columna 'Consejos personales' en un periódico",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Leer sobre métodos modernos empleados en los negocios",
+            "name1":"k",
+            "actividad2": "Leer sobre las costumbres de los habitantes de otros paises",
+            "name2":"l",
+            "actividad3": "Leer sobre nuevos métodos de explotación agrícola",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Trabajar en una estación meteorológica en el Ártico",
+            "name1":"n",
+            "actividad2": "Trabajar en una estación meteorológica en la ciudad",
+            "name2":"p",
+            "actividad3": "Trabajar en una estación meteorológica en las montañas",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Tener fama como director de investigaciones científicas",
+            "name1":"r",
+            "actividad2": "Tener fama como trabajador en el campo de acción social",
+            "name2":"s",
+            "actividad3": "Tener fama como crítico literario",
+            "name3":"t"
+        },
+        {
+            "actividad1":"Diseñar decoraciones para una obra teatral",
+            "name1":"u",
+            "actividad2": "Hacer análisis químico de un nuevo producto",
+            "name2":"v",
+            "actividad3": "Escribir artículos acerca de cómo reparar en casa utensilios domésticos",
+            "name3":"w"
+        },
+        {
+            "actividad1":"Entrevistar a las personas que soliciten la ayuda de beneficencia",
+            "name1":"x",
+            "actividad2": "Ensayar varios modelos de cartas de propaganda comercial para ver cual produce mejor resultado",
+            "name2":"y",
+            "actividad3": "Perfeccionar los métodos de trabajo de oficina para hacerlos más efectivos",
+            "name3":"z"
+        },
+        {
+            "actividad1": "Redactar la página financiera de un periódico",
+            "name1":"A",  
+            "actividad2": "Preparar una nueva aleación de metales más liviana y resistente",
+            "name2":"B",
+            "actividad3": "Administrar un moderno campamento para obreros",
+            "name3":"C" 
+        },
+        { 
+            "actividad1": "Visitar un museo de bellas artes",
+            "name1":"D", 
+            "actividad2": "Visitar el centro de diversiones de un barrio popular",
+            "name2":"E", 
+            "actividad3": "Visitar un célebre laboratorio de investigaciones médicas",
+            "name3":"F"
+        },
+        { 
+            "actividad1": "Asumir la responsabilidad de despedir empleados deficientes en una empresa",
+            "name1":"G", 
+            "actividad2": "Asumir la responsabilidad para llamar la atención a empleados cuyo rendimiento no es satisfactorio",
+            "name2":"H", 
+            "actividad3": "Asumir la responsabilidad de emplear el personal nuevo en una empresa",
+            "name3":"J"
+        },
+        { 
+            "actividad1":"Hacer un diccionario de dichos populares",
+            "name1":"K", 
+            "actividad2": "Descubrir un remedio contra el asma",
+            "name2":"L", 
+            "actividad3": "Implantar mejores métodos de trabajo en una empresa grande",
+            "name3":"M"
+        },
+        { 
+            "actividad1":"Leer un libro sobre la historia del arte dramático",
+            "name1":"N", 
+            "actividad2": "Leer un libro sobre las primitivas formas de la música",
+            "name2":"P", 
+            "actividad3": "Leer un libro sobre la influencia del lenguaje en el comportamiento",
+            "name3":"Q"
+        },
+        { 
+            "actividad1":"Hacer análisis químico de nuevos productos comerciales",
+            "name1":"R", 
+            "actividad2": "Trabajar en el perfeccionamiento del 'pulmón artificial' para que proporcione mayor comodidad al enfermo",
+            "name2":"S", 
+            "actividad3": "Confeccionar gráficas del estado financiero de una empresa",
+            "name3":"T"
+        }
+    ]
+}
