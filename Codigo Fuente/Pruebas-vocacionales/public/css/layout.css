@@ -49,6 +49,10 @@ body{
 .body-card{
     background-color: #4C566A !important;
 }
+.form-error{
+    background-color: red !important;
+    border-color: red !important;
+}
 .bloque{
     background-color: #2E3440!important;
 } 
@@ -56,6 +60,6 @@ body{
     font-size: 22px !important;
     color: #ECEFF4 !important; 
 }
-.active{
+/*.active{
     background-color: #5b82cf !important;
-} 
+}  */

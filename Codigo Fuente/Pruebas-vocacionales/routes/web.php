@@ -16,5 +16,6 @@ Route::post('/crearPrueba','QuizController@iniciarPrueba');
 Route::get('/instrucciones','QuizController@instrucciones');
 Route::get('/parte1','QuizOneController@primera');
 Route::get('/parte2','QuizTwoController@segunda');
+Route::get('/parte3','QuizThreeController@tercera');
 Route::post('/savePartOne','QuizOneController@store');
 Route::post('/savePartTwo','QuizTwoController@store');

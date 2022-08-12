@@ -5,6 +5,7 @@ namespace Pruebas\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Pruebas\Respuesta;
+
 class QuizOneController extends Controller
 {
 
@@ -78,48 +79,48 @@ class QuizOneController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'a' => 'required|different:c',
-            'b' => 'required|different:a',
-            'c' => 'required|different:b',
-            'd' => 'required|different:f',
-            'e' => 'required|different:d',
-            'f' => 'required|different:e',
-            'g' => 'required|different:j',
-            'h' => 'required|different:g',
-            'j' => 'required|different:h',
-            'k' => 'required|different:m',
-            'l' => 'required|different:k',
-            'm' => 'required|different:l',
-            'n' => 'required|different:q',
-            'p' => 'required|different:n',
-            'q' => 'required|different:p',
-            'r' => 'required|different:t',
-            's' => 'required|different:r',
-            't' => 'required|different:s',
-            'u' => 'required|different:w',
-            'v' => 'required|different:u',
-            'w' => 'required|different:v',
-            'x' => 'required|different:z',
-            'y' => 'required|different:x',
-            'z' => 'required|different:y',
-            'A' => 'required|different:C',
-            'B' => 'required|different:A',
-            'C' => 'required|different:B',
-            'D' => 'required|different:F',
-            'E' => 'required|different:D',
-            'F' => 'required|different:E',
-            'G' => 'required|different:J',
-            'H' => 'required|different:G',
-            'J' => 'required|different:H',
-            'K' => 'required|different:M',
-            'L' => 'required|different:K',
-            'M' => 'required|different:L',
-            'N' => 'required|different:Q',
-            'P' => 'required|different:N',
-            'Q' => 'required|different:P',
-            'R' => 'required|different:T',
-            'S' => 'required|different:R',
-            'T' => 'required|different:S',
+            'a' => 'required|different:c|different:b',
+            'b' => 'required|different:a|different:c',
+            'c' => 'required|different:b|different:a',
+            'd' => 'required|different:f|different:e',
+            'e' => 'required|different:d|different:f',
+            'f' => 'required|different:e|different:d',
+            'g' => 'required|different:j|different:h',
+            'h' => 'required|different:g|different:j',
+            'j' => 'required|different:h|different:g',
+            'k' => 'required|different:m|different:l',
+            'l' => 'required|different:k|different:m',
+            'm' => 'required|different:l|different:k',
+            'n' => 'required|different:q|different:p',
+            'p' => 'required|different:n|different:q',
+            'q' => 'required|different:p|different:n',
+            'r' => 'required|different:t|different:s',
+            's' => 'required|different:r|different:t',
+            't' => 'required|different:s|different:r',
+            'u' => 'required|different:w|different:v',
+            'v' => 'required|different:u|different:w',
+            'w' => 'required|different:v|different:u',
+            'x' => 'required|different:z|different:y',
+            'y' => 'required|different:x|different:z',
+            'z' => 'required|different:y|different:x',
+            'A' => 'required|different:C|different:B',
+            'B' => 'required|different:A|different:C',
+            'C' => 'required|different:B|different:A',
+            'D' => 'required|different:F|different:E',
+            'E' => 'required|different:D|different:F',
+            'F' => 'required|different:E|different:D',
+            'G' => 'required|different:J|different:H',
+            'H' => 'required|different:G|different:J',
+            'J' => 'required|different:H|different:G',
+            'K' => 'required|different:M|different:L',
+            'L' => 'required|different:K|different:M',
+            'M' => 'required|different:L|different:K',
+            'N' => 'required|different:Q|different:P',
+            'P' => 'required|different:N|different:Q',
+            'Q' => 'required|different:P|different:N',
+            'R' => 'required|different:T|different:S',
+            'S' => 'required|different:R|different:T',
+            'T' => 'required|different:S|different:R',
 
         ]);
         //bloques de respuestas 
@@ -137,6 +138,7 @@ class QuizOneController extends Controller
         $bloque_doce = $request->K . $request->L . $request->M;
         $bloque_trece = $request->N . $request->P . $request->Q;
         $bloque_catorce = $request->R . $request->S . $request->T;
+        //se preparan los campos de la respuesta que se envia
         $respuesta = new Respuesta;
         $respuesta->id_prueba = session('id_prueba');
         $respuesta->parte = 1;
@@ -154,9 +156,15 @@ class QuizOneController extends Controller
         $respuesta->bloque_doce = $bloque_doce;
         $respuesta->bloque_trece = $bloque_trece;
         $respuesta->bloque_catorce = $bloque_catorce;
-        $encontrado = DB::table('respuestas')->where('id_prueba', session('id_prueba'))->first();
+        $encontrado = DB::table('respuestas')->where([
+            'id_prueba' => session('id_prueba'),
+            'parte' => 1
+        ])->first();
         if ($encontrado) {
-            Respuesta::where('id_prueba', session('id_prueba'))->update(
+            Respuesta::where([
+                'id_prueba' => session('id_prueba'),
+                'parte' => 1
+            ])->update(
                 [
                     'bloque_uno' => $bloque_uno,
                     'bloque_dos' => $bloque_dos,

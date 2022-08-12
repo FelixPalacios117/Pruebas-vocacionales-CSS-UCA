@@ -2,7 +2,7 @@
 @section('titulo', 'Pruebas vocacionales')
 @section('navbar')
     @include('layouts.navbar')
-@section('body') 
+@section('body')
     <div class="container-fluid margen">
         <div class="row">
             <div class="col-12 text-light pt-5 pb-3">
@@ -17,12 +17,19 @@
                             <div class="alert alert-danger">
                                 <h2 class="text-center"> El formulario contiene errores</h2>
                                 <ul>
+                                    <li>
+                                        <h4 >Recuerda que por cada bloque de tres actividades debes seleccionar solamente una que te gusta más, una que te gusta menos
+                                            y una que te es indiferente.
+                                        </h4>
+                                    </li>
+                                </ul>
+                              {{--    <ul>
                                     @foreach ($errors->all() as $error)
                                         <li>
                                             <h5>{{ $error }}</h5>
                                         </li>
                                     @endforeach
-                                </ul>
+                                </ul>  --}}
                             </div>
                         </div>
                     </div>
@@ -40,20 +47,26 @@
                                         </h5>
                                     </div>
                                     <div class="col-12 btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-secondary active">
+                                        <label
+                                            class="btn btn-secondary 
+                                            {{ $errors->has($preguntas->name1) ? (old($preguntas->name1) == '+' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name1 }}
                                                 {{ old($preguntas->name1) == '+' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3] == '+') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
                                                 value="+" required> +
                                         </label>
-                                        <label class="btn btn-secondary active">
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name1) ? (old($preguntas->name1) == '0' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name1 }} value="0"
                                                 {{ old($preguntas->name1) == '0' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3] == '0') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
                                                 required>
                                             0
                                         </label>
-                                        <label class="btn btn-secondary">
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name1) ? (old($preguntas->name1) == '-' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name1 }} value="-"
                                                 {{ old($preguntas->name1) == '-' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3] == '-') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
@@ -65,19 +78,25 @@
                                             {{ $preguntas->actividad2 }}</h5>
                                     </div>
                                     <div class="col-12 btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-secondary active">
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name2) ? (old($preguntas->name2) == '+' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name2 }} value="+"
                                                 {{ old($preguntas->name2) == '+' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3 + 1] == '+') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
                                                 required> +
                                         </label>
-                                        <label class="btn btn-secondary active">
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name2) ? (old($preguntas->name2) == '0' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name2 }} value="0"
                                                 {{ old($preguntas->name2) == '0' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3 + 1] == '0') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
                                                 required> 0
                                         </label>
-                                        <label class="btn btn-secondary">
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name2) ? (old($preguntas->name2) == '-' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name2 }} value="-"
                                                 {{ old($preguntas->name2) == '-' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3 + 1] == '-') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
@@ -89,19 +108,25 @@
                                             {{ $preguntas->actividad3 }}</h5>
                                     </div>
                                     <div class="col-12 btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-secondary active">
-                                            <input type="radio" name={{ $preguntas->name3 }} value="+"
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name3) ? (old($preguntas->name3) == '+' ? 'form-error' : '') : '' }}">
+                                            <input type="radio" name={{ $preguntas->name3 }}
                                                 {{ old($preguntas->name3) == '+' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3 + 2] == '+') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
-                                                required> +
+                                                value="+" required> +
                                         </label>
-                                        <label class="btn btn-secondary active">
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name3) ? (old($preguntas->name3) == '0' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name3 }} value="0"
                                                 {{ old($preguntas->name3) == '0' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3 + 2] == '0') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
                                                 required> 0
                                         </label>
-                                        <label class="btn btn-secondary">
+                                        <label
+                                            class="btn btn-secondary
+                                        {{ $errors->has($preguntas->name3) ? (old($preguntas->name3) == '-' ? 'form-error' : '') : '' }}">
                                             <input type="radio" name={{ $preguntas->name3 }} value="-"
                                                 {{ old($preguntas->name3) == '-' ? 'checked=' . '"' . 'checked' . '"' : '' }}
                                                 @if (isset($arreglo) && $arreglo[$loop->index * 3 + 2] == '-') {{ 'checked=' . '"' . 'checked' . '"' }} @endif
