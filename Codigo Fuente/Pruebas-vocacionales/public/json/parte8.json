@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 8 de 12",
+    "bloques":[
+        {
+            "actividad1": "Ayudar a las familias que reciben asistencia económica a equilibrar sus presupuestos",
+            "name1":"A", 
+            "actividad2": "Catalogar libros en una biblioteca",
+            "name2":"B", 
+            "actividad3": "Ser un experto en el cuidado de árboles",
+            "name3":"C" 
+        },
+        {
+            "actividad1": "Vender en un almacén",
+            "name1":"D",
+            "actividad2": "Trabajar en una hacienda ganadera",
+            "name2":"E",
+            "actividad3": "Trabajar en una casa editorial",
+            "name3":"F"
+        },
+        {
+            "actividad1": "Ser profesor de matemática",
+            "name1":"G",
+            "actividad2": "Ser director de extensión cultural en una gran universidad",
+            "name2":"H",
+            "actividad3": "Ser profesor de lenguas extranjeras",
+            "name3":"J"
+        },
+        {
+            "actividad1":"Tomar un curso de correspondencia comercial",
+            "name1":"K",
+            "actividad2": "Tomar un curso de artes gráficas",
+            "name2":"L",
+            "actividad3": "Tomar un curso de ventas",
+            "name3":"M"
+        },
+        {
+            "actividad1":"Dibujar planos de arquitectura",
+            "name1":"N",
+            "actividad2": "Elaborar propaganda para una nueva urbanización",
+            "name2":"P",
+            "actividad3": "Escribir artículos comentando nuevas ideas sobre construcciones",
+            "name3":"Q"
+        },
+        {
+            "actividad1":"Comprar artículos costosos utilizando el sistema de crédito",
+            "name1":"R",
+            "actividad2": "Pedir prestado el dinero para comprar estos artículos",
+            "name2":"S",
+            "actividad3": "Economizar el dinero que se necesita para adquirirlos",
+            "name3":"T"
+        },
+        {
+            "actividad1":"Decorar muebles",
+            "name1":"U",
+            "actividad2": "Vigilar a los trabajadores en una plantación de caña de azúcar",
+            "name2":"V",
+            "actividad3": "Criar aves de corral",
+            "name3":"W"
+        },
+        {
+            "actividad1":"Ayudar a los jóvenes en la elección de su futura carrera",
+            "name1":"X",
+            "actividad2": "Diseñar motivos para nuevas telas",
+            "name2":"Y",
+            "actividad3": "Elaborar presupuestos de costos para impresión de libros y revistas",
+            "name3":"Z"
+        },
+        {
+            "actividad1": "Construir un telar de mano",
+            "name1":"a", 
+            "actividad2": "Hacer análisis estadístico para predecir tendencias del mercado",
+            "name2":"b", 
+            "actividad3": "Hacer encuestas sobre la actitud de los jóvenes hacia la religión",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Modelar en yeso el rostro de un célebre personaje",
+            "name1":"d",
+            "actividad2": "Escribir artículos sobre procedimientos para determinar el precio de venta de las mercancías",
+            "name2":"e",
+            "actividad3": "Escribir el tema musical para un programa radial",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Trabajar como comprador de mercancías para una cooperativa",
+            "name1":"g",
+            "actividad2": "Encargarse de la publicidad de una empresa importante",
+            "name2":"h",
+            "actividad3": "Encargarse del mantenimiento de las máquinas en una empresa comercial",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Lograr que la gente lo trate a Ud. como a un amigo",
+            "name1":"k",
+            "actividad2": "Lograr que la gente lo trate a Ud. como a un superior",
+            "name2":"l",
+            "actividad3": "Lograr que nadie se fije en Ud.",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Ser profesor de música",
+            "name1":"n",
+            "actividad2": "Ser diseñador de una casa de publicidad",
+            "name2":"p",
+            "actividad3": "Investigar por qué los chistes hacen reir",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Hacer las compras para una persona enferma",
+            "name1":"r",
+            "actividad2": "Hacer un crucigrama para entretener a un enfermo",
+            "name2":"s",
+            "actividad3": "Leer para distraer a una persona enferma",
+            "name3":"t"
+        }
+    ]
+}
