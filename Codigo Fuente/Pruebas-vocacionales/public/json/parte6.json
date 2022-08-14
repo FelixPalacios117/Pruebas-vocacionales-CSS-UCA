@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 6 de 12",
+    "bloques":[
+        {
+            "actividad1": "Dirigir una función teatral de aficionados",
+            "name1":"A", 
+            "actividad2": "Organizar la impresión de prograamas y boletas para la función",
+            "name2":"B", 
+            "actividad3": "Escribir el argumento de la pieza teatral que se va a representar",
+            "name3":"C" 
+        },
+        {
+            "actividad1": "Jugar a las damas con una persona que generalmente le gana a Ud.",
+            "name1":"D",
+            "actividad2": "Jugar a las damas con una persona que rara vez le gana a Ud.",
+            "name2":"E",
+            "actividad3": "Jugar a las damas con una persona que juegue más o menos como Ud.",
+            "name3":"F"
+        },
+        {
+            "actividad1": "Redactar un aviso de propaganda para un nuevo modelo de lavadora",
+            "name1":"G",
+            "actividad2": "Calcular el precio de costo para la fabricación de esta lavadora",
+            "name2":"H",
+            "actividad3": "Vender lavadoras",
+            "name3":"J"
+        },
+        {
+            "actividad1":"Escribir en un periódico la columna \"Se rumora en la ciudad\"",
+            "name1":"K",
+            "actividad2": "Escribir en un periódico la columna \"Consejos personales\"",
+            "name2":"L",
+            "actividad3": "Escibir en un periódico la columna \"Cómo cuidar el jardín\"",
+            "name3":"M"
+        },
+        {
+            "actividad1":"Ser explorador",
+            "name1":"N",
+            "actividad2": "Ser dibujante proyectista",
+            "name2":"P",
+            "actividad3": "Ser inventor",
+            "name3":"Q"
+        },
+        {
+            "actividad1":"Trabajar en la cosecha de café",
+            "name1":"R",
+            "actividad2": "Trabajar como tractorista en una hacienda",
+            "name2":"S",
+            "actividad3": "Trabajar en un laboratorio de productos químicos",
+            "name3":"T"
+        },
+        {
+            "actividad1":"Estuciar el arte de hablar en público",
+            "name1":"U",
+            "actividad2": "Estudiar sociología",
+            "name2":"V",
+            "actividad3": "Estudiar composición literaria",
+            "name3":"W"
+        },
+        {
+            "actividad1":"Manejar una máquina calculadora",
+            "name1":"X",
+            "actividad2": "Ensamblar máquinas calculadoras en una fábrica",
+            "name2":"Y",
+            "actividad3": "Vender máquinas calculadoras",
+            "name3":"Z"
+        },
+        {
+            "actividad1": "Construir lanchas",
+            "name1":"a", 
+            "actividad2": "Intervenir en el arreglo de conflictos laborales",
+            "name2":"b", 
+            "actividad3": "Componer música",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Ser el mejor vendedor de tractores y otros implementos agrícolas",
+            "name1":"d",
+            "actividad2": "Ser contacto público juramentado",
+            "name2":"e",
+            "actividad3": "Ser autoridad en materia de impuestos",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Perfeccionar métodos de trabajo de oficina en empresas importantes",
+            "name1":"g",
+            "actividad2": "Ser enfermero(a) de profesión",
+            "name2":"h",
+            "actividad3": "Hacer ensayos para obtener mejores recetas de pastelería",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Reparar un daño en la plancha eléctrica",
+            "name1":"k",
+            "actividad2": "Cortar la leña para prender la estufa",
+            "name2":"l",
+            "actividad3": "Escribir una carta a máquina por petición de un amigo",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Manejar un almacén de música",
+            "name1":"n",
+            "actividad2": "Hacer planos arquitectónicos",
+            "name2":"p",
+            "actividad3": "Investigar el nivel de vida de distintos barrios de la ciudad",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Examinar un nuevo juguete mecánico para ver cómo funciona",
+            "name1":"r",
+            "actividad2": "Jugar a las damas",
+            "name2":"s",
+            "actividad3": "Jugar ajedrez",
+            "name3":"t"
+        }
+    ]
+}
