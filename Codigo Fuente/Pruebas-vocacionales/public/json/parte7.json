@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 7 de 12",
+    "bloques":[
+        {
+            "actividad1": "Llevar la contabilidad de una empresa importante",
+            "name1":"a", 
+            "actividad2": "Desarrollar nuevas variedades de flores",
+            "name2":"b", 
+            "actividad3": "Ser psicólogo profesional y atender consultas personales",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Hacer de la pesca un medio para ganarse la vida",
+            "name1":"d",
+            "actividad2": "Seleccionar en un cafetal cafetos viejos para deshacerse de ellos",
+            "name2":"e",
+            "actividad3": "Pintar automóviles en una fábrica",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Ser visitador(a) social",
+            "name1":"g",
+            "actividad2": "Ser secretario(a) privado de una persona célebre",
+            "name2":"h",
+            "actividad3": "Preparar la propaganda para una casa editorial",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Escribir estampas de la vida real para una revista",
+            "name1":"k",
+            "actividad2": "Escribir artículos sobre la cría de aves de corral",
+            "name2":"l",
+            "actividad3": "Escribir artículos sobre la aplicación de primeros auxilios",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Trabajar como un mesero(a) en un restaurante",
+            "name1":"n",
+            "actividad2": "Seleccionar listas de personas para enviarles propaganda",
+            "name2":"p",
+            "actividad3": "Cuidar enfermos",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Modelar objetos de arcilla",
+            "name1":"r",
+            "actividad2": "Escribir artículos sobre recursos psicológicos para persuadir",
+            "name2":"s",
+            "actividad3": "Ser consueta en una obra teatral de aficionados",
+            "name3":"t"
+        },
+        {
+            "actividad1":"Ser médico",
+            "name1":"u",
+            "actividad2": "Ser escultor",
+            "name2":"v",
+            "actividad3": "Ser periodista",
+            "name3":"w"
+        },
+        {
+            "actividad1":"Contestar por escrito consultas sobre una computadora portátil",
+            "name1":"x",
+            "actividad2": "Estudiar la demanda que tienen las computadoras portátiles",
+            "name2":"y",
+            "actividad3": "Tener a su cargo la reparación de una computadora portátil",
+            "name3":"z"
+        },
+        {
+            "actividad1": "Estudiar métodos de propaganda usados durante la guerra",
+            "name1":"A",  
+            "actividad2": "Estudiar sistemas para mejorar los trabajos de oficina",
+            "name2":"B",
+            "actividad3": "Hacer un estudio acerca del movimiento demográfico del país",
+            "name3":"C" 
+        },
+        { 
+            "actividad1": "Corregir una prueba de imprenta",
+            "name1":"D", 
+            "actividad2": "Lavar platos",
+            "name2":"E", 
+            "actividad3": "Preparar la comida",
+            "name3":"F"
+        },
+        { 
+            "actividad1": "Enseñar Arquitectura",
+            "name1":"G", 
+            "actividad2": "Solicitar propaganda para una revista",
+            "name2":"H", 
+            "actividad3": "Reparar relojes",
+            "name3":"J"
+        },
+        { 
+            "actividad1":"Preparar la comida",
+            "name1":"K", 
+            "actividad2": "Reparar un juguete dañado",
+            "name2":"L", 
+            "actividad3": "Darle un mensaje a una persona",
+            "name3":"M"
+        },
+        { 
+            "actividad1":"Ser parte de una expedición en busca de animales raros",
+            "name1":"N", 
+            "actividad2": "Ser parte de una expedición para combatir epidemias",
+            "name2":"P", 
+            "actividad3": "Trabajar en una entidad de beneficencia",
+            "name3":"Q"
+        },
+        { 
+            "actividad1":"Ser pintor - retratista",
+            "name1":"R", 
+            "actividad2": "Dirigir investigaciones sobre las causas de los terremotos",
+            "name2":"S", 
+            "actividad3": "Ser ingeniero mecánico",
+            "name3":"T"
+        }
+    ]
+}
