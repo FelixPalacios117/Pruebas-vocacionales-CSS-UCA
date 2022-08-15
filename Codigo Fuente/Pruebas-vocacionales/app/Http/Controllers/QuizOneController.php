@@ -77,7 +77,7 @@ class QuizOneController extends Controller
         }
     }
     public function store(Request $request)
-    {
+    { 
         $this->validate($request, [
             'a' => 'required|different:c|different:b',
             'b' => 'required|different:a|different:c',
@@ -185,6 +185,11 @@ class QuizOneController extends Controller
         } else {
             $respuesta->save();
         }
-        return redirect('/parte2');
+        if($request->btnAnterior){ 
+            return redirect('/instrucciones');
+        }
+        if($request->btnSiguiente){
+            return redirect('/parte2');
+        }
     }
 }

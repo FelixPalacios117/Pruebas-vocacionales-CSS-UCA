@@ -22,6 +22,7 @@ class CreatePruebasTable extends Migration
             $table->date('fecha_nacimiento');
             $table->string('genero',10); 
             $table->string('lugar_estudio',50);
+            $table->boolean('finalizado');
             $table->timestamps();
         });
     }

@@ -117,7 +117,12 @@ class QuizTwoController extends Controller
         } else {
             $respuesta->save();
         }
-        return redirect('/parte3');
+        if($request->btnAnterior){ 
+            return redirect('/parte1');
+        }
+        if($request->btnSiguiente){
+            return redirect('/parte3');
+        }
     }
     public function segunda()
     {

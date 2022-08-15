@@ -18,18 +18,19 @@
                                 <h2 class="text-center"> El formulario contiene errores</h2>
                                 <ul>
                                     <li>
-                                        <h4 >Recuerda que por cada bloque de tres actividades debes seleccionar solamente una que te gusta más, una que te gusta menos
+                                        <h4>Recuerda que por cada bloque de tres actividades debes seleccionar solamente una
+                                            que te gusta más, una que te gusta menos
                                             y una que te es indiferente.
                                         </h4>
                                     </li>
                                 </ul>
-                              {{--    <ul>
+                                {{-- <ul>
                                     @foreach ($errors->all() as $error)
                                         <li>
                                             <h5>{{ $error }}</h5>
                                         </li>
                                     @endforeach
-                                </ul>  --}}
+                                </ul> --}}
                             </div>
                         </div>
                     </div>
@@ -138,11 +139,11 @@
                         @endforeach
                     </div>
                     <div class="row justify-content-around mb-5">
-                        <a href="/instrucciones"
+                        <button type="submit" name="btnAnterior" value="anterior"
                             class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
                             <h4>Anterior</h4>
-                        </a>
-                        <button type="submit"
+                        </button>
+                        <button type="submit" name="btnSiguiente" value="siguiente"
                             class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
                             <h4>Siguiente</h4>
                         </button>

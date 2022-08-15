@@ -35,7 +35,7 @@ class QuizController extends Controller
     }
     //
     public function instrucciones()
-    {
+    { 
         return view('instrucciones');
     }
     public function iniciarPrueba(Request $request)
@@ -51,7 +51,7 @@ class QuizController extends Controller
         ]);
         $date = new DateTime($request->fecha);
         $edad = Carbon::createFromDate($date->format('Y'), $date->format('m'), $date->format('d'))->age;
-        if ($edad < 15 || $edad > 55) {
+        if ($edad < 15 || $edad > 50) {
             return back()->withInput()->withErrors('Debes ser mayor de 15 años e ingresar una fecha válida');
         }
         $prueba = new Prueba;
@@ -62,6 +62,7 @@ class QuizController extends Controller
         $prueba->genero = $request->genero;
         $prueba->lugar_estudio = $request->lugar;
         $prueba->fecha_nacimiento = $request->fecha;
+        $prueba->finalizado=false;
         $prueba->save();
         $id_prueba = DB::table('pruebas')->where('correo', $request->correo)->value('id');
         session(['id_prueba' => $id_prueba]);
