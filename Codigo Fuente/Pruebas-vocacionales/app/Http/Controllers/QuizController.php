@@ -18,18 +18,28 @@ class QuizController extends Controller
             return view('index');
         }
     }
+    public function load(){
+        return view('continuar');
+    }
+    public function continuarPrueba(Request $request){
+        $this->validate($request, [ 
+            'correo' => 'required|email'
+        ]);
+        $id_prueba = DB::table('pruebas')->where('correo', $request->correo)->value('id'); 
+        if($id_prueba){
+            session(['id_prueba' => $id_prueba]);
+            return redirect('/instrucciones');
+        }else{
+            return back()->withInput()->withErrors('El correo electrónico ingresado no tiene ninguna prueba sin completar');
+        }
+    }
     //
     public function instrucciones()
     {
         return view('instrucciones');
     }
     public function iniciarPrueba(Request $request)
-    {
-        //dd($request->genero); imprime el dato que viene del form
-        //con esto puedo guardar el id del que lleno sus datos en session variables
-        //session(['idCarrito' => '123456']);
-        //dd(session('idCarrito'));
-        // session()->forget('idCarrito');
+    { 
         $this->validate($request, [
             'nombre' => 'required|string',
             'apellido' => 'required|string',

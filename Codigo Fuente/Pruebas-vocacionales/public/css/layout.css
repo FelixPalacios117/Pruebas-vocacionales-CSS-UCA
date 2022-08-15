@@ -18,7 +18,9 @@ body{
 }
 .boton{
     background-color: #5E81AC !important;
- 
+}
+.boton-regresar{
+    background-color: #4C566A !important;
 }
 .boton:hover{
     background-color: #3a5980 !important;
@@ -48,7 +50,10 @@ body{
 }
 .body-card{
     background-color: #4C566A !important;
-}
+} 
+.error h1{
+    vertical-align: middle;
+} 
 .form-error{
     background-color: red !important;
     border-color: red !important;
@@ -59,7 +64,4 @@ body{
 .literal{
     font-size: 22px !important;
     color: #ECEFF4 !important; 
-}
-/*.active{
-    background-color: #5b82cf !important;
-}  */
+} 
