@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 12 de 12",
+    "bloques":[
+        {
+            "actividad1": "Ser secretario(a) privado",
+            "name1":"A", 
+            "actividad2": "Ser contador",
+            "name2":"B", 
+            "actividad3": "Ser vendedor",
+            "name3":"C" 
+        },
+        {
+            "actividad1": "Practicar patinaje de figuras",
+            "name1":"D",
+            "actividad2": "Jugar tenis",
+            "name2":"E",
+            "actividad3": "Escalar montañas",
+            "name3":"F"
+        },
+        {
+            "actividad1": "Trabajar en una oficina",
+            "name1":"G",
+            "actividad2": "Trabajar en una hacienda",
+            "name2":"H",
+            "actividad3": "Trabajar como vendedor de casa en casa",
+            "name3":"J"
+        },
+        {
+            "actividad1":"Trabajar en una fábrica de dulces",
+            "name1":"K",
+            "actividad2": "Explotar un colmenar",
+            "name2":"L",
+            "actividad3": "Ser optómetra",
+            "name3":"M"
+        },
+        {
+            "actividad1":"Ser agricultor",
+            "name1":"N",
+            "actividad2": "Ser conductor de tren",
+            "name2":"P",
+            "actividad3": "Ser oficinista",
+            "name3":"Q"
+        },
+        {
+            "actividad1":"Hacer trabajos de oficina",
+            "name1":"R",
+            "actividad2": "Enseñar literatura",
+            "name2":"S",
+            "actividad3": "Vender objetos de arte",
+            "name3":"T"
+        },
+        {
+            "actividad1":"Estudiar contabilidad",
+            "name1":"U",
+            "actividad2": "Estudiar métodos en irrigación",
+            "name2":"V",
+            "actividad3": "Aprender a digitar textos",
+            "name3":"W"
+        },
+        {
+            "actividad1":"Repartir el correo",
+            "name1":"X",
+            "actividad2": "Trabajar en el aseo público",
+            "name2":"Y",
+            "actividad3": "Clasificar correo en una oficina postal",
+            "name3":"Z"
+        },
+        {
+            "actividad1": "Ser poeta",
+            "name1":"a", 
+            "actividad2": "Ser artista",
+            "name2":"b", 
+            "actividad3": "Trabajar en la asistencia social",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Resolver rompecabezas numéricos",
+            "name1":"d",
+            "actividad2": "Jugar a las damas",
+            "name2":"e",
+            "actividad3": "Resolver rompecabezas mecánicos",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Fundar un periódico",
+            "name1":"g",
+            "actividad2": "Fundar una escuela de arte",
+            "name2":"h",
+            "actividad3": "Fundar una orquesta",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Tener amigos",
+            "name1":"k",
+            "actividad2": "Tener poder",
+            "name2":"l",
+            "actividad3": "Tener fama",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Ser mecánico",
+            "name1":"n",
+            "actividad2": "Ser arquitecto",
+            "name2":"p",
+            "actividad3": "Ser químico",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Empastar libros",
+            "name1":"r",
+            "actividad2": "Cuidar niños enfermos",
+            "name2":"s",
+            "actividad3": "Digitar cartas en computadora",
+            "name3":"t"
+        }
+    ]
+}
