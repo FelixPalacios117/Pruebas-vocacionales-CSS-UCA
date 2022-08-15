@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 11 de 12",
+    "bloques":[
+        {
+            "actividad1": "Hacer dibujos para revistas",
+            "name1":"a", 
+            "actividad2": "Criar ganado",
+            "name2":"b", 
+            "actividad3": "Cultivar frutos para la venta",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Trabajar como botones en un hotel",
+            "name1":"d",
+            "actividad2": "Servir como mesero en un restaurante",
+            "name2":"e",
+            "actividad3": "Vivir en un sitio aislado atendiendo sus propias necesidades",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Ser guía de excursiones",
+            "name1":"g",
+            "actividad2": "Diseñar equipos para excursionistas",
+            "name2":"h",
+            "actividad3": "Vender equipos para excursionistas",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Vender pólizas de seguros de vida",
+            "name1":"k",
+            "actividad2": "Escribir artículos para una revista",
+            "name2":"l",
+            "actividad3": "Trabajar como jardinero decorador",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Ser considerado como modesto",
+            "name1":"n",
+            "actividad2": "Ser considerado digno de confianza",
+            "name2":"p",
+            "actividad3": "Ser considerado como poco serio",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Enseñar aritmética",
+            "name1":"r",
+            "actividad2": "Adiestrar perros para los ciegos",
+            "name2":"s",
+            "actividad3": "Ser secretario de un científico",
+            "name3":"t"
+        },
+        {
+            "actividad1":"Tomar clases de música moderna",
+            "name1":"u",
+            "actividad2": "Tomar clases de literatura moderna",
+            "name2":"v",
+            "actividad3": "Tomar clases de pintura moderna",
+            "name3":"w"
+        },
+        {
+            "actividad1":"Ser considerado como duro",
+            "name1":"x",
+            "actividad2": "Ser considerado como justo",
+            "name2":"y",
+            "actividad3": "Ser considerado como inteligente",
+            "name3":"z"
+        },
+        {
+            "actividad1": "Ser director de orquesta",
+            "name1":"A",  
+            "actividad2": "Ser gerente de una empresa",
+            "name2":"B",
+            "actividad3": "Ser director de un plan urbano",
+            "name3":"C" 
+        },
+        { 
+            "actividad1": "Cultivar flores",
+            "name1":"D", 
+            "actividad2": "Manejar una fotocopiadora",
+            "name2":"E", 
+            "actividad3": "Llevar la contabilidad",
+            "name3":"F"
+        },
+        { 
+            "actividad1": "Trabajar como guía de turistas",
+            "name1":"G", 
+            "actividad2": "Tallar joyas finas",
+            "name2":"H", 
+            "actividad3": "Arreglar música para orquesta",
+            "name3":"J"
+        },
+        { 
+            "actividad1":"Trabajar como telefonista",
+            "name1":"K", 
+            "actividad2": "Diseñar la portada de un libro",
+            "name2":"L", 
+            "actividad3": "Enseñar juegos a los niños",
+            "name3":"M"
+        },
+        { 
+            "actividad1":"Reparar un artefacto eléctrico",
+            "name1":"N", 
+            "actividad2": "Ayudar a lavar platos",
+            "name2":"P", 
+            "actividad3": "Arreglar un cuarto desordenado",
+            "name3":"Q"
+        },
+        { 
+            "actividad1":"Enseñar la construcción de muebles",
+            "name1":"R", 
+            "actividad2": "Corregir la redacción de un texto",
+            "name2":"S", 
+            "actividad3": "Vender artículos de Japón",
+            "name3":"T"
+        }
+    ]
+}
