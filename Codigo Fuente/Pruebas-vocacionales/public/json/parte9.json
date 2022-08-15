@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 9 de 12",
+    "bloques":[
+        {
+            "actividad1": "Prestar primeros auxilios en un hospital",
+            "name1":"a", 
+            "actividad2": "Vender flores en una floristeria",
+            "name2":"b", 
+            "actividad3": "Trabajar como secretario(a) privado",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Redactar la página financiera en un periódico",
+            "name1":"d",
+            "actividad2": "Cultivar una buena extensión de tierra",
+            "name2":"e",
+            "actividad3": "Negociar inmuebles",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Cuidar a sordomudos en un asilo",
+            "name1":"g",
+            "actividad2": "Dibujar gráficos estadísticos",
+            "name2":"h",
+            "actividad3": "Trabajar como vendedor(a) en un almacén",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Ser escritor",
+            "name1":"k",
+            "actividad2": "Ser autoridad en propaganda",
+            "name2":"l",
+            "actividad3": "Ser religioso misionero",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Trabajar en lo que le agrada con un sueldo alto",
+            "name1":"n",
+            "actividad2": "Trabajar en lo que le agrada con un sueldo bajo",
+            "name2":"p",
+            "actividad3": "Trabajar en algo que no le agrada con un sueldo alto",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Enseñar a la gente pobre nociones de higiene",
+            "name1":"r",
+            "actividad2": "Escribir artículos sobre temas de actualidad",
+            "name2":"s",
+            "actividad3": "Vender objetos de arte",
+            "name3":"t"
+        },
+        {
+            "actividad1":"Ser secretario(a) de un insigne lider político",
+            "name1":"u",
+            "actividad2": "Enseñar a los niños pintura y modelado",
+            "name2":"v",
+            "actividad3": "Escribir artículos para una revista de arte",
+            "name3":"w"
+        },
+        {
+            "actividad1":"Escoger su ropa siguiendo sus propios gustos",
+            "name1":"x",
+            "actividad2": "Oír consejos en la escogencia de su ropa",
+            "name2":"y",
+            "actividad3": "Dejar que otras personas la escoja para usted",
+            "name3":"z"
+        },
+        {
+            "actividad1": "Diseñar proyectos para la construcción de puentes",
+            "name1":"A",  
+            "actividad2": "Trabajar en algo que requiere intenso cáñculo mental",
+            "name2":"B",
+            "actividad3": "Tener a su cargo la correspondencia de una oficina",
+            "name3":"C" 
+        },
+        { 
+            "actividad1": "Dirigir la producción de tarjetas de Navidad",
+            "name1":"D", 
+            "actividad2": "Calcular el costo de producción de estas tarjetas",
+            "name2":"E", 
+            "actividad3": "Diseñar tarjetas de Navidad",
+            "name3":"F"
+        },
+        { 
+            "actividad1": "Examinar una cerradura dañada para ver cómo se arregla",
+            "name1":"G", 
+            "actividad2": "Corregir una prueba tipográfica",
+            "name2":"H", 
+            "actividad3": "Sumar una columna de cifras",
+            "name3":"J"
+        },
+        { 
+            "actividad1":"Tener entre sus amistades a una persona que siempre le hace bromas a Ud.",
+            "name1":"K", 
+            "actividad2": "Hacer bromas a los otros",
+            "name2":"L", 
+            "actividad3": "No hacer bromas a nadie",
+            "name3":"M"
+        },
+        { 
+            "actividad1":"Ser psicólogo profesional",
+            "name1":"N", 
+            "actividad2": "Dirigir la construcción de puentes",
+            "name2":"P", 
+            "actividad3": "Ser arquitecto urbanista",
+            "name3":"Q"
+        },
+        { 
+            "actividad1":"Investigar las causas de las enfermedades mentales",
+            "name1":"R", 
+            "actividad2": "Estudiar música",
+            "name2":"S", 
+            "actividad3": "Estudiar dibujo técnico",
+            "name3":"T"
+        }
+    ]
+}
