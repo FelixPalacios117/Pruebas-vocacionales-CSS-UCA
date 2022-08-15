@@ -17,7 +17,9 @@ Route::get('/instrucciones','QuizController@instrucciones')->middleware('checkqu
 Route::get('/parte1','QuizOneController@primera')->middleware('checkquiz');
 Route::get('/parte2','QuizTwoController@segunda')->middleware('checkquiz');
 Route::get('/parte3','QuizThreeController@tercera')->middleware('checkquiz');
-Route::post('/savePartOne','QuizOneController@store');
+Route::get('/parte7','QuizSevenController@septima')->middleware('checkquiz');
 Route::get('/continuar','QuizController@load');
+Route::post('/savePartOne','QuizOneController@store');
 Route::post('/savePartTwo','QuizTwoController@store');
+Route::post('/savePartSeven','QuizSevenController@store');
 Route::post('continuarPrueba','QuizController@continuarPrueba');
