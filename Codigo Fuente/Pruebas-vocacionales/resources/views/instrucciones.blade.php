@@ -6,7 +6,7 @@
     <div class="container margen">
         <div class="row">
             <div class="col-12 text-light pt-5 pb-3">
-                <h1 class="text-center">Instrucciones generales</h1>
+                <h1 class="text-center">Instrucciones generales </h1>
             </div>
         </div>
         <div class="row">
