@@ -26,3 +26,4 @@ Route::post('/savePartThree','QuizThreeController@store');
 Route::post('/savePartSeven','QuizSevenController@store');
 Route::post('/savePartEight','QuizEightController@store');
 Route::post('continuarPrueba','QuizController@continuarPrueba');
+Route::get('/parte4','QuizFourController@cuarta')->middleware('checkquiz');

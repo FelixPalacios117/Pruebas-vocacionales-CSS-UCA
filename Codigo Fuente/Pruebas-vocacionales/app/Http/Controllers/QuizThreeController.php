@@ -10,8 +10,7 @@ class QuizThreeController extends Controller
 {
     //
     public function store(Request $request)
-    { 
-        dd($request);
+    {  
         $this->validate($request, [
             'a' => 'required|different:c|different:b',
             'b' => 'required|different:a|different:c',
@@ -75,7 +74,7 @@ class QuizThreeController extends Controller
         //se preparan los campos de la respuesta que se envia
         $respuesta = new Respuesta;
         $respuesta->id_prueba = session('id_prueba');
-        $respuesta->parte = 1;
+        $respuesta->parte = 3;
         $respuesta->bloque_uno = $bloque_uno;
         $respuesta->bloque_dos = $bloque_dos;
         $respuesta->bloque_tres = $bloque_tres;
