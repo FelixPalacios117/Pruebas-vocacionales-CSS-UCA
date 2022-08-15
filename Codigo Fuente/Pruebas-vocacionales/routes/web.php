@@ -13,9 +13,11 @@
 
 Route::get('/','QuizController@index');
 Route::post('/crearPrueba','QuizController@iniciarPrueba');
-Route::get('/instrucciones','QuizController@instrucciones');
-Route::get('/parte1','QuizOneController@primera');
-Route::get('/parte2','QuizTwoController@segunda');
-Route::get('/parte3','QuizThreeController@tercera');
+Route::get('/instrucciones','QuizController@instrucciones')->middleware('checkquiz');
+Route::get('/parte1','QuizOneController@primera')->middleware('checkquiz');
+Route::get('/parte2','QuizTwoController@segunda')->middleware('checkquiz');
+Route::get('/parte3','QuizThreeController@tercera')->middleware('checkquiz');
 Route::post('/savePartOne','QuizOneController@store');
+Route::get('/continuar','QuizController@load');
 Route::post('/savePartTwo','QuizTwoController@store');
+Route::post('continuarPrueba','QuizController@continuarPrueba');
