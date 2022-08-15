@@ -28,7 +28,7 @@
                     </div>
                 @endif
 
-                <form method="POST" action={{ url('savePartTwo') }}>
+                <form method="POST" action={{ url('savePartEight') }}>
                     {{ csrf_field() }}
                     <div class="row justify-content-center mt-5 mb-5">
                         @foreach ($preguntas_ocho->bloques as $preguntas)

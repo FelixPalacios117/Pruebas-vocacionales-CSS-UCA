@@ -185,6 +185,11 @@ class QuizSevenController extends Controller
         } else {
             $respuesta->save();
         }
-        return redirect('/parte8');
+        if($request->btnAnterior){ 
+            return redirect('/parte6');
+        }
+        if($request->btnSiguiente){
+            return redirect('/parte8');
+        }
     }
 }
