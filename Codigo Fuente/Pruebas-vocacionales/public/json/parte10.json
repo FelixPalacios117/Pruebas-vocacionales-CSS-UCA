@@ -1,0 +1,117 @@
+{
+    "parte":"Parte 10 de 12",
+    "bloques":[
+        {
+            "actividad1": "Trabajar como chofer de taxi",
+            "name1":"A", 
+            "actividad2": "Trabajar como vigilante en un faro marítimo",
+            "name2":"B", 
+            "actividad3": "Trabajar como guardián de un paso ferroviario",
+            "name3":"C" 
+        },
+        {
+            "actividad1": "Redactar avisos de propaganda",
+            "name1":"D",
+            "actividad2": "Dirigir una biblioteca pública",
+            "name2":"E",
+            "actividad3": "Editar un periódico",
+            "name3":"F"
+        },
+        {
+            "actividad1": "Tomar clases de contabilidad de costos",
+            "name1":"G",
+            "actividad2": "Tomar clases sobre el arte de vender",
+            "name2":"H",
+            "actividad3": "Tomar clases de correspondencia comercial",
+            "name3":"J"
+        },
+        {
+            "actividad1":"Escribir una obra teatral",
+            "name1":"K",
+            "actividad2": "Vender las boletas para una función teatral",
+            "name2":"L",
+            "actividad3": "Manejar los fondos de una función teatral",
+            "name3":"M"
+        },
+        {
+            "actividad1":"Hacer caricaturas de personajes célebres",
+            "name1":"N",
+            "actividad2": "Pintar retratos de personajes célebres",
+            "name2":"P",
+            "actividad3": "Pintar paisajes",
+            "name3":"Q"
+        },
+        {
+            "actividad1":"Dibujar ilustraciones para revistas",
+            "name1":"R",
+            "actividad2": "Escribir artículos para revistas",
+            "name2":"S",
+            "actividad3": "Ser agente distribuidor de una revista",
+            "name3":"T"
+        },
+        {
+            "actividad1":"Pasar vacaciones en un elegante sitio de verano",
+            "name1":"U",
+            "actividad2": "Pasarlas acampando fuera de la ciudad",
+            "name2":"V",
+            "actividad3": "Pasarlas viajando por caminos apartados",
+            "name3":"W"
+        },
+        {
+            "actividad1":"Vivir con un famoso crítico literario",
+            "name1":"X",
+            "actividad2": "Vivir con un político destacado",
+            "name2":"Y",
+            "actividad3": "Vivir con un artista célebre",
+            "name3":"Z"
+        },
+        {
+            "actividad1": "Escribir artículos sobre pasatiempos",
+            "name1":"a", 
+            "actividad2": "Elaborar cuadros estadísticos sobre costos de vida",
+            "name2":"b", 
+            "actividad3": "Reparar y arreglar muebles viejos",
+            "name3":"c" 
+        },
+        {
+            "actividad1": "Revisar el texto de libros para niños",
+            "name1":"d",
+            "actividad2": "Contar cuentos a los niños",
+            "name2":"e",
+            "actividad3": "Confeccionar juguetes para niños",
+            "name3":"f"
+        },
+        {
+            "actividad1": "Tomar clases de educación física",
+            "name1":"g",
+            "actividad2": "Tomar clases de trabajos manuales",
+            "name2":"h",
+            "actividad3": "Tomar clases de matemáticas",
+            "name3":"j"
+        },
+        {
+            "actividad1":"Ser profesor de música",
+            "name1":"k",
+            "actividad2": "Ser maestro de escuela",
+            "name2":"l",
+            "actividad3": "Ser dentista",
+            "name3":"m"
+        },
+        {
+            "actividad1":"Tomar notas en un tribunal",
+            "name1":"n",
+            "actividad2": "Ser empresario de un célebre pianista",
+            "name2":"p",
+            "actividad3": "Ser consejero vocacional",
+            "name3":"q"
+        },
+        {
+            "actividad1":"Visitar un museo de ciencias naturales",
+            "name1":"r",
+            "actividad2": "Visitar una fábrica de aviones",
+            "name2":"s",
+            "actividad3": "Visitar los barrios bajos de una ciudad",
+            "name3":"t"
+        }
+    ]
+}
