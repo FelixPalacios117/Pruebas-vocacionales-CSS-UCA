@@ -22,6 +22,7 @@ Route::get('/parte9','QuizNineController@novena')->middleware('checkquiz');
 Route::get('/parte10','QuizTenController@decima')->middleware('checkquiz');
 Route::get('/parte11','QuizElevenController@onceava')->middleware('checkquiz');
 Route::get('/parte12','QuizTwelveController@doceava')->middleware('checkquiz');
+Route::get('/finalizar','QuizController@finalPrueba')->middleware('checkquiz');
 Route::get('/continuar','QuizController@load');
 Route::post('/crearPrueba','QuizController@iniciarPrueba');
 Route::post('/savePartOne','QuizOneController@store');
