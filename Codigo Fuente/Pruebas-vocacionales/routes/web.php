@@ -12,7 +12,6 @@
 */
 
 Route::get('/','QuizController@index');
-Route::post('/crearPrueba','QuizController@iniciarPrueba');
 Route::get('/instrucciones','QuizController@instrucciones')->middleware('checkquiz');
 Route::get('/parte1','QuizOneController@primera')->middleware('checkquiz');
 Route::get('/parte2','QuizTwoController@segunda')->middleware('checkquiz');
@@ -22,7 +21,9 @@ Route::get('/parte8','QuizEightController@octava')->middleware('checkquiz');
 Route::get('/parte9','QuizNineController@novena')->middleware('checkquiz');
 Route::get('/parte10','QuizTenController@decima')->middleware('checkquiz');
 Route::get('/parte11','QuizElevenController@onceava')->middleware('checkquiz');
+Route::get('/parte12','QuizTwelveController@doceava')->middleware('checkquiz');
 Route::get('/continuar','QuizController@load');
+Route::post('/crearPrueba','QuizController@iniciarPrueba');
 Route::post('/savePartOne','QuizOneController@store');
 Route::post('/savePartTwo','QuizTwoController@store');
 Route::post('/savePartThree','QuizThreeController@store');
@@ -31,5 +32,6 @@ Route::post('/savePartEight','QuizEightController@store');
 Route::post('/savePartNine','QuizNineController@store');
 Route::post('/savePartTen','QuizTenController@store');
 Route::post('/savePartEleven','QuizElevenController@store');
+Route::post('savePartTwelve','QuizTwelveController@store');
 Route::post('continuarPrueba','QuizController@continuarPrueba');
 Route::get('/parte4','QuizFourController@cuarta')->middleware('checkquiz');
