@@ -117,7 +117,12 @@ class QuizEightController extends Controller
         } else {
             $respuesta->save();
         }
-        return redirect('/parte9');
+        if($request->btnAnterior){ 
+            return redirect('/parte7');
+        }
+        if($request->btnSiguiente){
+            return redirect('/parte9');
+        }
     }
     public function octava()
     {
