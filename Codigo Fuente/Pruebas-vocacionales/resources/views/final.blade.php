@@ -35,6 +35,12 @@
                                     </h5>
                                 </div>
                             </div>
+                            <div class="row justify-content-center mb-5">
+                                <a href="/" type="button"
+                                    class="btn col-5 col-lg-5 col-10 col-sm-10 text-light btn-lg btn-info boton ">
+                                <h4>Volver al inicio</h4>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
