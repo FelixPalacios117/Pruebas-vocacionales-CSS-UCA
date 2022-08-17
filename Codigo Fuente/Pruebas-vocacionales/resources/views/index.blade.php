@@ -106,8 +106,9 @@
                             <input type="text" class="form-control" placeholder="Lugar de estudio" aria-label="lugar"
                                 aria-describedby="lugar" name="lugar" required value={{ old('lugar') }}>
                         </div>
-                        <div class="mb-4 col-8 text-center"> 
+                        <div class="mb-4 col-8 justify-center d-flex align-items-center text-center row"> 
                             <a class="text-light" href="/continuar"><h4>¿Tienes una prueba que no finalizaste?<br><strong>¡ Continúala aquí !</strong></h4></a>
+                            <a class="text-light col-4" href="/login"><h4>Iniciar sesión</h4></a>
                         </div>
                     </div>
                     <div class="row justify-content-center mb-4">
