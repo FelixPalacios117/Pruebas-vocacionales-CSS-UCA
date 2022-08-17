@@ -3,7 +3,7 @@
 @section('navbar')
     @include('layouts.navbar')
 @section('body')
-    <div class="container margen">
+    <div class="container margen d-flex justify-content-center align-items-center">
         <div class="row margen">
             <div class="container login mt-5 margen">
                 <form method="POST" action="{{ route('login') }}">
@@ -48,12 +48,12 @@
                                 <input type="password" class="form-control" placeholder="Contraseña" aria-label="password"
                                 aria-describedby="password" name="password" required value={{ old('password') }}>
                             </div>
-                    </div>
-                    <div class="row justify-content-center mb-4">
-                        <button type="submit"
-                            class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton ">
-                            <h4>Iniciar sesión</h4></a>
-                    </div>
+                            <div class="col-6 col-lg-6 col-8 col-sm-8 mb-2">
+                                <button type="submit"
+                                class="btn  text-light btn-lg btn-info boton btn-block">
+                                <h4>Iniciar sesión</h4></button>
+                            </div> 
+                    </div>  
                 </form>
             </div>
         </div>

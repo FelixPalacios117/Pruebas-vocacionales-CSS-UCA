@@ -106,15 +106,24 @@
                             <input type="text" class="form-control" placeholder="Lugar de estudio" aria-label="lugar"
                                 aria-describedby="lugar" name="lugar" required value={{ old('lugar') }}>
                         </div>
-                        <div class="mb-4 col-8 justify-center d-flex align-items-center text-center row"> 
-                            <a class="text-light" href="/continuar"><h4>¿Tienes una prueba que no finalizaste?<br><strong>¡ Continúala aquí !</strong></h4></a>
-                            <a class="text-light col-4" href="/login"><h4>Iniciar sesión</h4></a>
+                    </div>
+                    <div class="row justify-content-center mb-4">
+                        <button type="submit" class="btn col-4 col-lg-4 col-6 col-sm-6 text-light btn-lg btn-info boton ">
+                            <h4>Registrarme</h4>
+                        </button>
+                    </div>
+                    <div class="row justify-center d-flex align-items-center text-center justify-content-center">
+                        <div class="mb-4 col-8 ">
+                            <a class="text-light" href="/continuar">
+                                <h4>¿Tienes una prueba que no finalizaste?<br><strong>¡ Continúala aquí !</strong></h4>
+                            </a>
                         </div>
                     </div>
                     <div class="row justify-content-center mb-4">
-                        <button type="submit"
-                            class="btn col-2 col-lg-2 col-6 col-sm-6 text-light btn-lg btn-info boton ">
-                            <h4>Registrarme</h4></a>
+                        <a href="/login"
+                            class="btn col-4 col-lg-4 col-6 col-sm-6 text-light btn-lg btn-secondary boton-regresar ">
+                            <h4>Iniciar sesión</h4>
+                        </a>
                     </div>
                 </form>
             </div>
