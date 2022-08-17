@@ -68,4 +68,8 @@ class QuizController extends Controller
         session(['id_prueba' => $id_prueba]);
         return redirect('/instrucciones');
     }
+    public function finalPrueba()
+    {
+        return view('final');
+    }
 }
