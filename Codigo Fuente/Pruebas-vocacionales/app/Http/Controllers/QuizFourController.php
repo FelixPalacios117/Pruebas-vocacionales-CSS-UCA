@@ -4,9 +4,128 @@ namespace Pruebas\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Pruebas\Respuesta;
 
 class QuizFourController extends Controller
 {
+    //
+    public function store(Request $request){
+        $this->validate($request, [
+            'A'=>'required|different:B|different:C',
+            'B'=>'required|different:A|different:C',
+            'C'=>'required|different:A|different:B',
+            'D'=>'required|different:E|different:F',
+            'E'=>'required|different:F|different:D',
+            'F'=>'required|different:E|different:D',
+            'G'=>'required|different:J|different:H',
+            'H'=>'required|different:G|different:J',
+            'J'=>'required|different:H|different:G',
+            'K'=>'required|different:L|different:M',
+            'L'=>'required|different:M|different:K',
+            'M'=>'required|different:K|different:L',
+            'N'=>'required|different:P|different:Q',
+            'P'=>'required|different:Q|different:N',
+            'Q'=>'required|different:P|different:N',
+            'R'=>'required|different:S|different:T',
+            'S'=>'required|different:T|different:R',
+            'T'=>'required|different:S|different:R',
+            'U'=>'required|different:V|different:W',
+            'V'=>'required|different:W|different:U',
+            'W'=>'required|different:V|different:U',
+            'X'=>'required|different:Y|different:Z',
+            'Y'=>'required|different:Z|different:X',
+            'Z'=>'required|different:Y|different:X',
+            'a'=>'required|different:b|different:c',
+            'b'=>'required|different:c|different:a',
+            'c'=>'required|different:a|different:b',
+            'd'=>'required|different:e|different:f',
+            'e'=>'required|different:f|different:d',
+            'f'=>'required|different:d|different:e',
+            'g'=>'required|different:h|different:j',
+            'h'=>'required|different:j|different:g',
+            'j'=>'required|different:g|different:h',
+            'k'=>'required|different:l|different:m',
+            'l'=>'required|different:m|different:k',
+            'm'=>'required|different:l|different:k',
+            'n'=>'required|different:p|different:q',
+            'p'=>'required|different:n|different:q',
+            'q'=>'required|different:n|different:p',
+            'r'=>'required|different:t|different:s',
+            's'=>'required|different:r|different:t',
+            't'=>'required|different:s|different:r',
+        ]);
+        //se construyen cada bloque de respuestas
+
+        $bloque_uno=$request->A.$request->B.$request->C;
+        $bloque_dos=$request->D.$request->E.$request->F;
+        $bloque_tres=$request->G.$request->H.$request->J;
+        $bloque_cuatro=$request->K.$request->L.$request->M;
+        $bloque_cinco=$request->N.$request->P.$request->Q;
+        $bloque_seis=$request->R.$request->S.$request->T;
+        $bloque_siete=$request->U.$request->V.$request->W;
+        $bloque_ocho=$request->X.$request->Y.$request->Z;
+        $bloque_nueve=$request->a.$request->b.$request->c;
+        $bloque_diez=$request->d.$request->e.$request->f;
+        $bloque_once=$request->g.$request->h.$request->j;
+        $bloque_doce=$request->k.$request->l.$request->m;
+        $bloque_trece=$request->n.$request->p.$request->q;
+        $bloque_catorce=$request->r.$request->s.$request->t;
+
+        //respuesta enviada
+        $respuesta=new Respuesta;
+        $respuesta->id_prueba = session('id_prueba');
+        $respuesta->parte = 4;
+        $respuesta->bloque_uno = $bloque_uno;
+        $respuesta->bloque_dos = $bloque_dos;
+        $respuesta->bloque_tres = $bloque_tres;
+        $respuesta->bloque_cuatro = $bloque_cuatro;
+        $respuesta->bloque_cinco = $bloque_cinco;
+        $respuesta->bloque_seis = $bloque_seis;
+        $respuesta->bloque_siete = $bloque_siete;
+        $respuesta->bloque_ocho = $bloque_ocho;
+        $respuesta->bloque_nueve = $bloque_nueve;
+        $respuesta->bloque_diez = $bloque_diez;
+        $respuesta->bloque_once = $bloque_once;
+        $respuesta->bloque_doce = $bloque_doce;
+        $respuesta->bloque_trece = $bloque_trece;
+        $respuesta->bloque_catorce = $bloque_catorce;
+        $encontrado = DB::table('respuestas')->where([
+            'id_prueba' => session('id_prueba'),
+            'parte' => 4
+        ])->first();
+        if ($encontrado) {
+            Respuesta::where([
+                'id_prueba' => session('id_prueba'),
+                'parte' => 4
+            ])->update(
+                [
+                    'bloque_uno' => $bloque_uno,
+                    'bloque_dos' => $bloque_dos,
+                    'bloque_tres' => $bloque_tres,
+                    'bloque_cuatro' => $bloque_cuatro,
+                    'bloque_cinco' => $bloque_cinco,
+                    'bloque_seis' => $bloque_seis,
+                    'bloque_siete' => $bloque_siete,
+                    'bloque_ocho' => $bloque_ocho,
+                    'bloque_nueve' => $bloque_nueve,
+                    'bloque_diez' => $bloque_diez,
+                    'bloque_once' => $bloque_once,
+                    'bloque_doce' => $bloque_doce,
+                    'bloque_trece' => $bloque_trece,
+                    'bloque_catorce' => $bloque_catorce,
+                ]
+            );
+        } else {
+            $respuesta->save();
+        }
+        if($request->btnAnterior){ 
+            return redirect('/parte3');
+        }
+        if($request->btnSiguiente){
+            return redirect('/parte5');
+        }
+    }
+
     //
     public function cuarta()
     {

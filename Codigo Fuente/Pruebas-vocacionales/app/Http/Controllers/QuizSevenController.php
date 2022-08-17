@@ -141,7 +141,7 @@ class QuizSevenController extends Controller
         //se preparan los campos de la respuesta que se envia
         $respuesta = new Respuesta;
         $respuesta->id_prueba = session('id_prueba');
-        $respuesta->parte = 1;
+        $respuesta->parte = 7;
         $respuesta->bloque_uno = $bloque_uno;
         $respuesta->bloque_dos = $bloque_dos;
         $respuesta->bloque_tres = $bloque_tres;

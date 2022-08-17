@@ -73,7 +73,7 @@ class QuizEightController extends Controller
         //respuesta enviada
         $respuesta=new Respuesta;
         $respuesta->id_prueba = session('id_prueba');
-        $respuesta->parte = 2;
+        $respuesta->parte = 8;
         $respuesta->bloque_uno = $bloque_uno;
         $respuesta->bloque_dos = $bloque_dos;
         $respuesta->bloque_tres = $bloque_tres;
