@@ -1,6 +1,8 @@
-@extends('layouts.app')
-
-@section('content')
+@extends('layouts.container')
+@section('titulo', 'Pruebas vocacionales')
+@section('navbar')
+    @include('layouts.admin_navbar')
+@section('body')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -21,3 +23,5 @@
     </div>
 </div>
 @endsection
+@section('footer')
+    @include('layouts.footer')
