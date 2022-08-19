@@ -23,7 +23,7 @@ Route::get('/parte9','QuizNineController@novena')->middleware('checkquiz');
 Route::get('/parte10','QuizTenController@decima')->middleware('checkquiz');
 Route::get('/parte11','QuizElevenController@onceava')->middleware('checkquiz');
 Route::get('/parte12','QuizTwelveController@doceava')->middleware('checkquiz');
-Route::get('/finalizar','QuizController@finalPrueba')->middleware('checkquiz');
+Route::get('/finalizar','QuizController@finalPrueba')->middleware('complete');
 Route::get('/continuar','QuizController@load');
 Route::post('/crearPrueba','QuizController@iniciarPrueba');
 Route::post('/savePartOne','QuizOneController@store');
@@ -44,5 +44,5 @@ Route::post('/savePartTwelve','QuizTwelveController@store');
 Route::post('/continuarPrueba','QuizController@continuarPrueba');
 
 Auth::routes();
-
+Route::get('/resultados','ResultsController@index');
 Route::get('/home', 'HomeController@index')->name('home'); 

@@ -15,6 +15,7 @@ class QuizController extends Controller
         if (session('id_prueba')) {
             return back()->withInput()->withErrors('No puedes regresar al formulario de inicio, ya tienes una prueba en curso');
         } else {
+            session()->forget('completa');
             return view('index');
         }
     }
@@ -25,7 +26,10 @@ class QuizController extends Controller
         $this->validate($request, [ 
             'correo' => 'required|email'
         ]);
-        $id_prueba = DB::table('pruebas')->where('correo', $request->correo)->value('id'); 
+        $id_prueba = DB::table('pruebas')->where([
+            'correo'=>$request->correo,
+            'finalizado'=>false
+        ])->value('id'); 
         if($id_prueba){
             session(['id_prueba' => $id_prueba]);
             return redirect('/instrucciones');

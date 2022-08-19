@@ -39,6 +39,9 @@ body{
     width: 100% !important;
     margin-top: 3.5rem !important;  
 } 
+.points{
+  background-color:#E3E4E5 ;  
+}
 .card-texto{
     font-size: 22px !important; 
 }

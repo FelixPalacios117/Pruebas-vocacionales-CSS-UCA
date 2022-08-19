@@ -12,10 +12,11 @@ class CheckQuiz
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
      * @return mixed
-     */
+     */ 
     public function handle($request, Closure $next)
     {
         if (!session('id_prueba')) {
+            session()->forget('completa');
             return redirect('/')->withErrors('Debes ingresar toda tu información para iniciar una prueba o tu 
             correo previamente registrado para continuar
             una prueba que ya habias iniciado.');

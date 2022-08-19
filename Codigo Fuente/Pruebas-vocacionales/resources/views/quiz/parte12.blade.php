@@ -17,12 +17,19 @@
                             <div class="alert alert-danger">
                                 <h2 class="text-center"> El formulario contiene errores</h2>
                                 <ul>
+                                    @if($errors->has('parts'))
+                                    <li>
+                                        <h4>{{$errors->first()}}
+                                        </h4>
+                                    </li>
+                                    @else
                                     <li>
                                         <h4>Recuerda que por cada bloque de tres actividades debes seleccionar solamente una
                                             que te gusta más, una que te gusta menos
                                             y una que te es indiferente.
                                         </h4>
                                     </li>
+                                    @endif  
                                 </ul>
                             </div>
                         </div>
@@ -137,9 +144,9 @@
                             class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
                             <h4>Anterior</h4>
                         </button>
-                        <button type="submit" name="btnSiguiente" value="siguiente"
+                        <button type="submit" name="btnFinalizar" value="finalizar"
                             class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
-                            <h4>Siguiente</h4>
+                            <h4>Finalizar</h4>
                         </button>
                     </div>
             </div>
