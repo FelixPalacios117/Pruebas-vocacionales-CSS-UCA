@@ -23,16 +23,39 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $pruebas = DB::table('pruebas')
+        if($request->btnBuscar){
+            $cadena = $request->get('buscador');
+            if($cadena!=""){
+                $pruebas = DB::table('pruebas')
+                    ->select('id','nombre','apellido','genero','correo','telefono','updated_at')
+                    ->where('nombre','LIKE','%'.$cadena.'%')
+                    ->orwhere('apellido','LIKE','%'.$cadena.'%')
+                    ->orwhere('correo','LIKE','%'.$cadena.'%')
+                    ->orderByDesc('updated_at')
+                    ->paginate(2);
+                return view('home', compact('pruebas','cadena'));
+            }
+        }else if($request->btnRefrescar){
+                $pruebas = DB::table('pruebas')
+                ->select('id','nombre','apellido','genero','correo','telefono','updated_at')
+                //->where([
+                //'finalizado' => 1
+                //])
+             ->orderByDesc('updated_at')
+                ->paginate(2);
+            //return view('home', compact('pruebas'));
+            return redirect('/home');
+        } else{
+            $pruebas = DB::table('pruebas')
             ->select('id','nombre','apellido','genero','correo','telefono','updated_at')
-            ->where([
-            'finalizado' => 1
-            ])
+            //->where([
+            //'finalizado' => 1
+            //])
             ->orderByDesc('updated_at')
-            ->paginate(1);
-            //->get();
+            ->paginate(2);
         return view('home', compact('pruebas'));
+        }
     }
 }
