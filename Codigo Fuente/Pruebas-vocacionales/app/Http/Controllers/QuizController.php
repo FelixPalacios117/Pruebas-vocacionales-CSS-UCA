@@ -67,6 +67,7 @@ class QuizController extends Controller
         $prueba->lugar_estudio = $request->lugar;
         $prueba->fecha_nacimiento = $request->fecha;
         $prueba->finalizado=false;
+        $prueba->revisado=false;
         $prueba->save();
         $id_prueba = DB::table('pruebas')->where('correo', $request->correo)->value('id');
         session(['id_prueba' => $id_prueba]);
