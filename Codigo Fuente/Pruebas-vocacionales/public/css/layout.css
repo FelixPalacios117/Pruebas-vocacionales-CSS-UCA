@@ -32,6 +32,13 @@ body{
     margin-top: 5.4rem;
     margin-bottom: 8rem;
 }
+.margenresultados{
+    margin-top: 5.4rem;
+    margin-bottom:6.4rem;
+}
+.margenFinal{
+    margin-bottom:8.6rem;
+}
 .footer{ 
     position: absolute !important;
     background-color: #2E3440 !important;
@@ -41,6 +48,9 @@ body{
 } 
 .points{
   background-color:#E3E4E5 ;  
+}
+.resultsdiv{
+    background-color: #2E3440;
 }
 .card-texto{
     font-size: 22px !important; 
