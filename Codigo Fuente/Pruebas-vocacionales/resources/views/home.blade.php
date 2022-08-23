@@ -66,7 +66,8 @@
                     </thead>
                     <tbody>
                         @foreach($pruebas as $prueba)
-                        <form method="GET" action="/resultados"">
+                        <form method="POST" action={{ "/resultados/$prueba->id" }}>
+                        {{ csrf_field() }}
                             <tr>
                                 <td class="align-middle">
                                     <h3 class="align-middle">
@@ -99,7 +100,7 @@
                                     @endif
                                 </td>
                                 <td class="align-middle">
-                                    <button type="submit" name="btnResultados" value="{{$prueba->id}}"
+                                    <button type="submit" value="{{$prueba->id}}"
                                         class="btn text-light btn-sm btn-info boton mx-lg-2">
                                         <h7>Ver resultados</h7>
                                     </button>

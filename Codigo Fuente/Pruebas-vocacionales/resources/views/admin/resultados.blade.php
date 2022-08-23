@@ -1,7 +1,7 @@
 @extends('layouts.container')
 @section('titulo', 'Pruebas vocacionales')
 @section('navbar')
-    @include('layouts.navbar')
+    @include('layouts.admin_navbar')
 @section('body')
     <div class="container margenresultados">
         <div class="row pt-4">

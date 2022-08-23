@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\DB;
 class ResultsController extends Controller
 {
     //
-    public function index()
+    public function index($id)
     {
         $respuestas = DB::table("respuestas")
             ->join('pruebas', 'pruebas.id', '=', 'respuestas.id_prueba')->select('respuestas.*', 'pruebas.id')->where([
-                "id_prueba" => 1,
+                "id_prueba" => $id,
                 "pruebas.finalizado" => true
             ])->orderBy('respuestas.parte', 'Desc')->get();
         $actividades = array(
