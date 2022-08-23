@@ -11,26 +11,45 @@
         </div>
         <div class="row">
             <div class="container-fluid login mt-5 margen mx-5 table-responsive">
+                <div class="row">
                 <form method="GET" action="{{route('home')}}">
-                    <div class="input-group input-group-sm mt-2 col-6">
+                    <div class="input-group input-group-sm mt-2">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="buscador">
                                 <i class="bi bi-search"></i>
                             </span>
                         </div>
-                        <input type="text" class="form-control col-lg-4" placeholder="Buscar" aria-label="buscador"
+                        <input type="text" required class="form-control col-lg-4" placeholder="Buscar" aria-label="buscador"
                             aria-describedby="buscador" name="buscador">
                         </input>
                         <button type="submit" name="btnBuscar" value="Buscar"
-                            class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-sm btn-info boton mx-2">
+                            class="btn col-3 col-lg-4 col-sm-2 text-light btn-sm btn-info boton mx-2">
                             <h7>Buscar</h7>
                         </button>
+                    </div>
+                </form>
+                <form method="GET" action="{{route('home')}}">
+                    <div class="input-group input-group-sm mt-2">
+                        <select class="custom-select" id="filtro" name="filtro" required>
+                                <option value="">Seleccionar filtro</option>
+                                <option value="1">Revisado</option>
+                                <option value="0">Sin revisar</option>
+                        </select>
+                        <button type="submit" name="btnFiltrar" value="Filtrar"
+                            class="btn col-3 col-lg-3 col-sm-2 text-light btn-sm btn-info boton mx-2">
+                            <h7>Filtrar</h7>
+                        </button>
+                    </div>
+                </form>
+                <form method="GET" action="{{route('home')}}">
+                    <div class="input-group input-group-sm mt-2">
                         <button type="submit" name="btnRefrescar" value="refrescar"
-                            class="text-light btn">
+                            class="text-light btn mt-auto mx-4">
                             <i class="bi bi-arrow-clockwise"></i>
                         </button>
                     </div>
                 </form>
+                </div>
                 <table class="table text-center text-white">
                     <thead class="thead-dark">
                         <tr>
@@ -46,8 +65,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <form>
-                            @foreach($pruebas as $prueba)
+                        @foreach($pruebas as $prueba)
+                        <form method="GET" action="/resultados"">
                             <tr>
                                 <td class="align-middle">
                                     <h3 class="align-middle">
@@ -73,7 +92,14 @@
                                     {{ $prueba->telefono }}
                                 </td>
                                 <td class="align-middle">
-                                    <button type="submit" name="btnResultados" value="resultados"
+                                    @if($prueba->revisado)
+                                    Revisado
+                                    @else
+                                    Sin revisar
+                                    @endif
+                                </td>
+                                <td class="align-middle">
+                                    <button type="submit" name="btnResultados" value="{{$prueba->id}}"
                                         class="btn text-light btn-sm btn-info boton mx-lg-2">
                                         <h7>Ver resultados</h7>
                                     </button>
@@ -83,8 +109,8 @@
                                     </button>
                                 </td>
                             </tr>
-                            @endforeach
                         </form>
+                        @endforeach
                     </tbody>
                     <tfoot>
                         <tr>

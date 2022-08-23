@@ -29,33 +29,52 @@ class HomeController extends Controller
             $cadena = $request->get('buscador');
             if($cadena!=""){
                 $pruebas = DB::table('pruebas')
-                    ->select('id','nombre','apellido','genero','correo','telefono','updated_at')
-                    ->where('nombre','LIKE','%'.$cadena.'%')
-                    ->orwhere('apellido','LIKE','%'.$cadena.'%')
-                    ->orwhere('correo','LIKE','%'.$cadena.'%')
+                    ->select('id','nombre','apellido','genero','correo','telefono','finalizado','revisado','updated_at')
+                    ->where([
+                        ['nombre','LIKE','%'.$cadena.'%'],
+                        ['finalizado','=','1']
+                        ])
+                    ->orwhere([
+                        ['apellido','LIKE','%'.$cadena.'%'],
+                        ['finalizado','=','1']
+                        ])
+                    ->orwhere([
+                        ['correo','LIKE','%'.$cadena.'%'],
+                        ['finalizado','=','1']
+                        ])
                     ->orderByDesc('updated_at')
                     ->paginate(2);
                 return view('home', compact('pruebas','cadena'));
             }
         }else if($request->btnRefrescar){
-                $pruebas = DB::table('pruebas')
+            $pruebas = DB::table('pruebas')
                 ->select('id','nombre','apellido','genero','correo','telefono','updated_at')
-                //->where([
-                //'finalizado' => 1
-                //])
-             ->orderByDesc('updated_at')
+                ->where([
+                    'finalizado' => 1
+                    ])
+                ->orderByDesc('updated_at')
                 ->paginate(2);
-            //return view('home', compact('pruebas'));
             return redirect('/home');
+        } else if($request->btnFiltrar){
+            $filtro = $request->get('filtro');
+            $pruebas = DB::table('pruebas')
+                ->select('id','nombre','apellido','genero','correo','telefono','finalizado','revisado','updated_at')
+                ->where([
+                    ['finalizado','=','1'],
+                    ['revisado','=',$filtro]
+                    ])
+                ->orderByDesc('updated_at')
+                ->paginate(2);
+            return view('home', compact('pruebas'));
         } else{
             $pruebas = DB::table('pruebas')
-            ->select('id','nombre','apellido','genero','correo','telefono','updated_at')
-            //->where([
-            //'finalizado' => 1
-            //])
-            ->orderByDesc('updated_at')
-            ->paginate(2);
-        return view('home', compact('pruebas'));
+                ->select('id','nombre','apellido','genero','correo','telefono','revisado','updated_at')
+                ->where([
+                    'finalizado' => 1
+                ])
+                ->orderByDesc('updated_at')
+                ->paginate(2);
+            return view('home', compact('pruebas'));
         }
     }
 }
