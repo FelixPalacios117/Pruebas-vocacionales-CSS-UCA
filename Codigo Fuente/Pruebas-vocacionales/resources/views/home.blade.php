@@ -20,7 +20,7 @@
                             </span>
                         </div>
                         <input type="text" required class="form-control col-lg-4" placeholder="Buscar" aria-label="buscador"
-                            aria-describedby="buscador" name="buscador">
+                            aria-describedby="buscador" name="buscador" value={{$cadena}}>
                         </input>
                         <button type="submit" name="btnBuscar" value="Buscar"
                             class="btn col-3 col-lg-4 col-sm-2 text-light btn-sm btn-info boton mx-2">
@@ -30,8 +30,8 @@
                 </form>
                 <form method="GET" action="{{route('home')}}">
                     <div class="input-group input-group-sm mt-2">
-                        <select class="custom-select" id="filtro" name="filtro" required>
-                                <option value="">Seleccionar filtro</option>
+                        <select class="custom-select" value={{$filtro}} id="filtro" name="filtro" required>
+                                <option value="" selected disabled>Seleccionar filtro</option>
                                 <option value="1">Revisado</option>
                                 <option value="0">Sin revisar</option>
                         </select>

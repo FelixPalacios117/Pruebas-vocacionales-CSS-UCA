@@ -27,6 +27,7 @@ class HomeController extends Controller
     {
         if($request->btnBuscar){
             $cadena = $request->get('buscador');
+            $filtro = $request->get('filtro');
             if($cadena!=""){
                 $pruebas = DB::table('pruebas')
                     ->select('id','nombre','apellido','genero','correo','telefono','finalizado','revisado','updated_at')
@@ -44,7 +45,13 @@ class HomeController extends Controller
                         ])
                     ->orderByDesc('updated_at')
                     ->paginate(20);
-                return view('home', compact('pruebas','cadena'));
+
+                if($filtro==0){
+                    $filtro = "Sin revisar";
+                }else {
+                    $filtro = "Revisado";
+                }
+                return view('home', compact('pruebas','cadena','filtro'));
             }
         }else if($request->btnRefrescar){
             $pruebas = DB::table('pruebas')
@@ -56,6 +63,7 @@ class HomeController extends Controller
                 ->paginate(20);
             return redirect('/home');
         } else if($request->btnFiltrar){
+            $cadena = $request->get('buscador');
             $filtro = $request->get('filtro');
             $pruebas = DB::table('pruebas')
                 ->select('id','nombre','apellido','genero','correo','telefono','finalizado','revisado','updated_at')
@@ -65,8 +73,16 @@ class HomeController extends Controller
                     ])
                 ->orderByDesc('updated_at')
                 ->paginate(20);
-            return view('home', compact('pruebas'));
+                
+            if($filtro==0){
+                $filtro = "Sin revisar";
+            }else {
+                $filtro = "Revisado";
+            }
+            return view('home', compact('pruebas','cadena','filtro'));
         } else{
+            $cadena = $request->get('buscador');
+            $filtro = $request->get('filtro');
             $pruebas = DB::table('pruebas')
                 ->select('id','nombre','apellido','genero','correo','telefono','revisado','updated_at')
                 ->where([
@@ -74,7 +90,13 @@ class HomeController extends Controller
                 ])
                 ->orderByDesc('updated_at')
                 ->paginate(20);
-            return view('home', compact('pruebas'));
+            
+            if($filtro==0){
+                $filtro = "Sin revisar";
+            }else {
+                $filtro = "Revisado";
+            }
+            return view('home', compact('pruebas','cadena','filtro'));
         }
     }
 }
