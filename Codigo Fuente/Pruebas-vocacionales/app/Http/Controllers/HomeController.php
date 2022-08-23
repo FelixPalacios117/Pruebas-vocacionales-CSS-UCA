@@ -43,7 +43,7 @@ class HomeController extends Controller
                         ['finalizado','=','1']
                         ])
                     ->orderByDesc('updated_at')
-                    ->paginate(2);
+                    ->paginate(20);
                 return view('home', compact('pruebas','cadena'));
             }
         }else if($request->btnRefrescar){
@@ -53,7 +53,7 @@ class HomeController extends Controller
                     'finalizado' => 1
                     ])
                 ->orderByDesc('updated_at')
-                ->paginate(2);
+                ->paginate(20);
             return redirect('/home');
         } else if($request->btnFiltrar){
             $filtro = $request->get('filtro');
@@ -64,7 +64,7 @@ class HomeController extends Controller
                     ['revisado','=',$filtro]
                     ])
                 ->orderByDesc('updated_at')
-                ->paginate(2);
+                ->paginate(20);
             return view('home', compact('pruebas'));
         } else{
             $pruebas = DB::table('pruebas')
@@ -73,7 +73,7 @@ class HomeController extends Controller
                     'finalizado' => 1
                 ])
                 ->orderByDesc('updated_at')
-                ->paginate(2);
+                ->paginate(20);
             return view('home', compact('pruebas'));
         }
     }
