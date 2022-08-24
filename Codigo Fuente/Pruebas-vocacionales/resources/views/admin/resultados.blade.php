@@ -753,6 +753,16 @@
                     </div>
                 </div>
             @endforeach
+            <div class=" w-100 row justify-content-around mb-5">
+                <button  onclick="location.href='{{ url('home') }}'" type="submit" name="btnAnterior" value="anterior"
+                    class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
+                    <h4>Regresar</h4>
+                </button>
+                <button type="submit" name="btnSiguiente" value="siguiente"
+                    class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
+                    <h4>Finalizar revisión</h4>
+                </button>
+            </div>
         </div>
     </div>
 @endsection
