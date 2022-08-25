@@ -10,7 +10,7 @@
                     <thead>
                         <tr class="points text-center">
                             <th colspan="4" scope="col">
-                                <h3>Puntaje de Félix Guevara</h3>
+                                <h3>Puntaje de {{$alumno[0]->nombre}} {{ $alumno[0]->apellido}}</h3>
                             </th>
                         </tr>
                     </thead>
@@ -20,7 +20,7 @@
                                 <h5>V. &nbsp; {{$validez}}</h5>
                             </td>
                             <td>
-                                <h5>0. &nbsp; 34</h5>
+                                <h5>0. &nbsp; {{$cero}}</h5>
                             </td>
                             <td>
                                 <h5>1. &nbsp; 34</h5>

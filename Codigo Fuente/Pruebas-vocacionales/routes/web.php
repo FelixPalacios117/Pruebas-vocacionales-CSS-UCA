@@ -44,5 +44,5 @@ Route::post('/savePartTwelve','QuizTwelveController@store');
 Route::post('/continuarPrueba','QuizController@continuarPrueba');
 
 Auth::routes();
-Route::post('/resultados/{id}','ResultsController@index');
+Route::post('/resultados/{id}','ResultsController@index')->name("resultados");
 Route::get('/home', 'HomeController@index')->name('home'); 

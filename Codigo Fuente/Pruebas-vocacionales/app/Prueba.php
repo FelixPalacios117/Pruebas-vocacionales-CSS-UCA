@@ -12,7 +12,7 @@ class Prueba extends Model
      *
      * @var array
      */
-    protected $fillable=['nombre','apellido',
+    protected $fillable=['id','nombre','apellido',
     'correo','telefono','genero','fecha_nacimiento','lugar_estudio','finalizado'];
 
     public function respuestas(){

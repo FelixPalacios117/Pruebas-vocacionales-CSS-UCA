@@ -4,15 +4,18 @@ namespace Pruebas\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Pruebas\Prueba;
 
 class ResultsController extends Controller
 {
     //
     public function index($id)
     {
+        $prueba=new Prueba;
+        $alumno=DB::table("pruebas")->select('nombre','apellido')->where('id',$id)->get(); 
         $respuestas = DB::table("respuestas")
             ->join('pruebas', 'pruebas.id', '=', 'respuestas.id_prueba')->select('respuestas.*', 'pruebas.id')->where([
-                "id_prueba" => $id,
+                "id_prueba" =>$id,
                 "pruebas.finalizado" => true
             ])->orderBy('respuestas.parte', 'Desc')->get();
         $actividades = array(
@@ -40,11 +43,11 @@ class ResultsController extends Controller
             'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't',
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T'
-        );
-        //Columna 12
+        ); 
         $validez = self::validez($respuestas);
+        $cero=self::cero($respuestas);
         //dd($validez);
-        return view('admin.resultados', compact('respuestas', 'actividades', 'validez'));
+        return view('admin.resultados', compact('respuestas', 'actividades', 'validez','cero','alumno'));
     }
     public function validez($respuestas)//evalua la plantilla de validez se auxilia de la función de casos
     {
@@ -130,6 +133,27 @@ class ResultsController extends Controller
         $validez += self::evaluar(substr($respuestas[11]->bloque_tres, 1, 1), 1);
         $validez += self::evaluar(substr($respuestas[11]->bloque_tres, 2, 1), 3);
         return $validez;
+    }
+    public function cero($respuestas){
+        //Columna 12
+        $cero=self::evaluar(substr($respuestas[0]->bloque_dos,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_dos,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_dos,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_tres,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_tres,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_tres,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_cuatro,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_cuatro,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_cinco,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_cinco,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_cinco,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_siete,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_siete,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[0]->bloque_siete,2,1),1);
+        //Columna 11
+        
+        return $cero;
     }
     public function evaluar($respuesta, $op)
     {
