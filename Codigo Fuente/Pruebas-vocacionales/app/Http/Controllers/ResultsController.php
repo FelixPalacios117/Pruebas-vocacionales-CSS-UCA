@@ -152,7 +152,124 @@ class ResultsController extends Controller
         $cero+=self::evaluar(substr($respuestas[0]->bloque_siete,1,1),2);
         $cero+=self::evaluar(substr($respuestas[0]->bloque_siete,2,1),1);
         //Columna 11
-        
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_uno,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_uno,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_uno,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_dos,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_dos,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_dos,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_tres,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_tres,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_tres,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_cuatro,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[1]->bloque_cuatro,2,1),2);
+        //Columna 10
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_uno,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_uno,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_uno,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_cinco,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_cinco,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_cinco,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_siete,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_siete,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[2]->bloque_siete,2,1),2);
+        //Columna 9
+        $cero+=self::evaluar(substr($respuestas[3]->bloque_dos,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[3]->bloque_dos,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[3]->bloque_dos,2,1),1);
+        //Columna 8
+        $cero+=self::evaluar(substr($respuestas[4]->bloque_uno,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[4]->bloque_uno,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[4]->bloque_uno,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[4]->bloque_siete,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[4]->bloque_siete,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[4]->bloque_siete,2,1),2);
+        //Columna 7
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_uno,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_uno,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_uno,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_dos,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_dos,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_dos,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_cuatro,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[5]->bloque_cuatro,2,1),1);
+        //Columna 6
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_cuatro,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_cuatro,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_cinco,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_cinco,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_cinco,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_seis,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_seis,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[6]->bloque_seis,2,1),1);
+        //Columna 5
+        $cero+=self::evaluar(substr($respuestas[7]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[7]->bloque_cuatro,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[7]->bloque_cuatro,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[7]->bloque_seis,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[7]->bloque_seis,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[7]->bloque_seis,2,1),2);
+        //Columna 4
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_dos,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_dos,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_dos,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_seis,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_seis,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_seis,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_once,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_once,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[8]->bloque_once,2,1),2);
+        //Columna 3
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_dos,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_dos,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_dos,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_tres,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_tres,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_tres,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_cuatro,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_cuatro,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_cinco,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_cinco,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[9]->bloque_cinco,2,1),2);
+        //Columna 2
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_uno,0,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_uno,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_uno,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_dos,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_dos,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_dos,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_tres,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_tres,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_tres,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_cuatro,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_cuatro,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_cinco,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_cinco,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_cinco,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_seis,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_seis,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[10]->bloque_seis,2,1),1);
+        //Columna 1
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_uno,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_uno,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_uno,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_tres,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_tres,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_tres,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_cuatro,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_cuatro,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_cuatro,2,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_seis,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_seis,1,1),2);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_seis,2,1),2);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_ocho,0,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_ocho,1,1),1);
+        $cero+=self::evaluar(substr($respuestas[11]->bloque_ocho,2,1),2);
         return $cero;
     }
     public function evaluar($respuesta, $op)
