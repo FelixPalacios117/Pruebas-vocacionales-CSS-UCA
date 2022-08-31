@@ -37,10 +37,10 @@
                                 <h5>4. &nbsp; 34</h5>
                             </td>
                             <td>
-                                <h5>5. &nbsp; 34</h5>
+                                <h5>5. &nbsp; {{$cinco}}</h5>
                             </td>
                             <td>
-                                <h5>6. &nbsp; 34</h5>
+                                <h5>6. &nbsp; {{$seis}}</h5>
                             </td>
                         </tr>
                         <tr>
