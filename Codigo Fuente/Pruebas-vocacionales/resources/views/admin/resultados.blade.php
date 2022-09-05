@@ -26,7 +26,7 @@
                                 <h5>1. &nbsp; {{$uno}}</h5>
                             </td>
                             <td>
-                                <h5>2. &nbsp; 34</h5>
+                                <h5>2. &nbsp; {{$dos}}</h5>
                             </td>
                         </tr>
                         <tr>
