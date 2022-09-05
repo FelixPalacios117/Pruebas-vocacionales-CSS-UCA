@@ -45,7 +45,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5>7. &nbsp; 34</h5>
+                                <h5>7. &nbsp; {{$siete}}</h5>
                             </td>
                             <td>
                                 <h5>8. &nbsp; 34</h5>
