@@ -66,7 +66,7 @@
                     </thead>
                     <tbody>
                         @foreach($pruebas as $prueba)
-                        <form method="POST" action={{ route("resultados",$prueba->id)}}>
+                        <form method="POST" action="/resultados/{{Crypt::encrypt($prueba->id)}}" >
                         {{ csrf_field() }}
                             <tr>
                                 <td class="align-middle">

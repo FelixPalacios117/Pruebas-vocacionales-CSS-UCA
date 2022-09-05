@@ -4,6 +4,7 @@ namespace Pruebas\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Crypt;
 use Pruebas\Prueba;
 
 class ResultsController extends Controller
@@ -12,10 +13,10 @@ class ResultsController extends Controller
     public function index($id)
     {
         $prueba = new Prueba;
-        $alumno = DB::table("pruebas")->select('nombre', 'apellido')->where('id', $id)->get();
+        $alumno = DB::table("pruebas")->select('nombre', 'apellido')->where('id', decrypt($id))->get();
         $respuestas = DB::table("respuestas")
             ->join('pruebas', 'pruebas.id', '=', 'respuestas.id_prueba')->select('respuestas.*', 'pruebas.id')->where([
-                "id_prueba" => $id,
+                "id_prueba" => decrypt($id),
                 "pruebas.finalizado" => true
             ])->orderBy('respuestas.parte', 'Desc')->get();
         $actividades = array(
