@@ -31,10 +31,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5>3. &nbsp; 34</h5>
+                                <h5>3. &nbsp; {{$tres}}</h5>
                             </td>
                             <td>
-                                <h5>4. &nbsp; 34</h5>
+                                <h5>4. &nbsp; {{$cuatro}}</h5>
                             </td>
                             <td>
                                 <h5>5. &nbsp; {{$cinco}}</h5>
