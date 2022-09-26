@@ -47,4 +47,4 @@ Auth::routes();
 Route::post('/resultados/{id}','ResultsController@index')->name("resultados");
 Route::post('/resultados/revision/{id}','ResultsController@finalizarRevision')->name("resultados");
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/home/reiniciar/{id}','ResultsController@reiniciarPrueba')->name('home');
+Route::post('/home/reiniciar/{id}','ResultsController@reiniciarPrueba')->name('resultados');

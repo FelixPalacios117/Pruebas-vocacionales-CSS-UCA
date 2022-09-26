@@ -77,9 +77,23 @@ class ResultsController extends Controller
 
     public function finalizarRevision($id)
     {
-        $prueba = DB::table('pruebas')
+        DB::table('pruebas')
             ->where('id', decrypt($id))
             ->update(['revisado' => '1']);
+        return redirect('/home');
+    }
+
+    public function reiniciarPrueba($id)
+    {
+        DB::table('pruebas')
+            ->where('id', decrypt($id))
+            ->update(
+                ['finalizado'=>'0'],
+                ['revisado'=>'0']
+            );
+            
+        DB::table('respuestas')
+            ->where('id_prueba', decrypt($id));
         return redirect('/home');
     }
 

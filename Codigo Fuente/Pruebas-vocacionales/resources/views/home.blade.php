@@ -104,6 +104,7 @@
                                         class="btn text-light btn-sm btn-info boton mx-lg-2">
                                         <h7>Ver resultados</h7>
                                     </button>
+                                </form>
                                     <button type="submit" name="btnReiniciar" value="reiniciar"
                                         data-toggle="modal" data-target="#restartModal"
                                         class="btn text-light btn-sm btn-info boton mx-lg-2">
@@ -124,7 +125,7 @@
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
                                                     <form method="POST" action="/home/reiniciar/{{Crypt::encrypt($prueba->id)}}" >
-                                                    {{ csrf_field() }}
+                                                        {{ csrf_field() }}
                                                         <button type="submit" class="btn btn-primary">Si</button>
                                                     </form>
                                                 </div>
@@ -133,7 +134,7 @@
                                     </div>
                                 </td>
                             </tr>
-                        </form>
+                        
                         @endforeach
                     </tbody>
                     <tfoot>
