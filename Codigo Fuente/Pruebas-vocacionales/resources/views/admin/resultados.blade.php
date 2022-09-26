@@ -753,15 +753,40 @@
                     </div>
                 </div>
             @endforeach
-            <div class=" w-100 row justify-content-around mb-5">
+            <div class="w-100 row justify-content-around mb-5">
                 <button  onclick="location.href='{{ url('home') }}'" type="submit" name="btnAnterior" value="anterior"
                     class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
                     <h4>Regresar</h4>
                 </button>
-                <button type="submit" name="btnSiguiente" value="siguiente"
+                @if($alumno[0]->revisado == 0)
+                <button type="button" name="btnFinalizarRevision" value="finalizar"
+                    data-toggle="modal" data-target="#confirmModal"
                     class="btn col-2 col-lg-2 col-10 col-sm-10 text-light btn-lg btn-info boton mt-3">
                     <h4>Finalizar revisión</h4>
                 </button>
+                @endif
+                <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="confirmModalLabel">Confirmación</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ¿Seguro que desea finalizar la revisión?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                <form method="POST" action="/resultados/revision/{{$id}}" >
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn btn-primary">Si</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

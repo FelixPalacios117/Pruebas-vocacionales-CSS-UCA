@@ -13,7 +13,7 @@ class ResultsController extends Controller
     public function index($id)
     {
         $prueba = new Prueba;
-        $alumno = DB::table("pruebas")->select('nombre', 'apellido')->where('id', decrypt($id))->get();
+        $alumno = DB::table("pruebas")->select('nombre', 'apellido','revisado')->where('id', decrypt($id))->get();
         $respuestas = DB::table("respuestas")
             ->join('pruebas', 'pruebas.id', '=', 'respuestas.id_prueba')->select('respuestas.*', 'pruebas.id')->where([
                 "id_prueba" => decrypt($id),
@@ -57,6 +57,7 @@ class ResultsController extends Controller
         $ocho = self::ocho($respuestas);
         $nueve = self::nueve($respuestas);
         return view('admin.resultados', compact(
+            'id',
             'respuestas',
             'actividades',
             'validez',
@@ -72,6 +73,15 @@ class ResultsController extends Controller
             'nueve',
             'alumno'
         ));
+    }
+
+    public function finalizarRevision($id)
+    {
+        $g = decrypt($id);
+        $prueba = DB::table('pruebas')
+            ->where('id', decrypt($id))
+            ->update(['revisado' => '1']);
+        return redirect('/home');
     }
 
     public function validez($respuestas) //evalua la plantilla de validez se auxilia de la función de casos
