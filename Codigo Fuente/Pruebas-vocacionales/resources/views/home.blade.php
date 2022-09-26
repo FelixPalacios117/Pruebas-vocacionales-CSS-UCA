@@ -105,9 +105,32 @@
                                         <h7>Ver resultados</h7>
                                     </button>
                                     <button type="submit" name="btnReiniciar" value="reiniciar"
+                                        data-toggle="modal" data-target="#restartModal"
                                         class="btn text-light btn-sm btn-info boton mx-lg-2">
                                         <h7>Reiniciar prueba</h7>
                                     </button>
+                                    <div class="modal fade" id="restartModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-danger" id="confirmModalLabel">Confirmación</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-success">
+                                                    ¿Seguro que desea reinicar la prueba?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                                                    <form method="POST" action="/home/reiniciar/{{Crypt::encrypt($prueba->id)}}" >
+                                                    {{ csrf_field() }}
+                                                        <button type="submit" class="btn btn-primary">Si</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                         </form>

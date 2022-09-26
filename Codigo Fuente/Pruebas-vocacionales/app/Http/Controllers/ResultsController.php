@@ -77,7 +77,6 @@ class ResultsController extends Controller
 
     public function finalizarRevision($id)
     {
-        $g = decrypt($id);
         $prueba = DB::table('pruebas')
             ->where('id', decrypt($id))
             ->update(['revisado' => '1']);
