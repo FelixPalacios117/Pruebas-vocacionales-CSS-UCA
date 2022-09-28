@@ -774,7 +774,7 @@ class ResultsController extends Controller
         $cuatro += self::evaluar(substr($respuestas[8]->bloque_once, 2, 1), 1);
         //Columna 3
         $cuatro += self::evaluar(substr($respuestas[9]->bloque_uno, 0, 1), 1);
-        $cuatro += self::evaluar(substr($respuestas[9]->bloque_uno, 1, 1), 2);
+        $cuatro += self::evaluar(substr($respuestas[9]->bloque_uno, 1, 1), 1);
         $cuatro += self::evaluar(substr($respuestas[9]->bloque_uno, 2, 1), 2);
         //Columna 2
         $cuatro += self::evaluar(substr($respuestas[10]->bloque_tres, 0, 1), 1);
