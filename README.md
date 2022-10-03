@@ -1,7 +1,8 @@
 # Pruebas-vocacionales-CSS-UCA
 Proyecto de servicio social sobre pruebas vocacionales
+
 ## Indicaciones de instalación
- 
+Antes que nada debe de ejecutarse apache y mysql/mariadb 
 ***
 1. Crear un archivo .env dentro de la carpeta codigo fuente> pruebas-vocacionales con el siguiente contenido, y cambiar los campos DB_USERNAME y DB_PASSWORD por las credenciales correspondientes que se utilicen en su entorno.
 ```
@@ -44,4 +45,5 @@ PUSHER_APP_SECRET=
 4. Ejecutar el comando php artisan migrate
 5. Dentro de la carpeta database acceder a la carpeta seeds y posteriormente abrir el archivo UserSeeder.php, en el cambiar el email y la contraseña por las credenciales que serán definidas para acceder al sistema potencialmente podría ser dide.cae@uca.edu.sv y la contraseña que se estime conveniente.
 6. Ejecutar el comando php artisan db:seed
-7.
+7. Para ejecutar el programa se usa php artisan serve
+8. Debe tener xampp con apache y mysql ejecutandose, y ya se debería poder testear el programa sin problemas.
