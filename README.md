@@ -38,14 +38,10 @@ MAIL_ENCRYPTION=null
 PUSHER_APP_ID=
 PUSHER_APP_KEY=
 PUSHER_APP_SECRET=
-```
-2.
-3.
-4.
-6.
-2- Crear la base de datos pruebas_vocacionales con la configuración de caracteres utf8_spanish_ci en mariadb.
-3- Abrir la consola CMD, ubicarse en la carpeta pruebas_vocacionales y ejecutar el comando composer install.
-4- Ejecutar el comando php artisan migrate
-5- Dentro de la carpeta database acceder a la carpeta seeds y posteriormente abrir el archivo UserSeeder.php, en el cambiar el email y la contraseña por las credenciales que serán definidas para acceder al sistema potencialmente podría ser dide.cae@uca.edu.sv y la contraseña que se estime conveniente.
-6- Ejecutar el comando php artisan db:seed
-7-
+``` 
+2. Crear la base de datos pruebas_vocacionales con la configuración de caracteres utf8_spanish_ci en mariadb.
+3. Abrir la consola CMD, ubicarse en la carpeta pruebas_vocacionales y ejecutar el comando composer install.
+4. Ejecutar el comando php artisan migrate
+5. Dentro de la carpeta database acceder a la carpeta seeds y posteriormente abrir el archivo UserSeeder.php, en el cambiar el email y la contraseña por las credenciales que serán definidas para acceder al sistema potencialmente podría ser dide.cae@uca.edu.sv y la contraseña que se estime conveniente.
+6. Ejecutar el comando php artisan db:seed
+7.
