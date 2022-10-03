@@ -2,7 +2,11 @@
 Proyecto de servicio social sobre pruebas vocacionales
 ## Indicaciones de instalación
 
-Crear un archivo .env dentro de la carpeta codigo fuente> pruebas-vocacionales con el siguiente contenido:
+# Crear un archivo .env dentro de la carpeta codigo fuente> pruebas-vocacionales con el siguiente contenido:
+## Installation
+***
+A little intro about the installation. 
+```
 APP_NAME=Pruebas
 APP_ENV=local
 APP_KEY=base64:ZPU4BRWbrz1ZIepGThqPlYaqwJdkCaYC1DnidaFF2Es=
@@ -36,3 +40,5 @@ MAIL_ENCRYPTION=null
 PUSHER_APP_ID=
 PUSHER_APP_KEY=
 PUSHER_APP_SECRET=
+```
+ 
