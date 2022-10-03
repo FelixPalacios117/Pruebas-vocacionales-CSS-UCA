@@ -4,7 +4,7 @@ Proyecto de servicio social sobre pruebas vocacionales
 ## Indicaciones de instalación
 Antes que nada debe de ejecutarse apache y mysql/mariadb 
 ***
-1. Crear un archivo .env dentro de la carpeta codigo fuente> pruebas-vocacionales con el siguiente contenido, y cambiar los campos DB_USERNAME y DB_PASSWORD por las credenciales correspondientes que se utilicen en su entorno.
+1. Crear un archivo .env dentro de la carpeta Codigo Fuente/Pruebas-vocacionales con el siguiente contenido, y cambiar los campos DB_USERNAME y DB_PASSWORD por las credenciales correspondientes que se utilicen en su entorno.
 ```
 APP_NAME=Pruebas
 APP_ENV=local
