@@ -3,7 +3,7 @@ Proyecto de servicio social sobre pruebas vocacionales
 ## Indicaciones de instalación
  
 ***
-Crear un archivo .env dentro de la carpeta codigo fuente> pruebas-vocacionales con el siguiente contenido:
+1. Crear un archivo .env dentro de la carpeta codigo fuente> pruebas-vocacionales con el siguiente contenido:
 ```
 APP_NAME=Pruebas
 APP_ENV=local
@@ -39,4 +39,4 @@ PUSHER_APP_ID=
 PUSHER_APP_KEY=
 PUSHER_APP_SECRET=
 ```
- 
+2- Crear la base de datos pruebas_vocacionales en mariadb.
