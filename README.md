@@ -39,6 +39,10 @@ PUSHER_APP_ID=
 PUSHER_APP_KEY=
 PUSHER_APP_SECRET=
 ```
+2.
+3.
+4.
+6.
 2- Crear la base de datos pruebas_vocacionales con la configuración de caracteres utf8_spanish_ci en mariadb.
 3- Abrir la consola CMD, ubicarse en la carpeta pruebas_vocacionales y ejecutar el comando composer install.
 4- Ejecutar el comando php artisan migrate
