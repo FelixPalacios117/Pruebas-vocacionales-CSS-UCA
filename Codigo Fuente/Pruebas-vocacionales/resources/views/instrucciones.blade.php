@@ -213,7 +213,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center mb-5">
-                    <a href="/parte1" type="button"
+                    <a href={{ env('APP_URL') }}parte1 type="button"
                         class="btn col-5 col-lg-5 col-10 col-sm-10 text-light btn-lg btn-info boton ">
                         <h4>@if(session('id_prueba')) {{'Continuar prueba'}} @else{{'Iniciar prueba'}} @endif</h4>
                     </a>

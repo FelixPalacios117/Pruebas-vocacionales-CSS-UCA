@@ -61,7 +61,7 @@ class HomeController extends Controller
                     ])
                 ->orderByDesc('updated_at')
                 ->paginate(20);
-            return redirect('/home');
+                return redirect(env('APP_URL').'/home');
         } else if($request->btnFiltrar){
             $cadena = $request->get('buscador');
             $filtro = $request->get('filtro');

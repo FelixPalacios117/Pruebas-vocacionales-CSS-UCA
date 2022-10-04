@@ -53,7 +53,7 @@
                             </button> 
                         </div>  
                         <div class="row justify-content-center mt-4">
-                            <a href="/"
+                            <a href={{ env('APP_URL') }}
                             class="btn col-4 col-lg-4 col-6 col-sm-6 text-light btn-lg btn-secondary boton-regresar">
                             <h4>Regresar</h4></a> 
                         </div>   

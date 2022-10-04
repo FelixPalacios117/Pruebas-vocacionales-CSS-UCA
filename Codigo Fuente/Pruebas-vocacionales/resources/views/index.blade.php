@@ -114,13 +114,13 @@
                     </div>
                     <div class="row justify-center d-flex align-items-center text-center justify-content-center">
                         <div class="mb-4 col-8 ">
-                            <a class="text-light" href="/continuar">
+                            <a class="text-light" href={{ env('APP_URL') }}continuar>
                                 <h4>¿Tienes una prueba que no finalizaste?<br><strong>¡ Continúala aquí !</strong></h4>
                             </a>
                         </div>
                     </div>
                     <div class="row justify-content-center mb-4">
-                        <a href="/login"
+                        <a href={{ env('APP_URL') }}login
                             class="btn col-4 col-lg-4 col-6 col-sm-6 text-light btn-lg btn-secondary boton-regresar ">
                             <h4>Iniciar sesión</h4>
                         </a>
