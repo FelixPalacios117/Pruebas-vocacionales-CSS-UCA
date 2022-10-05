@@ -80,7 +80,8 @@ class ResultsController extends Controller
         DB::table('pruebas')
             ->where('id', decrypt($id))
             ->update(['revisado' => '1']);
-        return redirect('/home');
+            
+        return redirect(env('APP_URL').'home');
     }
 
     public function reiniciarPrueba($id)

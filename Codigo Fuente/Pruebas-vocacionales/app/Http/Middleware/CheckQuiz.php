@@ -17,7 +17,7 @@ class CheckQuiz
     {
         if (!session('id_prueba')) {
             session()->forget('completa');
-            return redirect('/')->withErrors('Debes ingresar toda tu información para iniciar una prueba o tu 
+            return redirect(env('APP_URL'))->withErrors('Debes ingresar toda tu información para iniciar una prueba o tu 
             correo previamente registrado para continuar
             una prueba que ya habias iniciado.');
         }

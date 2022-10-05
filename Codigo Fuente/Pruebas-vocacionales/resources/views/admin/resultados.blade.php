@@ -779,7 +779,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-                                <form method="POST" action="/resultados/revision/{{$id}}" >
+                                <form method="POST" action={{ env('APP_URL') }}/resultados/revision/{{$id}}>
                                     {{ csrf_field() }}
                                     <button type="submit" class="btn btn-primary">Si</button>
                                 </form>

@@ -1,13 +1,13 @@
 <nav class="navbar w-100 navbar-light nav text-light fixed-top">
     <div class="row">
         <div class="col-2">
-            <a href="/home"> <img class="navbar-brand img-fluid img-thumbnail rounded" width="250px"
+            <a href={{ env('APP_URL') }}home> <img class="navbar-brand img-fluid img-thumbnail rounded" width="250px"
                     src="{{ asset('img/logo.jpg') }}" alt="">
             </a>
         </div>
         <div class="column">
             <div class="titulo">
-                <a href="/home">
+                <a href={{ env('APP_URL') }}home>
                     <h3 class="text-light">Diagnóstico vocacional</h3>
                 </a>
             </div>

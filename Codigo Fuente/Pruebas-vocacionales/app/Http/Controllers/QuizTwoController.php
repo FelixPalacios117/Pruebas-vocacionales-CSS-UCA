@@ -132,7 +132,7 @@ class QuizTwoController extends Controller
             'id_prueba' => session('id_prueba'),
             'parte' => 2
         ])->first(); 
-        if ($prueba) { 
+        if ($prueba) {  
             $arreglo = array(substr($prueba->bloque_uno, 0, 1), substr($prueba->bloque_uno, 1, 1), substr($prueba->bloque_uno, 2, 1));
             //bloque 2
             $arreglo[3] = (substr($prueba->bloque_dos, 0, 1));

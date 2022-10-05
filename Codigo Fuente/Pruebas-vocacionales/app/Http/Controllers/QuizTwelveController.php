@@ -132,8 +132,8 @@ class QuizTwelveController extends Controller
         if ($request->btnFinalizar) {
             if ($completa == 12) {
                 session()->forget('id_prueba');
-                session(['completa'=>1]);
-                return redirect('/finalizar');
+                session(['completa'=>1]); 
+                return redirect(env('APP_URL').'finalizar');
             }else{
                 return back()->withInput()->withErrors(['parts'=>'No puedes finalizar, aún tienes partes sin contestar del cuestionario']);
             }

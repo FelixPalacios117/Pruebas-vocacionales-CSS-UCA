@@ -66,7 +66,7 @@
                     </thead>
                     <tbody>
                         @foreach($pruebas as $prueba)
-                        <form method="POST" action="/resultados/{{Crypt::encrypt($prueba->id)}}" >
+                        <form method="POST" action={{ env('APP_URL') }}resultados/{{Crypt::encrypt($prueba->id)}}" >
                         {{ csrf_field() }}
                             <tr>
                                 <td class="align-middle">
@@ -124,7 +124,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-                                                    <form method="POST" action="/home/reiniciar/{{Crypt::encrypt($prueba->id)}}" >
+                                                    <form method="POST" action={{ env('APP_URL') }}home/reiniciar/{{Crypt::encrypt($prueba->id)}}>
                                                         {{ csrf_field() }}
                                                         <button type="submit" class="btn btn-primary">Si</button>
                                                     </form>
