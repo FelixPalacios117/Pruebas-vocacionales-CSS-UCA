@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 use DateTime;
+use Mail;
 
 class QuizController extends Controller
 {
@@ -68,18 +69,50 @@ class QuizController extends Controller
         $prueba->nombre = $request->nombre;
         $prueba->apellido = $request->apellido;
         $prueba->contrasenia = Hash::make($request->contraseña);
+        $prueba->codigo_verificacion = str_random(25);
         $prueba->correo = $request->correo;
         $prueba->telefono = $request->telefono;
         $prueba->genero = $request->genero;
         $prueba->lugar_estudio = $request->lugar;
         $prueba->fecha_nacimiento = $request->fecha;
-        $prueba->finalizado=false;
-        $prueba->revisado=false;
+        $prueba->finalizado = false;
+        $prueba->revisado = false;
         $prueba->save();
-        $id_prueba = DB::table('pruebas')->where('correo', $request->correo)->value('id');
-        session(['id_prueba' => $id_prueba]);
-        return redirect('/instrucciones');
+
+        $data['codigo_verificacion'] = $prueba->codigo_verificacion;
+        $data['correo'] = $request->correo;
+        $data['nombre'] = $request->nombre;
+
+       Mail::send('emails.confirmacion', $data, function($message) use ($data) {
+            $message->to($data['correo'], $data['nombre'])
+            ->subject('Por favor confirma tu correo');
+        });
+        return view('correoenviado',compact('prueba')); 
     }
+
+    public function verificar($codigo){
+        $prueba = DB::table('pruebas')
+            ->where([
+            'codigo_verificacion' => $codigo,
+            ])->first();
+
+            if(! $prueba){
+                return redirect('/');
+            }else {
+                DB::table('pruebas')
+                ->where([
+                    'codigo_verificacion' => $codigo,
+                    ])
+                ->update([
+                    'verificado' => '1',
+                    'codigo_verificacion'=>null
+                ]);
+                $id_prueba = DB::table('pruebas')->where('correo', $prueba->correo)->value('id');
+                session(['id_prueba' => $id_prueba]);
+                return redirect('/instrucciones')->with('notification', 'Has confirmado correctamente tu correo!');
+            }
+    }
+
     public function finalPrueba()
     {
         return view('final');

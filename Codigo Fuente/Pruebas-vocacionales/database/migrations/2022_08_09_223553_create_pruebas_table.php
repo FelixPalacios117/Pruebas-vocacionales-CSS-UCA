@@ -18,6 +18,8 @@ class CreatePruebasTable extends Migration
             $table->string('nombre',50);
             $table->string('apellido',50);
             $table->string('contrasenia');
+            $table->boolean('verificado')->default(0);
+            $table->string('codigo_verificacion')->nullable();
             $table->string('correo',75)->unique();
             $table->string('telefono',10)->unique();
             $table->date('fecha_nacimiento');

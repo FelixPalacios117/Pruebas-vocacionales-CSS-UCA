@@ -12,6 +12,7 @@
 */
 
 Route::get('/','QuizController@index');
+Route::get('/crearPrueba/verificar/{codigo}','QuizController@verificar');
 Route::get('/instrucciones','QuizController@instrucciones')->middleware('checkquiz');
 Route::get('/parte1','QuizOneController@primera')->middleware('checkquiz');
 Route::get('/parte2','QuizTwoController@segunda')->middleware('checkquiz');
