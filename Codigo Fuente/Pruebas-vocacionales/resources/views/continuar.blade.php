@@ -45,6 +45,15 @@
                                 <input class="form-control" placeholder="Correo electrónico" aria-label="Correo"
                                     aria-describedby="Correo" name="correo" required value={{ old('correo') }}>
                             </div>
+                            <div class="input-group input-group-lg mb-4 col-8">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="contraseña">
+                                        <i class="bi bi-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña"
+                                    aria-describedby="contraseña" name="contraseña" required value={{ old('contraseña') }}>
+                            </div>
                         </div>
                         <div class="row justify-content-center mt-4">
                             <button type="submit"

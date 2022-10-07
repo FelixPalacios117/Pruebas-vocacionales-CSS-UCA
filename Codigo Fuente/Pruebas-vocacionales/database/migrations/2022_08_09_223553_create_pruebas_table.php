@@ -17,6 +17,7 @@ class CreatePruebasTable extends Migration
             $table->increments('id');
             $table->string('nombre',50);
             $table->string('apellido',50);
+            $table->string('contrasenia');
             $table->string('correo',75)->unique();
             $table->string('telefono',10)->unique();
             $table->date('fecha_nacimiento');

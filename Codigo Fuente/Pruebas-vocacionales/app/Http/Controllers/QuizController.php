@@ -5,6 +5,8 @@ namespace Pruebas\Http\Controllers;
 use Illuminate\Http\Request;
 use Pruebas\Prueba;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 use DateTime;
 
@@ -24,20 +26,22 @@ class QuizController extends Controller
     }
     public function continuarPrueba(Request $request){
         $this->validate($request, [ 
-            'correo' => 'required|email'
+            'correo' => 'required|email',
+            'contraseña' => 'required'
         ]);
-        $id_prueba = DB::table('pruebas')->where([
+        $prueba = DB::table('pruebas')
+            ->where([
             'correo'=>$request->correo,
             'finalizado'=>false
-        ])->value('id'); 
-        if($id_prueba){
-            session(['id_prueba' => $id_prueba]);
+            ])->first();
+        if($prueba && Hash::check($request->contraseña, $prueba->contrasenia)){
+            session(['id_prueba' => $prueba->id]);
             return redirect('/instrucciones');
-        }else{
-            return back()->withInput()->withErrors('El correo electrónico ingresado no tiene ninguna prueba sin completar');
+        } else {
+            return back()->withInput()->withErrors('El correo electrónico ingresado no tiene ninguna prueba sin completar o los datos ingresados son incorrectos.');
         }
     }
-    //
+    
     public function instrucciones()
     { 
         return view('instrucciones');
@@ -51,7 +55,9 @@ class QuizController extends Controller
             'telefono' => 'required|unique:pruebas,telefono',
             'genero' => 'required',
             'lugar' => 'required',
-            'fecha' => 'required|date'
+            'fecha' => 'required|date',
+            'contraseña' => 'required|min:8|same:repetir_contraseña|string',
+            'repetir_contraseña' => 'required|min:8|string'
         ]);
         $date = new DateTime($request->fecha);
         $edad = Carbon::createFromDate($date->format('Y'), $date->format('m'), $date->format('d'))->age;
@@ -61,6 +67,7 @@ class QuizController extends Controller
         $prueba = new Prueba;
         $prueba->nombre = $request->nombre;
         $prueba->apellido = $request->apellido;
+        $prueba->contrasenia = Hash::make($request->contraseña);
         $prueba->correo = $request->correo;
         $prueba->telefono = $request->telefono;
         $prueba->genero = $request->genero;

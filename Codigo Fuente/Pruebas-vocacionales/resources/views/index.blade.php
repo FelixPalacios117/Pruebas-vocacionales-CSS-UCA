@@ -106,6 +106,24 @@
                             <input type="text" class="form-control" placeholder="Lugar de estudio" aria-label="lugar"
                                 aria-describedby="lugar" name="lugar" required value={{ old('lugar') }}>
                         </div>
+                        <div class="input-group input-group-lg mb-4 col-8">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="contraseña">
+                                    <i class="bi bi-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña"
+                                aria-describedby="contraseña" name="contraseña" required value={{ old('contraseña') }}>
+                        </div>
+                        <div class="input-group input-group-lg mb-4 col-8">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="confirmcontrasenia">
+                                    <i class="bi bi-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Repetir contraseña" aria-label="Repetircontraseña"
+                                aria-describedby="repetircontraseña" name="repetir_contraseña" required value={{ old('repetir_contraseña') }}>
+                        </div>
                     </div>
                     <div class="row justify-content-center mb-4">
                         <button type="submit" class="btn col-4 col-lg-4 col-6 col-sm-6 text-light btn-lg btn-info boton ">
