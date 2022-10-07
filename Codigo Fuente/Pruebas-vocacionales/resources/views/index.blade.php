@@ -119,12 +119,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row justify-content-center mb-4">
-                        <a href={{ env('APP_URL') }}login
-                            class="btn col-4 col-lg-4 col-6 col-sm-6 text-light btn-lg btn-secondary boton-regresar ">
-                            <h4>Iniciar sesión</h4>
-                        </a>
-                    </div>
                 </form>
             </div>
         </div>
