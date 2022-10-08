@@ -33,13 +33,13 @@ MAIL_DRIVER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
 MAIL_USERNAME=vocacionalesuca@gmail.com
-MAIL_PASSWORD=rlscgsmpudziaapk
+MAIL_PASSWORD=<password>
 MAIL_FROM_NAME='Pruebas Vocacionales UCA'
 MAIL_FROM_ADDRESS=vocacionalesuca@gmail.com
 MAIL_ENCRYPTION=tls
 
-CAPTCHA_SECRET=6Le4w2MiAAAAADL-r4gZMjz0WuAeLWCqjo2pJm8D
-CAPTCHA_SITEKEY=6Le4w2MiAAAAAJzgQHEibeiYrnyf7a3zrd4i2nb0
+CAPTCHA_SECRET=<secret_key>
+CAPTCHA_SITEKEY=<site_key>
 
 PUSHER_APP_ID=
 PUSHER_APP_KEY=
