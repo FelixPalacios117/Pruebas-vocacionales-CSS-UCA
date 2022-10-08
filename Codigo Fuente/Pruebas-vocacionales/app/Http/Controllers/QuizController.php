@@ -58,7 +58,8 @@ class QuizController extends Controller
             'lugar' => 'required',
             'fecha' => 'required|date',
             'contraseña' => 'required|min:8|same:repetir_contraseña|string',
-            'repetir_contraseña' => 'required|min:8|string'
+            'repetir_contraseña' => 'required|min:8|string',
+            'captcha' => 'required|captcha'
         ]);
         $date = new DateTime($request->fecha);
         $edad = Carbon::createFromDate($date->format('Y'), $date->format('m'), $date->format('d'))->age;

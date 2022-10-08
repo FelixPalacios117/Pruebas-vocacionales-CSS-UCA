@@ -124,6 +124,9 @@
                             <input type="password" class="form-control" placeholder="Repetir contraseña" aria-label="Repetircontraseña"
                                 aria-describedby="repetircontraseña" name="repetir_contraseña" required value={{ old('repetir_contraseña') }}>
                         </div>
+                        <div class="input-group input-group-lg mb-4 justify-content-center">
+                            {!! Captcha::display(['captcha']) !!}
+                        </div>
                     </div>
                     <div class="row justify-content-center mb-4">
                         <button type="submit" class="btn col-4 col-lg-4 col-6 col-sm-6 text-light btn-lg btn-info boton ">

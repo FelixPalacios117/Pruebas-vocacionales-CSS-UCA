@@ -136,6 +136,7 @@ return [
     */
 
     'providers' => [
+        'Buzz\LaravelGoogleCaptcha\CaptchaServiceProvider',
 
         /*
          * Laravel Framework Service Providers...
@@ -198,6 +199,7 @@ return [
         'Blade' => Illuminate\Support\Facades\Blade::class,
         'Broadcast' => Illuminate\Support\Facades\Broadcast::class,
         'Bus' => Illuminate\Support\Facades\Bus::class,
+        'Captcha' => '\Buzz\LaravelGoogleCaptcha\CaptchaFacade',
         'Cache' => Illuminate\Support\Facades\Cache::class,
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
