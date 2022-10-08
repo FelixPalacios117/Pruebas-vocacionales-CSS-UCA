@@ -59,7 +59,7 @@ class QuizController extends Controller
             'fecha' => 'required|date',
             'contraseña' => 'required|min:8|same:repetir_contraseña|string',
             'repetir_contraseña' => 'required|min:8|string',
-            'captcha' => 'required|captcha'
+            'g-recaptcha-response' => 'required|captcha'
         ]);
         $date = new DateTime($request->fecha);
         $edad = Carbon::createFromDate($date->format('Y'), $date->format('m'), $date->format('d'))->age;
@@ -110,7 +110,7 @@ class QuizController extends Controller
                 ]);
                 $id_prueba = DB::table('pruebas')->where('correo', $prueba->correo)->value('id');
                 session(['id_prueba' => $id_prueba]);
-                return redirect('/instrucciones')->with('notification', 'Has confirmado correctamente tu correo!');
+                return view('correoconfirmado');
             }
     }
 

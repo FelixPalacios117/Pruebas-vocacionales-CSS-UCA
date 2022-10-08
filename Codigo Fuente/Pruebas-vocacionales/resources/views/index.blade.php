@@ -125,7 +125,7 @@
                                 aria-describedby="repetircontraseña" name="repetir_contraseña" required value={{ old('repetir_contraseña') }}>
                         </div>
                         <div class="input-group input-group-lg mb-4 justify-content-center">
-                            {!! Captcha::display(['captcha']) !!}
+                            {!! Captcha::display() !!}
                         </div>
                     </div>
                     <div class="row justify-content-center mb-4">
