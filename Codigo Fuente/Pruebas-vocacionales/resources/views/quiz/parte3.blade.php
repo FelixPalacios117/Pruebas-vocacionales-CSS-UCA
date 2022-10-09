@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="container-fluid login mt-5 margen mx-5">
+            <div class="container-fluid login mt-5 margen">
                 @if ($errors->any())
                     <div class="row justify-content-center mt-5">
                         <div class="col-8">
@@ -33,7 +33,7 @@
                     {{ csrf_field() }}
                     <div class="row justify-content-center mt-5 mb-5">
                         @foreach ($preguntas_tres->bloques as $preguntas)
-                            <div class="mx-3 my-3 card bloque col-5 col-lg-5 col-5 col-md-5 col-12 col-sm-12">
+                            <div class="mx-3 my-3 card bloque col-lg-5 col-md-10 col-sm-12 col-xs-12">
                                 <div class="card-body card-texto">
                                     <div class="col-12">
                                         <h5 class="card-title literal">{{ $preguntas->name1 }}.
