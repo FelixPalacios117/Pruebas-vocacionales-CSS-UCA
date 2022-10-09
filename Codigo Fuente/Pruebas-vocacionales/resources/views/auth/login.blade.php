@@ -30,7 +30,7 @@
                         @endif
                     </div>
                     <div class="row justify-content-center">
-                            <div class="input-group input-group-lg mb-4 col-8">
+                            <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="correo">
                                         <i class="bi bi-envelope"></i>
@@ -39,7 +39,7 @@
                                 <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="email"
                                     aria-describedby="email" name="email" required value={{ old('email') }}>
                             </div>
-                            <div class="input-group input-group-lg mb-4 col-8">
+                            <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                                 <div class="input-group-prepend">
                                  <span class="input-group-text" id="password">
                                         <i class="bi bi-lock"></i>                                
