@@ -33,12 +33,16 @@ class QuizController extends Controller
         $prueba = DB::table('pruebas')
             ->where([
             'correo'=>$request->correo,
-            'finalizado'=>false
-            ])->first();
+            'finalizado'=>false, 
+            ])->first();  
         if($prueba && Hash::check($request->contraseña, $prueba->contrasenia)){
+            if(!$prueba->verificado){
+                return back()->withInput()->withErrors("La cuenta no está verificada, busca el correo de verificación que se te envió al registrarte");
+            } 
             session(['id_prueba' => $prueba->id]);
             return redirect('/instrucciones');
-        } else {
+        } 
+        else {
             return back()->withInput()->withErrors('El correo electrónico ingresado no tiene ninguna prueba sin completar o los datos ingresados son incorrectos.');
         }
     }

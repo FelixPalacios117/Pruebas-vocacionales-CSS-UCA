@@ -13,7 +13,7 @@ class Prueba extends Model
      * @var array
      */
     protected $fillable=['id','nombre','apellido',
-    'correo','telefono','genero','fecha_nacimiento','lugar_estudio','finalizado'];
+    'correo','telefono','genero','fecha_nacimiento','lugar_estudio','finalizado','revisado','verificado'];
 
     public function respuestas(){
         $this->hasMany('App\Respuesta');
