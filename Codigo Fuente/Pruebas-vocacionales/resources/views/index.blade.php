@@ -35,7 +35,7 @@
                         @endif
                     </div>
                     <div class="row justify-content-center">
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="nombre">
                                     <i class="bi bi-person-fill"></i>
@@ -44,7 +44,7 @@
                             <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
                                 aria-describedby="nombre" name="nombre" required value={{ old('nombre') }}>
                         </div>
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="apellido">
                                     <i class="bi bi-person-bounding-box"></i>
@@ -53,7 +53,7 @@
                             <input type="text" class="form-control" placeholder="Apellido" aria-label="apellido"
                                 aria-describedby="nombre" name="apellido" required value={{ old('apellido') }}>
                         </div>
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="genero">
                                     <i class="bi bi-gender-ambiguous"></i>
@@ -68,7 +68,10 @@
                                     Femenino</option>
                             </select>
                         </div>
-                        <div class="input-group input-group-lg date mb-4 col-8">
+                        <div class="input-group input-group-lg col-lg-8 col-md-8 col-sm-12">
+                            <h5 class="text-light">Fecha de nacimiento</h5>
+                        </div>
+                        <div class="input-group input-group-lg date mb-4 col-lg-8 col-md-8 col-sm-12"> 
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="Fecha">
                                     <i class="bi bi-calendar"></i>
@@ -78,7 +81,7 @@
                                 aria-describedby="Fecha" name="fecha" onkeypress="return false"
                                 max="{{ Carbon\Carbon::now()->format('Y-m-d') }}" required value={{ old('fecha') }}>
                         </div>
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="correo">
                                     <i class="bi bi-envelope"></i>
@@ -87,7 +90,7 @@
                             <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Correo"
                                 aria-describedby="Correo" name="correo" required value={{ old('correo') }}>
                         </div>
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="telefono">
                                     <i class="bi bi-telephone"></i>
@@ -97,7 +100,7 @@
                                 placeholder="Teléfono" aria-label="telefono" aria-describedby="telefono" name="telefono"
                                 required value={{ old('telefono') }}>
                         </div>
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="lugar">
                                     <i class="bi bi-house-door-fill"></i>
@@ -106,7 +109,7 @@
                             <input type="text" class="form-control" placeholder="Lugar de estudio" aria-label="lugar"
                                 aria-describedby="lugar" name="lugar" required value={{ old('lugar') }}>
                         </div>
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="contraseña">
                                     <i class="bi bi-lock"></i>
@@ -115,7 +118,7 @@
                             <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña"
                                 aria-describedby="contraseña" name="contraseña" required value={{ old('contraseña') }}>
                         </div>
-                        <div class="input-group input-group-lg mb-4 col-8">
+                        <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="confirmcontrasenia">
                                     <i class="bi bi-lock"></i>
@@ -134,7 +137,7 @@
                         </button>
                     </div>
                     <div class="row justify-center d-flex align-items-center text-center justify-content-center">
-                        <div class="mb-4 col-8 ">
+                        <div class="mb-4 col-lg-8 col-md-8 col-sm-12 ">
                             <a class="text-light" href={{ env('APP_URL') }}continuar>
                                 <h4>¿Tienes una prueba que no finalizaste?<br><strong>¡ Continúala aquí !</strong></h4>
                             </a>

@@ -16,7 +16,7 @@
                         {{ csrf_field() }}
                         <div class="row">
                             <div class="col-12">
-                                <h2 class="text-center p-3 text-light mb-4 mt-4">Ingresa el correo electrónico que registraste en la prueba</h2>
+                                <h2 class="text-center p-3 text-light mb-4 mt-4">Ingresa los datos que registraste previamente</h2>
                             </div>
                             @if ($errors->any())
                                 <div class="container mt-2 mb-4">
@@ -36,7 +36,7 @@
                             @endif
                         </div>
                         <div class="row justify-content-center">
-                            <div class="input-group input-group-lg mb-4 col-8">
+                            <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="correo">
                                         <i class="bi bi-envelope"></i>
@@ -45,7 +45,7 @@
                                 <input class="form-control" placeholder="Correo electrónico" aria-label="Correo"
                                     aria-describedby="Correo" name="correo" required value={{ old('correo') }}>
                             </div>
-                            <div class="input-group input-group-lg mb-4 col-8">
+                            <div class="input-group input-group-lg mb-4 col-lg-8 col-md-8 col-sm-12">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="contraseña">
                                         <i class="bi bi-lock"></i>

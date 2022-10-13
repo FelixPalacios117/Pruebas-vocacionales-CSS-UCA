@@ -31,7 +31,7 @@
                                 <div class="card-body body-card text-white">
                                     <h5 class="card-title text-center card-titulo">
                                         {{ $prueba->nombre }} {{ $prueba->apellido }}, verifica tu bandeja de entrada
-                                        de tú correo electrónico. Te hemos enviado un correo para verificar
+                                        o de spam de tú correo electrónico. Te hemos enviado un correo para verificar
                                         tu identidad.
                                     </h5>
                                 </div>
