@@ -5,9 +5,11 @@
 @section('body')
     <div class="container-fluid margen">
         <div class="row">
-            <div class="col-12 text-light pt-5 pb-3">
-                <h1 class="text-center">{{ $preguntas_uno->parte }}</h1>
-            </div>
+            <div class="col-11 text-light pt-5 pb-3">
+                <h1 class="text-center">{{ $preguntas_uno->parte }}   
+ 
+                </h1>  
+            </div> 
         </div>
         <div class="row">
             <div class="container-fluid login mt-5 margen">

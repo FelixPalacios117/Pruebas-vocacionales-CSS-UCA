@@ -8,11 +8,11 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-6 col-lg-6 col-12 col-sm-12">
-                    <div class="row justify-content-center">
-                        <a href="https://www.instagram.com/uca_elsalvador/" target="blank" class="text-white col-1">
+                    <div class="row justify-content-center"> 
+                        <a href="https://instagram.com/dideuca.sv?igshid=YmMyMTA2M2Y=" target="blank" class="text-white col-1">
                             <h3 class="p-2"><i class="bi bi-instagram"></i></h3>
                         </a>
-                        <a href="https://www.facebook.com/UCA.ElSalvador" target="blank" class="text-white col-1">
+                        <a href="https://www.facebook.com/dideuca.sv" target="blank" class="text-white col-1">
                             <h3 class="p-2"><i class="bi bi-facebook"></i></h3>
                         </a>
                         <a href="https://twitter.com/UCA_ES" target="blank" class="text-white col-1">
@@ -23,19 +23,19 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
+                
                 <div class="col-6 col-lg-6 col-12 col-sm-12">
-                    <h4 class="text-wrap ">Universidad Centroamericana José Simeón Cañas
-                    </h4>
-                    <h6 class="text-wrap">
-                        Bulevar Los Próceres, Antiguo Cuscatlán, La Libertad, El Salvador, Centroamérica
-                    </h6>
-                    <h6 class="text-wrap">
-                        Horario de atención administrativa: Lunes a viernes, de 8:00 a.m. a 12 del mediodía y de 1:00 a
-                        5:45 p.m
-                    </h6>
-                    <h6 class="text-wrap">
-                        +(503) 2210-6600, direccion.comunicaciones@uca.edu.sv
-                    </h6>
+                    <h4 class="text-wrap ">Dirección de Desarrollo Estudiantil UCA
+                    </h4> 
+                    <h5 class="text-wrap">
+                        Correo: diagnosticovocacional@uca.edu.sv 
+                    </h5>
+                    <h5 class="text-wrap"> 
+                        Télefono: 2210-6693 
+                    </h5>
+                    <h5 class="text-wrap"> 
+                        WhatsApp: 7183-2652
+                    </h5>
                 </div>
                 <!--Grid column-->
             </div>

@@ -25,6 +25,10 @@ class QuizController extends Controller
     public function load(){
         return view('continuar');
     }
+    public function exit(){
+        session()->forget('id_prueba'); 
+        return redirect(env('APP_URL'));
+    }
     public function continuarPrueba(Request $request){
         $this->validate($request, [ 
             'correo' => 'required|email',

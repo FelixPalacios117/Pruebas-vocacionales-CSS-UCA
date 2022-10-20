@@ -209,6 +209,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="card mt-5 mb-5">
+                                <h5 class="card-header text-center header-card card-titulo">Consideraciones</h5>
+                                <div class="card-body body-card text-white">
+                                    <p class="card-text card-texto">
+                                        La prueba consta de 12 partes, organizadas en 14 bloques de 3 preguntas, podrás navegar entre las diferentes
+                                        partes de la prueba cuando hayas completado la parte actual, sin embargo para que una parte de la prueba sea
+                                        guardada debe estar contestada correctamente y además debe ser contestada en su totalidad,
+                                         en caso abandones la prueba y la desees retomar posteriormente 
+                                        solo se guardarán las partes de la prueba que cumplan ese criterio.
+                                    </p>   
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

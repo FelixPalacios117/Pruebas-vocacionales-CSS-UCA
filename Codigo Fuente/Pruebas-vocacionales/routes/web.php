@@ -43,7 +43,7 @@ Route::post('/savePartTen','QuizTenController@store');
 Route::post('/savePartEleven','QuizElevenController@store');
 Route::post('/savePartTwelve','QuizTwelveController@store');
 Route::post('/continuarPrueba','QuizController@continuarPrueba');
-
+Route::post('/exitquiz','QuizController@exit')->name("exitquiz");
 Auth::routes();
 Route::post('/resultados/{id}','ResultsController@index')->name("resultados");
 Route::post('/resultados/revision/{id}','ResultsController@finalizarRevision')->name("resultados");
