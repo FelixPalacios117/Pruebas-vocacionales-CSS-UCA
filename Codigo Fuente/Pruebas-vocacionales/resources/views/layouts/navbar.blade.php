@@ -11,9 +11,11 @@
                     <h3 class="text-light">Diagnóstico vocacional</h3>
                     
                 </a>
-                <h4 class="px-4 py-1"><a data-toggle="modal" href="#"
-                    data-target="#confirmModal1"
-                    ><i class="bi bi-info-circle-fill text-white"></i></a></h4>
+               @if(Session::has('id_prueba'))
+               <h4 class="px-4 py-1"><a data-toggle="modal" href="#"
+                data-target="#confirmModal1"
+                ><i class="bi bi-info-circle-fill text-white"></i></a></h4>
+               @endif
             </div>
             @if (Session::has('id_prueba')) 
                 <div class="row">
