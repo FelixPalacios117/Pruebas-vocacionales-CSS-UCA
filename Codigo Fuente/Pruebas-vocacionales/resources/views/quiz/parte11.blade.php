@@ -1,8 +1,6 @@
-@extends('layouts.container')
-@section('titulo', 'Pruebas vocacionales')
-@section('navbar')
-    @include('layouts.navbar')
+@extends('layouts.container') 
 @section('body')
+@include('layouts.navbar')
     <div class="container-fluid margen">
         <div class="row">
             <div class="col-12 text-light pt-5 pb-3">
@@ -146,6 +144,4 @@
         </div>
     </div>
     </div>
-@endsection
-@section('footer')
-    @include('layouts.footer')
+@endsection 

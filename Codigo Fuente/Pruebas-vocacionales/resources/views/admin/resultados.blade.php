@@ -1,8 +1,6 @@
-@extends('layouts.container')
-@section('titulo', 'Pruebas vocacionales')
-@section('navbar')
-    @include('layouts.admin_navbar')
+@extends('layouts.container') 
 @section('body')
+@include('layouts.admin_navbar')
     <div class="container margenresultados">
         <div class="row pt-4">
             <div class="col-12 pt-5 table-responsive">
@@ -790,6 +788,4 @@
             </div>
         </div>
     </div>
-@endsection
-@section('footer')
-    @include('layouts.footer')
+@endsection 

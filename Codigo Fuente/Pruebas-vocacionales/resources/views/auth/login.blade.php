@@ -1,8 +1,6 @@
 @extends('layouts.container')
-@section('titulo', 'Pruebas vocacionales')
-@section('navbar')
-    @include('layouts.navbar')
 @section('body')
+@include('layouts.navbar')
     <div class="container margen d-flex justify-content-center align-items-center">
         <div class="row margen">
             <div class="container login mt-5 margen">
@@ -58,6 +56,4 @@
             </div>
         </div>
     </div>
-@endsection
-@section('footer')
-    @include('layouts.footer')
+@endsection 
